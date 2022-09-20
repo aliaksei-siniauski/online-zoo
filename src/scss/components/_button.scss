@@ -1,0 +1,22 @@
+.button {
+  display: inline-flex;
+  @extend %js-content-center;
+  padding: 1.6rem 0.1rem 1.6rem 0.5rem;
+  @include font($main-size, $line-height-main, $medium);
+  color: $color-light;
+  background: transparent;
+  border: none;
+  @extend %text-uppercase;
+  @extend %cursor-pointer;
+  @extend %transition;
+
+  &--main {
+    border-radius: $button-radius-main;
+    background: $main-gradient;
+    min-width: 292px;
+  }
+
+  &--second {
+    border-radius: $button-radius-second;
+  }
+}

@@ -1,0 +1,43 @@
+.hero {
+  background: url("/src/images/bg/bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  position: relative;
+  @extend %flex;
+  justify-content: flex-end;
+  padding-top: 8.6rem;
+}
+
+.hero__content {
+  position: relative;
+  max-width: 500px;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  gap: 6rem;
+  margin-bottom: 10rem;
+}
+
+.hero__cicle {
+  position: absolute;
+  top: 12px;
+  right: 125px;
+  width: 465px;
+  height: 465px;
+  background: $main-gradient;
+  border-radius: 50%;
+}
+
+.hero__title {
+  @include font($accent-size, $line-height-accent, $bold);
+  color: $color-light;
+  text-transform: uppercase;
+  @extend %text-center;
+  &--accent {
+    color: $color-accent;
+  }
+}
