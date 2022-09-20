@@ -3,4 +3,7 @@ body {
   @extend %flex;
   @extend %flex-column;
   @extend %js-content-space-between;
+  font-family: $font-family-main;
+  color: $color-main;
+  background: $color-light;
 }

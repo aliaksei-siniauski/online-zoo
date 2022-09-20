@@ -1,0 +1,18 @@
+.logo {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  min-height: 52px;
+  padding: 0.3.55rem 0.4.75rem;
+  border: 1px solid $color-light;
+  $border-radius: $logo-radius;
+}
+
+.logo__title {
+  color: $color-light;
+  padding: 0.2rem 0 0;
+  @extend %text-center;
+}
