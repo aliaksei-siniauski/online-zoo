@@ -7,11 +7,11 @@
 /* Font */
 /* Width */
 /* Meida quaries */
-.header__container, .list, body {
+.header__container, .list, .logo, body {
   display: flex;
 }
 
-body {
+.logo, body {
   flex-direction: column;
 }
 
@@ -19,7 +19,11 @@ body {
   justify-content: space-between;
 }
 
-.header__container {
+.logo {
+  justify-content: center;
+}
+
+.header__container, .logo {
   align-items: center;
 }
 
@@ -28,6 +32,10 @@ body {
 } */
 .logo__title {
   text-align: center;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 /* Vendors */
@@ -491,10 +499,6 @@ h1 {
 /* Components */
 .logo {
   position: relative;
-  display: inline-flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
   width: 82px;
   min-height: 52px;
   padding: 0.3 0.55rem 0.4 0.75rem;
@@ -502,8 +506,8 @@ h1 {
 }
 
 .logo__title {
-  color: #ffffff;
   padding: 0.2rem 0 0;
+  color: #ffffff;
 }
 
 .icon {
