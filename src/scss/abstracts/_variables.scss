@@ -18,11 +18,9 @@ $color-feed-background: rgba(253, 253, 255, 0.52);
 $color-dark: #000000;
 $color-light: #ffffff;
 
-$backdrop-filter: blur(2px);
-
 /* Gradient */
 
-$button-gradient: linear-gradient((113.96deg, #f9804b 1.49%, #fe9013 101.44%));
+$main-gradient: linear-gradient((113.96deg, #f9804b 1.49%, #fe9013 101.44%));
 
 $donate-gradient: linear-gradient(
     315.75deg,
@@ -63,11 +61,13 @@ $info-size: 3.6rem;
 $logo-title: 1.9rem; /* 19.0145 */
 
 $line-height-logo: 2.3rem;
-$line-height-main: 120%;
+$line-height-main: 2.2rem;
+$line-height-accent: 8rem;
 
 /* Border-radius */
 
-$button-radius: 0.5rem;
+$button-radius-main: 2.5rem;
+$button-radius-second: 0.5rem;
 $logo-radius: 0.2rem;
 $section-radius: 2rem;
 

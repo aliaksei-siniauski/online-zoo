@@ -2,7 +2,7 @@
   display: flex;
 }
 
-%inline-flex {
+%inline-block {
   display: inline-flex;
 }
 
@@ -30,8 +30,20 @@
   font-family: $font-family-second;
 } */
 
+%link-style {
+  @include font($main-size, $line-height-main, $medium);
+  color: $color-light;
+  &:hover {
+    color: $color-main;
+  }
+}
+
 %text-center {
   text-align: center;
+}
+
+%text-uppercase {
+  text-transform: uppercase;
 }
 
 %transition {
@@ -40,8 +52,4 @@
 
 %cursor-pointer {
   cursor: pointer;
-}
-
-%letter-spacing-main {
-  letter-spacing: 0.06em;
 }

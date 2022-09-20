@@ -1,16 +1,22 @@
+.header__nav {
+  margin-right: auto;
+}
 .list {
   @extend %flex;
 }
 
 .list__item {
-  @include font($main-size, $line-height-main, $medium);
   &:not(:last-child) {
     margin: 0 5.8rem 0 0;
   }
 }
 
 .list__link {
-  color: $color-light;
+  @extend %link-style;
+  @extend %transition;
+  W &--active {
+    color: $color-main;
+  }
 }
 
 .header__list {

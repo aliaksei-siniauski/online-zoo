@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="logo">
+        <a href="index.html" class="logo">
           <span class="icon icon--logo"></span>
           <h1 class="logo__title">PetStory online</h1>
         </a>
@@ -19,7 +19,7 @@
         <nav class="navigation header__nav">
           <ul class="list header__list">
             <li class="list__item">
-              <a href="#" class="list__link">About</a>
+              <a href="#" class="list__link list__link--active">About</a>
             </li>
             <li class="list__item">
               <a href="#" class="list__link">Map</a>
@@ -28,17 +28,40 @@
               <a href="#" class="list__link">Zoos</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__link">Contact us</a>
+              <a href="#" class="list__link">Donate</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__link">Designed by ©</a>
+              <a href="#" class="list__link">Contact us</a>
             </li>
           </ul>
-          <!-- nav -->
         </nav>
+        <!-- close nav -->
+        <div class="header__copyright-auther">
+          <a href="#" class="copyright-auther">Designed by ©</a>
+        </div>
+        <!-- close header__copyright-auther -->
       </div>
       <!-- container -->
     </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__cicle"></div>
+          <div class="hero__content">
+            <h2 class="hero__title">
+              Watch your
+              <span class="hero__title--accent">favorite</span> animal online
+            </h2>
+            <div class="hero__button">
+              <button class="button button--main">wath online</button>
+            </div>
+          </div>
+          <!-- close hero__content -->
+        </div>
+        <!-- close container -->
+      </section>
+      <!-- close hero -->
+    </main>
   </body>
   <script type="module" src="src/index.js"></script>
 </html>

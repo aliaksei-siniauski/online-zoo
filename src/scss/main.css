@@ -7,34 +7,53 @@
 /* Font */
 /* Width */
 /* Meida quaries */
-.header__container, .list, .logo, body {
+.hero__content, .hero__container, .header__container, .list, .logo, body {
   display: flex;
 }
 
-.logo, body {
+.hero__content, .logo, body {
   flex-direction: column;
 }
 
-body {
+.header__container, body {
   justify-content: space-between;
 }
 
-.logo {
+.logo, .button {
   justify-content: center;
 }
 
-.header__container, .logo {
+.hero__content, .header__container, .logo {
   align-items: center;
 }
 
 /* %font-add {
   font-family: $font-family-second;
 } */
-.logo__title {
+.copyright-auther, .list__link {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+}
+.copyright-auther:hover, .list__link:hover {
+  color: #f9804b;
+}
+
+.hero__title, .logo__title {
   text-align: center;
 }
 
-.logo {
+.button {
+  text-transform: uppercase;
+}
+
+.copyright-auther, .list__link, .button {
+  transition: ease-in-out 0.5s;
+}
+
+.logo, .button {
   cursor: pointer;
 }
 
@@ -348,7 +367,7 @@ template {
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  color: #f9804b;
+  color: #333b41;
   background: #ffffff;
 }
 
@@ -497,6 +516,26 @@ h1 {
 }
 
 /* Components */
+.button {
+  display: inline-flex;
+  padding: 1.6rem 0.1rem 1.6rem 0.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+}
+.button--main {
+  border-radius: 2.5rem;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  min-width: 292px;
+}
+.button--second {
+  border-radius: 0.5rem;
+}
+
 .logo {
   position: relative;
   width: 82px;
@@ -524,18 +563,16 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.list__item {
-  font-size: 1.6rem;
-  line-height: 120%;
-  font-weight: 500;
-  font-style: normal;
+.header__nav {
+  margin-right: auto;
 }
+
 .list__item:not(:last-child) {
   margin: 0 5.8rem 0 0;
 }
 
-.list__link {
-  color: #ffffff;
+W .list__link--active {
+  color: #f9804b;
 }
 
 .header__list {
@@ -546,6 +583,48 @@ h1 {
 .header {
   padding: 1.4rem 0;
   background: #000000;
+}
+
+.hero {
+  background: url("/src/images/bg/bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  position: relative;
+  justify-content: flex-end;
+  padding-top: 8.6rem;
+}
+
+.hero__content {
+  position: relative;
+  max-width: 500px;
+  gap: 6rem;
+  margin-bottom: 10rem;
+}
+
+.hero__cicle {
+  position: absolute;
+  top: 12px;
+  right: 125px;
+  width: 465px;
+  height: 465px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+}
+
+.hero__title {
+  font-size: 10.65rem;
+  line-height: 8rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero__title--accent {
+  color: #ffee2e;
 }
 
 /* Pages */
