@@ -1,0 +1,4 @@
+h1 {
+  @include font($logo-title, $line-height-logo);
+  color: $color-light;
+}
