@@ -586,7 +586,7 @@ W .list__link--active {
 }
 
 .hero {
-  background: url("/src/images/bg/bg.jpg");
+  background: url("../images/bg/bg.jpg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
