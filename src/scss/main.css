@@ -480,6 +480,27 @@ h1 {
   color: #ffffff;
 }
 
+h2 {
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 3.6rem;
+  line-height: 4.7rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight.woff2") format("woff2");
@@ -630,6 +651,34 @@ h1 {
 }
 .hero__title--accent {
   color: #ffee2e;
+}
+
+.backstage__text, .backstage__info {
+  font-size: 1.6rem;
+}
+
+.backstage__container {
+  display: grid;
+  grid-template-columns: 2fr minmax(465px, 1fr);
+  padding: 14rem 1.5rem;
+  gap: 8.7rem;
+}
+
+.backstage__title {
+  margin: 0 0 2rem 0;
+}
+
+.backstage__info {
+  margin: 0 0 5.4rem 0;
+  line-height: 2.1rem;
+}
+
+.backstage__subtitle {
+  margin: 0 0 3.4rem 0;
+}
+
+.backstage__text {
+  line-height: 2.2rem;
 }
 
 /* Pages */

@@ -1,0 +1,29 @@
+%font-text {
+  font-size: $main-size;
+}
+
+.backstage__container {
+  display: grid;
+  grid-template-columns: 2fr minmax(465px, 1fr);
+  padding: 14rem 1.5rem;
+  gap: 8.7rem;
+}
+
+.backstage__title {
+  margin: 0 0 2rem 0;
+}
+
+.backstage__info {
+  margin: 0 0 5.4rem 0;
+  @extend %font-text;
+  line-height: $line-height-info;
+}
+
+.backstage__subtitle {
+  margin: 0 0 3.4rem 0;
+}
+
+.backstage__text {
+  line-height: $line-height-main;
+  @extend %font-text;
+}
