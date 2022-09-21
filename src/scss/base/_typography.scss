@@ -12,7 +12,7 @@ h3 {
 }
 
 h4 {
-  @include font($subtitle-size, $line-height-subtitle);
+  @extend %subtitle-font;
 }
 
 h5 {
