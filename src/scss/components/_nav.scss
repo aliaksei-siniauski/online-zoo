@@ -14,7 +14,7 @@
 .list__link {
   @extend %link-style;
   @extend %transition;
-  W &--active {
+  &--active {
     color: $color-main;
   }
 }

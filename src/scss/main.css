@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 
-.logo, .button {
+.logo {
   justify-content: center;
 }
 
@@ -517,15 +517,20 @@ h1 {
 
 /* Components */
 .button {
-  display: inline-flex;
+  display: inline-block;
   padding: 1.6rem 0.1rem 1.6rem 0.5rem;
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-weight: 500;
   font-style: normal;
   color: #ffffff;
-  background: transparent;
   border: none;
+}
+.button:hover {
+  background: #e47209;
+}
+.button:active {
+  background: #4b9200;
 }
 .button--main {
   border-radius: 2.5rem;
@@ -571,7 +576,7 @@ h1 {
   margin: 0 5.8rem 0 0;
 }
 
-W .list__link--active {
+.list__link--active {
   color: #f9804b;
 }
 
