@@ -2,7 +2,7 @@
   display: flex;
 }
 
-%inline-block {
+%inline-flex {
   display: inline-flex;
 }
 
@@ -31,11 +31,18 @@
 } */
 
 %link-style {
-  @include font($main-size, $line-height-main, $medium);
   color: $color-light;
   &:hover {
     color: $color-main;
   }
+}
+
+%font-style-main {
+  @include font($main-size, $line-height-main, $medium);
+}
+
+%font-info {
+  @include font($second-size, $line-height-second, $light);
 }
 
 %text-center {

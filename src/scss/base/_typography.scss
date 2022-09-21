@@ -14,3 +14,8 @@ h3 {
 h4 {
   @include font($subtitle-size, $line-height-subtitle);
 }
+
+h5 {
+  @extend %font-style-main;
+  color: $color-dark;
+}

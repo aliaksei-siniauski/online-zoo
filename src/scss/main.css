@@ -7,23 +7,31 @@
 /* Font */
 /* Width */
 /* Meida quaries */
-.hero__content, .hero__container, .header__container, .list, .logo, body {
+.hero__content, .hero__container, .header__container, .card__description, .card__description-wrapper, .cards, .list, .logo, body {
   display: flex;
 }
 
-.hero__content, .logo, body {
+.arrow__button {
+  display: inline-flex;
+}
+
+.cards {
+  flex-wrap: wrap;
+}
+
+.hero__content, .card__description, .logo, body {
   flex-direction: column;
 }
 
-.header__container, body {
+.header__container, .card__description-wrapper, body {
   justify-content: space-between;
 }
 
-.logo {
+.arrow__button, .logo {
   justify-content: center;
 }
 
-.hero__content, .header__container, .logo {
+.hero__content, .header__container, .arrow__button, .logo {
   align-items: center;
 }
 
@@ -31,29 +39,39 @@
   font-family: $font-family-second;
 } */
 .copyright-auther, .list__link {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  font-weight: 500;
-  font-style: normal;
   color: #ffffff;
 }
 .copyright-auther:hover, .list__link:hover {
   color: #f9804b;
 }
 
-.hero__title, .logo__title {
+.copyright-auther, .list__link, .button, h5 {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card__info {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.pets__button, .hero__title, .logo__title {
   text-align: center;
 }
 
-.button {
+.card__title, .button {
   text-transform: uppercase;
 }
 
-.copyright-auther, .list__link, .button {
+.card, .copyright-auther, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
-.logo, .button {
+.arrow__button, .icon, .logo, .button {
   cursor: pointer;
 }
 
@@ -501,6 +519,10 @@ h4 {
   font-style: normal;
 }
 
+h5 {
+  color: #000000;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight.woff2") format("woff2");
@@ -540,10 +562,6 @@ h4 {
 .button {
   display: inline-block;
   padding: 1.6rem 0.1rem 1.6rem 0.5rem;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  font-weight: 500;
-  font-style: normal;
   color: #ffffff;
   border: none;
 }
@@ -575,6 +593,11 @@ h4 {
   color: #ffffff;
 }
 
+.icon--arrow-prev, .icon--arrow-next {
+  width: 18px;
+  height: 9px;
+}
+
 .icon {
   display: inline-block;
 }
@@ -587,6 +610,26 @@ h4 {
   background: url("../icons/bamboo.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+.icon--banana {
+  width: 33px;
+  height: 37px;
+  background: url("../icons/fruit/banana.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon--meet-fish {
+  width: 48px;
+  height: 38px;
+  background: url("../icons/fruit/meet-fish.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon--arrow-next {
+  background: url("../icons/arrows/arrow-next.svg");
+}
+.icon--arrow-prev {
+  background: url("../icons/arrows/arrow-prev.svg");
 }
 
 .header__nav {
@@ -603,6 +646,55 @@ h4 {
 
 .header__list {
   margin: 0 0 0 6.3rem;
+}
+
+.position__img {
+  position: absolute;
+}
+
+.cards__wrapper {
+  position: relative;
+  padding: 0 0 8rem 0;
+}
+
+.cards {
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid #f9804b;
+  border-radius: 0.5rem;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card__description-wrapper {
+  padding: 0.51rem 1.1rem 1.2rem 1.4rem;
+}
+
+.card__info {
+  color: #000000;
+}
+
+.arrow__button {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 50%;
+}
+
+.arrow-prev {
+  top: 45.4%;
+  left: -52px;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-next {
+  top: 42.2%;
+  right: -79.5px;
 }
 
 /* Layout  */
@@ -657,11 +749,26 @@ h4 {
   font-size: 1.6rem;
 }
 
+.backstage {
+  overflow: hidden;
+}
+
 .backstage__container {
+  position: relative;
   display: grid;
   grid-template-columns: 2fr minmax(465px, 1fr);
   padding: 14rem 1.5rem;
   gap: 8.7rem;
+}
+
+.backstage__position-img {
+  position: absolute;
+  top: 10px;
+  right: -294px;
+  height: 605px;
+  width: 293px;
+  background: url("/src/images/page/flower.png");
+  background-repeat: no-repeat;
 }
 
 .backstage__title {
@@ -679,6 +786,10 @@ h4 {
 
 .backstage__text {
   line-height: 2.2rem;
+}
+
+.pets {
+  padding: 4rem 0 0;
 }
 
 /* Pages */

@@ -12,6 +12,7 @@
 }
 
 .list__link {
+  @extend %font-style-main;
   @extend %link-style;
   @extend %transition;
   &--active {

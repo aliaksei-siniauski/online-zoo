@@ -1,0 +1,7 @@
+.pets {
+  padding: 4rem 0 0;
+}
+
+.pets__button {
+  @extend %text-center;
+}

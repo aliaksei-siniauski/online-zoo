@@ -20,7 +20,7 @@ $color-light: #ffffff;
 
 /* Gradient */
 
-$main-gradient: linear-gradient((113.96deg, #f9804b 1.49%, #fe9013 101.44%));
+$main-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 
 $donate-gradient: linear-gradient(
     315.75deg,
@@ -62,6 +62,7 @@ $logo-title-size: 1.9rem; /* 19.0145 */
 
 $line-height-logo: 2.3rem;
 $line-height-main: 2.2rem;
+$line-height-second: 1.8rem;
 $line-height-accent: 8rem;
 $line-height-title: 5.8rem;
 $line-height-info: 2.1rem;

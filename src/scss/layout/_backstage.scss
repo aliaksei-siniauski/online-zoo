@@ -2,11 +2,25 @@
   font-size: $main-size;
 }
 
+.backstage {
+  overflow: hidden;
+}
 .backstage__container {
+  position: relative;
   display: grid;
   grid-template-columns: 2fr minmax(465px, 1fr);
   padding: 14rem 1.5rem;
   gap: 8.7rem;
+}
+
+.backstage__position-img {
+  position: absolute;
+  top: 10px;
+  right: -294px;
+  height: 605px;
+  width: 293px;
+  background: url("/src/images/page/flower.png");
+  background-repeat: no-repeat;
 }
 
 .backstage__title {
