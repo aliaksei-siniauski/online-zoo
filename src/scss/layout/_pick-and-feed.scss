@@ -8,9 +8,9 @@
 }
 
 .pick-and-feed__container {
+  max-width: 1163px;
   background: $color-feed-background;
   border-radius: $button-radius-main;
-  max-width: 1163px;
 }
 
 .pick-and-feed__content {
@@ -71,14 +71,14 @@
 }
 .how-it-works__title {
   margin: 0 0 4rem;
-  text-align: center;
+  @extend %text-center;
 }
 
 .how-it-works__cards {
   position: relative;
   max-width: 764px;
   @extend %flex;
-  justify-content: space-between;
+  @extend %js-content-space-between;
 }
 
 .how-it-works__card {
@@ -89,8 +89,8 @@
 }
 
 .how-it-works__card-icon-block {
-  height: 168px;
   width: 168px;
+  height: 168px;
   @extend %flex;
   @extend %flex-column;
   @extend %js-content-center;

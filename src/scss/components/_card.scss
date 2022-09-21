@@ -10,6 +10,8 @@
 }
 
 .card {
+  flex-basis: 366px;
+  padding: 0 0 0.6rem 0;
   border: 1px solid $color-main;
   border-radius: 0.5rem;
   @extend %transition;
@@ -17,25 +19,22 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
-  flex-basis: 366px;
-  padding-bottom: 0.6rem;
 }
 
 .card__description-wrapper {
   @extend %flex;
-  align-items: center;
-  justify-content: space-between;
+  @extend %al-items-center;
+  @extend %js-content-space-between;
   padding-inline: 1.3rem;
 }
 
 .card__description {
   @extend %flex;
   @extend %flex-column;
-  padding: 0.7rem 0 0.7rem;
+  padding: 0.75rem 0 0.7rem;
 }
 .card__title {
   @extend %font-style-main;
-
   @extend %text-uppercase;
 }
 
