@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.header__container, body {
+.how-it-works__cards, .header__container, .card__description-wrapper, body {
   justify-content: space-between;
 }
 
@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .logo {
+.how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .logo {
   align-items: center;
 }
 
@@ -66,7 +66,7 @@
   font-style: normal;
 }
 
-.pick-and-feed__title, .pets__button, .hero__title, .logo__title {
+.how-it-works__title, .pick-and-feed__title, .pets__button, .hero__title, .logo__title {
   text-align: center;
 }
 
@@ -690,23 +690,21 @@ h5 {
 }
 
 .card {
+  flex-basis: 366px;
+  padding: 0 0 0.6rem 0;
   border: 1px solid #f9804b;
   border-radius: 0.5rem;
-  flex-basis: 366px;
-  padding-bottom: 0.6rem;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .card__description-wrapper {
-  align-items: center;
-  justify-content: space-between;
   padding-inline: 1.3rem;
 }
 
 .card__description {
-  padding: 0.7rem 0 0.7rem;
+  padding: 0.75rem 0 0.7rem;
 }
 
 .card__info {
@@ -828,7 +826,27 @@ h5 {
 }
 
 .pets {
+  position: relative;
   padding: 4rem 0 10rem;
+  overflow: hidden;
+}
+
+.pets__section-img--left {
+  width: 292px;
+  height: 460px;
+  background: url("/src/images/page/palm.png");
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: -41px;
+}
+
+.pets__section-img--right {
+  width: 368px;
+  height: 275px;
+  background: url("/src/images/page/strelitzia.png");
+  background-repeat: no-repeat;
+  right: -40px;
+  bottom: 1px;
 }
 
 .pick-and-feed__description, .pick-and-feed__accent {
@@ -844,9 +862,9 @@ h5 {
 }
 
 .pick-and-feed__container {
+  max-width: 1163px;
   background: rgba(253, 253, 255, 0.52);
   border-radius: 2.5rem;
-  max-width: 1163px;
 }
 
 .pick-and-feed__content {
@@ -900,13 +918,11 @@ h5 {
 
 .how-it-works__title {
   margin: 0 0 4rem;
-  text-align: center;
 }
 
 .how-it-works__cards {
   position: relative;
   max-width: 764px;
-  justify-content: space-between;
 }
 
 .how-it-works__card {
@@ -915,8 +931,8 @@ h5 {
 }
 
 .how-it-works__card-icon-block {
-  height: 168px;
   width: 168px;
+  height: 168px;
   background: #ffffff;
   border-radius: 0.5rem;
   border: 1px solid #f9804b;
