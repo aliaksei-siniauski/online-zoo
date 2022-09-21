@@ -1,14 +1,19 @@
 .button {
-  display: inline-flex;
-  @extend %js-content-center;
+  display: inline-block;
   padding: 1.6rem 0.1rem 1.6rem 0.5rem;
-  @include font($main-size, $line-height-main, $medium);
+  @extend %font-style-main;
   color: $color-light;
-  background: transparent;
   border: none;
   @extend %text-uppercase;
   @extend %cursor-pointer;
   @extend %transition;
+  &:hover {
+    background: $color-button-hover;
+  }
+
+  &:active {
+    background: $color-button-active;
+  }
 
   &--main {
     border-radius: $button-radius-main;

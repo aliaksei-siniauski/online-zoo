@@ -12,9 +12,10 @@
 }
 
 .list__link {
+  @extend %font-style-main;
   @extend %link-style;
   @extend %transition;
-  W &--active {
+  &--active {
     color: $color-main;
   }
 }

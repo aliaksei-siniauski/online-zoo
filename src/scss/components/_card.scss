@@ -1,0 +1,63 @@
+.cards__wrapper {
+  position: relative;
+  padding: 0 0 8rem 0;
+}
+
+.cards {
+  @extend %flex;
+  justify-content: space-around;
+  @extend %flex-wrap;
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid $color-main;
+  border-radius: 0.5rem;
+  @extend %transition;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+}
+
+.card__description-wrapper {
+  @extend %flex;
+  @extend %js-content-space-between;
+  padding: 0.51rem 1.1rem 1.2rem 1.4rem;
+}
+
+.card__description {
+  @extend %flex;
+  @extend %flex-column;
+}
+.card__title {
+  @extend %text-uppercase;
+}
+
+.card__info {
+  @extend %font-info;
+  color: $color-dark;
+}
+
+.arrow__button {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  @extend %inline-flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: $main-gradient;
+  border-radius: 50%;
+  @extend %cursor-pointer;
+}
+
+.arrow-prev {
+  top: 45.4%;
+  left: -52px;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-next {
+  top: 42.2%;
+  right: -79.5px;
+}

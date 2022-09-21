@@ -1,4 +1,21 @@
 h1 {
-  @include font($logo-title, $line-height-logo);
+  @include font($logo-title-size, $line-height-logo);
   color: $color-light;
+}
+
+h2 {
+  @include font($title-size, $line-height-title);
+}
+
+h3 {
+  @include font($description-size, $line-height-description);
+}
+
+h4 {
+  @include font($subtitle-size, $line-height-subtitle);
+}
+
+h5 {
+  @extend %font-style-main;
+  color: $color-dark;
 }
