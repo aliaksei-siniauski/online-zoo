@@ -6,6 +6,7 @@
 .icon {
   display: inline-block;
   @extend %cursor-pointer;
+
   &--logo {
     position: absolute;
     bottom: 6px;
@@ -37,5 +38,35 @@
   &--arrow-prev {
     @extend %arrow-icon;
     background: url("../icons/arrows/arrow-prev.svg");
+  }
+
+  &--pay {
+    width: 120px;
+    height: 108px;
+    background: url("../icons/donation/pay.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--step {
+    width: 70px;
+    height: 36px;
+    background: url("../icons/donation/step-first.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--zoo {
+    width: 85px;
+    height: 95px;
+    background: url("../icons/donation/zoo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--monkey {
+    width: 124.75px;
+    height: 71.6px;
+    background: url("../icons/donation/monkey.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

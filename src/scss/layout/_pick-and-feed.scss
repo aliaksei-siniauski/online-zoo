@@ -1,0 +1,116 @@
+%font-info {
+  @include font($main-size, $line-height-info, $medium);
+}
+
+.pick-and-feed {
+  padding: 6.9rem 0 10rem;
+  background: $donate-gradient;
+}
+
+.pick-and-feed__container {
+  background: $color-feed-background;
+  border-radius: $button-radius-main;
+  max-width: 1163px;
+}
+
+.pick-and-feed__content {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-center;
+  @extend %al-items-center;
+  padding: 4.1rem 0 6rem;
+}
+
+.pick-and-feed__text-info {
+  padding: 0 0 5.9rem 4rem;
+}
+
+.pick-and-feed__title {
+  padding: 0 4rem 0 0;
+  @extend %text-center;
+}
+
+.pick-and-feed__description {
+  max-width: 863px;
+}
+
+.pick-and-feed__title {
+  color: $color-accent-second;
+  margin: 0 0 3rem 0;
+}
+
+.pick-and-feed__subtitle {
+  @extend %subtitle-font;
+  margin: 0 0 4rem 0;
+}
+
+.pick-and-feed__accent {
+  @extend %font-info;
+  margin: 0 0 1rem 0;
+}
+
+.pick-and-feed__description {
+  @extend %font-info;
+  font-weight: $regular;
+}
+
+.support-fundation {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background: $color-accent-second;
+  }
+}
+
+.how-it-works {
+  padding: 0 0 6.4rem;
+}
+.how-it-works__title {
+  margin: 0 0 4rem;
+  text-align: center;
+}
+
+.how-it-works__cards {
+  position: relative;
+  max-width: 764px;
+  @extend %flex;
+  justify-content: space-between;
+}
+
+.how-it-works__card {
+  @extend %flex;
+  @extend %flex-column;
+  gap: 3rem;
+  flex-basis: 168px;
+}
+
+.how-it-works__card-icon-block {
+  height: 168px;
+  width: 168px;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-center;
+  @extend %al-items-center;
+  background: $color-light;
+  border-radius: $button-radius-second;
+  border: 1px solid $color-main;
+}
+
+.how-it-works__card-title {
+  @include font($main-size, $line-height-info, $regular);
+}
+
+.how-it-works__icon-step--first {
+  position: relative;
+  top: 65px;
+  right: 1px;
+}
+.how-it-works__icon-step--second {
+  position: relative;
+  top: 61px;
+  right: 0;
+}

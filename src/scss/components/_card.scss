@@ -1,13 +1,12 @@
 .cards__wrapper {
   position: relative;
-  padding: 0 0 8rem 0;
+  padding: 0 0 8rem 0rem;
 }
 
 .cards {
   @extend %flex;
-  justify-content: space-around;
   @extend %flex-wrap;
-  gap: 2rem;
+  gap: 1.8rem 3rem;
 }
 
 .card {
@@ -18,25 +17,32 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
+  flex-basis: 366px;
+  padding-bottom: 0.6rem;
 }
 
 .card__description-wrapper {
   @extend %flex;
-  @extend %js-content-space-between;
-  padding: 0.51rem 1.1rem 1.2rem 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.3rem;
 }
 
 .card__description {
   @extend %flex;
   @extend %flex-column;
+  padding: 0.7rem 0 0.7rem;
 }
 .card__title {
+  @extend %font-style-main;
+
   @extend %text-uppercase;
 }
 
 .card__info {
-  @extend %font-info;
+  @include font($main-size, $line-height-second, $light);
   color: $color-dark;
+  letter-spacing: -0.041rem;
 }
 
 .arrow__button {
@@ -52,12 +58,11 @@
 }
 
 .arrow-prev {
-  top: 45.4%;
-  left: -52px;
-  transform: translate(-50%, -50%);
+  top: 402px;
+  left: -83px;
 }
 
 .arrow-next {
-  top: 42.2%;
-  right: -79.5px;
+  top: 402px;
+  right: -79px;
 }
