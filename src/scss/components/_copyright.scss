@@ -1,0 +1,8 @@
+.copyright {
+  @include font($main-size, $line-height-info, $thin);
+  color: $color-light;
+}
+
+.copyright__company {
+  padding: 1rem 0 0;
+}

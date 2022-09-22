@@ -10,15 +10,29 @@
   background: $feedback-gradient;
   border: 1px solid transparent;
   border-radius: $button-radius-second;
+  @extend %transition;
   &--progress {
     position: absolute;
     left: 0;
     width: 115.1px;
     height: 7px;
     background: $color-accent-second;
+    @extend %cursor-pointer;
+    &:hover {
+      background: $color-button-hover;
+    }
   }
 }
 
 .testimonials__scroll {
   margin: 0 0.4rem 0 0;
+}
+
+.testimonials__section-img {
+  width: 368px;
+  height: 275px;
+  background: url("../images/page/strelitzia.png");
+  background-repeat: no-repeat;
+  right: -40px;
+  bottom: 1px;
 }

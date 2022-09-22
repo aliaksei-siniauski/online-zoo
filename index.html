@@ -36,7 +36,7 @@
           </ul>
         </nav>
         <!-- close nav -->
-        <div class="header__copyright-auther">
+        <div class="header-copyright">
           <a
             class="copyright-auther"
             href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
@@ -297,6 +297,7 @@
         <!-- close container -->
       </section>
       <section class="testimonials">
+        <div class="position__img testimonials__section-img"></div>
         <div class="container testimonials__container">
           <h3 class="testimonials__title">Testimonials</h3>
           <div class="testimonial__inner">
@@ -466,7 +467,103 @@
         <!-- close container -->
       </section>
     </main>
-    <footer id="#contacts" class="footer"></footer>
+    <footer id="#contacts" class="footer">
+      <div class="container footer__container">
+        <div class="footer__content">
+          <a href="index.html" class="logo footer__logo">
+            <span class="icon icon--logo"></span>
+            <h1 class="logo__title">PetStory online</h1>
+          </a>
+          <!-- close logo -->
+          <div class="footer__button">
+            <button class="button button--second">donate for volunteers</button>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--meta"></span>
+              </span>
+              <a href="https://www.facebook.com/" class="social__link"
+                >Facebook</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--twitter"></span>
+              </span>
+              <a href="https://twitter.com/?lang=en" class="social__link"
+                >Twitter</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--instagram"></span>
+              </span>
+              <a href="https://www.instagram.com/" class="social__link"
+                >Instagram</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--youtube"></span>
+              </span>
+              <a href="https://www.youtube.com/" class="social__link"
+                >YouTube</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+          </ul>
+          <!-- close social-list- -->
+          <nav class="navigation footer__nav">
+            <ul class="list header__list">
+              <li class="list__item">
+                <a href="#" class="list__link list__link--active">About</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Map</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Zoos</a>
+              </li>
+              <li class="list__item">
+                <a href="#contacts" class="list__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- footer-nav -->
+          <div class="subscribe footer__subscribe">
+            <h4 class="subscribe__title">Subscribe to our news</h4>
+            <div class="subscribe">
+              <form class="subscribe__form" action method="POST">
+                <input
+                  class="subscribe-line"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="button button--submit mistake">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="copyright footer__copyright">
+            <p class="copyright__auther">Designed by Alisa Samborskaya</p>
+            <p class="copyright__company">©RSSchool & ©Yem Digital 2021</p>
+          </div>
+          <!-- close copyright -->
+        </div>
+        <!-- footer__content -->
+      </div>
+      <!-- container -->
+    </footer>
   </body>
   <script type="module" src="src/index.js"></script>
 </html>

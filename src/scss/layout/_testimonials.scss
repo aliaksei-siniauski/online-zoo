@@ -1,5 +1,7 @@
 .testimonials {
+  position: relative;
   padding: 14rem 0 18rem;
+  @extend %overflow-hidden;
 }
 
 .testimonials__container {
@@ -60,4 +62,13 @@
 
 .user__dot {
   margin-inline: 3.4px;
+}
+
+.testimonials__section-img {
+  width: 300.92px;
+  height: 295.45px;
+  background: url("../images/page/leav.png");
+  background-repeat: no-repeat;
+  right: -93px;
+  bottom: -20px;
 }
