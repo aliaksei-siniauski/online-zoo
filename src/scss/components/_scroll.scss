@@ -1,0 +1,24 @@
+.scroll {
+  position: relative;
+  width: 599px;
+  min-height: 9px;
+  @extend %flex;
+}
+.scroll__line {
+  display: block;
+  width: 100%;
+  background: $feedback-gradient;
+  border: 1px solid transparent;
+  border-radius: $button-radius-second;
+  &--progress {
+    position: absolute;
+    left: 0;
+    width: 115.1px;
+    height: 7px;
+    background: $color-accent-second;
+  }
+}
+
+.testimonials__scroll {
+  margin: 0 0.4rem 0 0;
+}

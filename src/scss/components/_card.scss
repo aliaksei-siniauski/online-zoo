@@ -12,8 +12,9 @@
 .card {
   flex-basis: 366px;
   padding: 0 0 0.6rem 0;
-  border: 1px solid $color-main;
-  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: $button-radius-second;
+  background: $border-background;
   @extend %transition;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -39,9 +40,8 @@
 }
 
 .card__info {
-  @include font($main-size, $line-height-second, $light);
+  @extend %font-info;
   color: $color-dark;
-  letter-spacing: -0.041rem;
 }
 
 .arrow__button {

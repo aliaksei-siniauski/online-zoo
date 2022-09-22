@@ -37,16 +37,16 @@
   }
 }
 
+%font-info {
+  @include font($second-size, $line-height-second, $light);
+}
+
 %subtitle-font {
   @include font($subtitle-size, $line-height-subtitle);
 }
 
 %font-style-main {
   @include font($main-size, $line-height-main, $medium);
-}
-
-%font-info {
-  @include font($second-size, $line-height-second, $light);
 }
 
 %text-center {
