@@ -31,13 +31,13 @@
 }
 
 .pick-and-feed__title {
-  color: $color-accent-second;
   margin: 0 0 3rem 0;
+  color: $color-accent-second;
 }
 
 .pick-and-feed__subtitle {
-  @extend %subtitle-font;
   margin: 0 0 4rem 0;
+  @extend %subtitle-font;
 }
 
 .pick-and-feed__accent {
@@ -93,7 +93,6 @@
   @extend %flex-column;
   @extend %js-content-center;
   @extend %al-items-center;
-  background: $color-light;
   border-radius: $button-radius-second;
   border: 1px solid transparent;
   background: $border-background;

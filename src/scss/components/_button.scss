@@ -21,9 +21,9 @@
     min-width: 298px;
     border-radius: $button-radius-main;
   }
-
+  content: "Foo " + Bar;
   &--second {
-    min-width: 296px;
+    min-width: 29px;
     border-radius: $button-radius-second;
     padding: 1.6rem 0;
   }

@@ -78,7 +78,7 @@
   text-transform: uppercase;
 }
 
-.header-copyright, .scroll__line, .card, .list__link, .button {
+.header-copyright, .scroll__line, .arrow__button, .card, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
@@ -395,7 +395,7 @@ template {
 /* Base */
 body {
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, Verdana, sans-serif;
   color: #333b41;
   background: #ffffff;
 }
@@ -529,6 +529,13 @@ h5 {
 
 @font-face {
   font-family: "Roboto";
+  src: url("../fonts/RobotoThin.woff") format("woff"), url("../fonts/RobotoThin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
   src: url("../fonts/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
@@ -569,6 +576,7 @@ h5 {
   color: #ffffff;
   border: none;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  content: "Foo Bar";
 }
 .button:hover {
   background: #e47209;
@@ -581,7 +589,7 @@ h5 {
   border-radius: 2.5rem;
 }
 .button--second {
-  min-width: 296px;
+  min-width: 29px;
   border-radius: 0.5rem;
   padding: 1.6rem 0;
 }
@@ -789,6 +797,9 @@ h5 {
 .card__description {
   padding: 0.75rem 0 0.7rem;
 }
+.card__description:hover {
+  mix-blend-mode: darken;
+}
 
 .card__info {
   color: #000000;
@@ -800,6 +811,12 @@ h5 {
   height: 62px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 50%;
+}
+.arrow__button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.arrow__button:active {
+  background: #4b9200;
 }
 
 .arrow-prev {
@@ -1016,8 +1033,8 @@ h5 {
 }
 
 .pick-and-feed__title {
-  color: #fe9013;
   margin: 0 0 3rem 0;
+  color: #fe9013;
 }
 
 .pick-and-feed__subtitle {
@@ -1067,7 +1084,6 @@ h5 {
 .how-it-works__card-icon-block {
   width: 168px;
   height: 168px;
-  background: #ffffff;
   border-radius: 0.5rem;
   border: 1px solid transparent;
   background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%) border-box;
@@ -1149,14 +1165,6 @@ h5 {
   background-repeat: no-repeat;
   right: -93px;
   bottom: -20px;
-}
-
-.copyright {
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  font-weight: 300;
-  font-style: normal;
-  color: #ffffff;
 }
 
 .footer {
