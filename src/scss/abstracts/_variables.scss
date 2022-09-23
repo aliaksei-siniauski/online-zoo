@@ -5,7 +5,7 @@ $color-accent-second: #fe9013;
 $color-text: #333b41;
 $color-placeholder: #bdbdbd;
 $color-placeholder-amount: #929699;
-$color-submit-background: #f1f3f2;
+$color-block: #f1f3f2;
 $color-social-background: #c4c4c480;
 $color-button-hover: #e47209;
 $color-button-active: #4b9200;
@@ -21,6 +21,9 @@ $color-light: #ffffff;
 /* Gradient */
 
 $main-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+
+$border-background: linear-gradient($color-light, $color-light) padding-box,
+  linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%) border-box;
 
 $donate-gradient: linear-gradient(
     315.75deg,
@@ -45,13 +48,18 @@ $donate-gradient: linear-gradient(
     #eaf7fe 149.54%
   );
 
-$feedback-gradient: lianer-gradient(
-  rgba(254, 189, 171, 0.74) 6.48% rgba(243, 169, 248, 0.66) 22.51% #e0d8f0
-    45.57% #eaf7fe 82.33% #eaf7fe 99.1%
-);
+$feedback-gradient: linear-gradient($color-block, $color-block) padding-box,
+  linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    )
+    border-box;
 
-/* Size */
-
+/*Size*/
 $accent-size: 10.65rem; /* 106.496px */
 $main-size: 1.6rem;
 $second-size: 1.5rem;
@@ -62,10 +70,10 @@ $logo-title-size: 1.9rem; /* 19.0145 */
 
 $line-height-logo: 2.3rem;
 $line-height-main: 2.2rem;
+$line-height-info: 2.1rem;
 $line-height-second: 1.8rem;
 $line-height-accent: 8rem;
 $line-height-title: 5.8rem;
-$line-height-info: 2.1rem;
 $line-height-subtitle: 2.9rem;
 $line-height-description: 4.7rem;
 
@@ -78,7 +86,8 @@ $section-radius: 2rem;
 
 /* Font */
 
-$font-family-main: "Roboto", sans-serif;
+$font-family-main: Roboto, Verdana, sans-serif;
+$thin: 100;
 $light: 300;
 $regular: 400;
 $medium: 500;

@@ -1,7 +1,3 @@
-%font-info {
-  @include font($main-size, $line-height-info, $medium);
-}
-
 .pick-and-feed {
   padding: 6.9rem 0 10rem;
   background: $donate-gradient;
@@ -35,22 +31,24 @@
 }
 
 .pick-and-feed__title {
-  color: $color-accent-second;
   margin: 0 0 3rem 0;
+  color: $color-accent-second;
 }
 
 .pick-and-feed__subtitle {
-  @extend %subtitle-font;
   margin: 0 0 4rem 0;
+  @extend %subtitle-font;
 }
 
 .pick-and-feed__accent {
-  @extend %font-info;
+  @extend %font-style-main;
+  line-height: $line-height-info;
   margin: 0 0 1rem 0;
 }
 
 .pick-and-feed__description {
-  @extend %font-info;
+  @extend %font-style-main;
+  line-height: $line-height-info;
   font-weight: $regular;
 }
 
@@ -61,7 +59,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    bottom: 0;
+    bottom: -2px;
     background: $color-accent-second;
   }
 }
@@ -95,9 +93,9 @@
   @extend %flex-column;
   @extend %js-content-center;
   @extend %al-items-center;
-  background: $color-light;
   border-radius: $button-radius-second;
-  border: 1px solid $color-main;
+  border: 1px solid transparent;
+  background: $border-background;
 }
 
 .how-it-works__card-title {

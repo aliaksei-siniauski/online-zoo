@@ -1,9 +1,7 @@
-.copyright-auther {
-  @extend %font-style-main;
-  @extend %link-style;
-  @extend %transition;
-}
-
 .position__img {
   position: absolute;
+}
+
+.hide-text {
+  display: none;
 }

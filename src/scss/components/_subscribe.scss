@@ -1,0 +1,25 @@
+.subscribe__title {
+  color: $color-light;
+  margin: 0 0 1.4rem;
+}
+
+.subscribe__form {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.subscribe-line {
+  width: 228px;
+  border: 0.8px solid transparent;
+  background: linear-gradient($color-background, $color-background) padding-box,
+    $main-gradient, border-box;
+  color: $color-light;
+  font-size: $main-size;
+  &::placeholder {
+    padding: 1rem 0.7rem 1rem 1rem;
+    @extend %font-style-main;
+    font-weight: $regular;
+    color: $color-placeholder;
+  }
+}

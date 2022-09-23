@@ -69,4 +69,50 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  &--user {
+    width: 37px;
+    height: 37px;
+    background: url("../icons/user.svg");
+  }
+
+  &--meta {
+    width: 8px;
+    height: 16px;
+    background: url("../icons/social/meta.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--twitter {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/social/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--instagram {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/social/instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    width: 16px;
+    height: 16px;
+    background: url("../icons/social/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.icon-round {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  background: rgba(196, 196, 196, 0.5);
 }

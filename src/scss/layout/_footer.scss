@@ -1,0 +1,77 @@
+.footer {
+  padding: 4.1rem 0 5rem;
+  background: $color-background;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-areas:
+    "logo nav subscribe"
+    "donate nav subscribe"
+    "social nav copyright";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.navigation {
+  grid-area: nav;
+}
+
+.subscribe {
+  grid-area: subscribe;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+.social {
+  grid-area: social;
+}
+.footer__button {
+  max-width: 290px;
+  grid-area: donate;
+}
+
+/* Footer content */
+
+.footer__logo {
+  margin: 0 0 6.8rem 0;
+}
+
+.footer__button {
+  margin: 0 0 4.4rem 0;
+}
+
+.footer__nav {
+  align-self: end;
+  padding: 0 0 0 0.4rem;
+}
+
+.footer__subscribe {
+  padding: 0 0 0 4.1rem;
+}
+
+.footer__copyright {
+  align-self: end;
+  justify-self: end;
+}
+
+.social {
+  @extend %flex;
+  @extend %flex-column;
+  gap: 1rem;
+}
+
+.social__item {
+  @extend %flex;
+  gap: 1rem;
+}
+
+.social__link {
+  color: $color-light;
+  @extend %font-style-main;
+  font-weight: $regular;
+  align-self: end;
+}

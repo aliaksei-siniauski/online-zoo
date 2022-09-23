@@ -12,8 +12,9 @@
 .card {
   flex-basis: 366px;
   padding: 0 0 0.6rem 0;
-  border: 1px solid $color-main;
-  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: $button-radius-second;
+  background: $border-background;
   @extend %transition;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -32,6 +33,9 @@
   @extend %flex;
   @extend %flex-column;
   padding: 0.75rem 0 0.7rem;
+  &:hover {
+    mix-blend-mode: darken;
+  }
 }
 .card__title {
   @extend %font-style-main;
@@ -39,9 +43,8 @@
 }
 
 .card__info {
-  @include font($main-size, $line-height-second, $light);
+  @extend %font-info;
   color: $color-dark;
-  letter-spacing: -0.041rem;
 }
 
 .arrow__button {
@@ -53,7 +56,18 @@
   @extend %js-content-center;
   background: $main-gradient;
   border-radius: 50%;
+  @extend %transition;
   @extend %cursor-pointer;
+
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  &:active {
+    background: $color-button-active;
+  }
 }
 
 .arrow-prev {
