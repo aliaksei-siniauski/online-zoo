@@ -1178,6 +1178,15 @@ h5 {
   padding: 1rem 0 0;
 }
 
+.testimonials__scroll input[type=range] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+.testimonials__scroll input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .user__content {
   gap: 1rem;
   padding-left: 0.1rem;
