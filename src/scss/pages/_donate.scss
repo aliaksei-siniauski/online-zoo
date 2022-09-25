@@ -85,11 +85,6 @@
   left: 386px;
 }
 
-.donate__message {
-  @extend %font-style-main;
-  font-weight: $regular;
-}
-
 /* Amount */
 
 .amount__title {
@@ -264,10 +259,10 @@ input[type="radio"] {
 }
 
 .another-amount__wrapper {
-  padding: 5rem 0 3.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5rem 0 3.1rem;
 }
 
 .donation-pick-and-feed__button {
@@ -276,4 +271,6 @@ input[type="radio"] {
 
 .donate__message {
   padding: 3.1rem 0 0;
+  @extend %font-style-main;
+  font-weight: $regular;
 }

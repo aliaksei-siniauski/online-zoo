@@ -63,7 +63,7 @@ input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-d
   font-style: normal;
 }
 
-.another-amount__control, .another-amount, .donate__message, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, .card__title, .list__link, .button, h5 {
+.donate__message, .another-amount__control, .another-amount, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, .card__title, .list__link, .button, h5 {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-weight: 500;
@@ -78,11 +78,11 @@ input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-d
   text-transform: uppercase;
 }
 
-.header-copyright, .scroll__line, .arrow__button, .card, .list__link, .button {
+.header-copyright, .scroll__line, .arrow__button, .card__img, .card:hover .card__description-wrapper, .card, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
-.scroll__line--progress, .arrow__button, .icon, .logo, .button {
+.scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
   cursor: pointer;
 }
 
@@ -394,6 +394,7 @@ template {
 
 /* Base */
 body {
+  min-width: 1190px;
   min-height: 100vh;
   font-family: "Roboto, Verdana", sans-serif;
   color: #333b41;
@@ -808,10 +809,22 @@ h5 {
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: rgba(5, 4, 4, 0.4);
+}
+.card:hover .card__description-wrapper {
+  opacity: 1;
+}
+.card:hover .card__img {
+  transform: scale(1.028);
+}
+
+.card__img:hover {
+  transform: scale(1.028);
 }
 
 .card__description-wrapper {
   padding-inline: 1.3rem;
+  opacity: 0;
 }
 
 .card__description {
@@ -1342,10 +1355,6 @@ h5 {
   left: 386px;
 }
 
-.donate__message {
-  font-weight: 400;
-}
-
 /* Amount */
 .amount__title {
   padding: 0 0 0 0.4rem;
@@ -1507,10 +1516,10 @@ input[type=radio]:focus {
 }
 
 .another-amount__wrapper {
-  padding: 5rem 0 3.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5rem 0 3.1rem;
 }
 
 .donation-pick-and-feed__button {
@@ -1519,6 +1528,7 @@ input[type=radio]:focus {
 
 .donate__message {
   padding: 3.1rem 0 0;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
