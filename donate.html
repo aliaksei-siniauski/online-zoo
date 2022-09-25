@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="src/icons/animals.ico" />
+    <link rel="icon" type="image/x-icon" href="src/icons/donation.ico" />
     <link rel="stylesheet" href="src/scss/main.css" />
     <title>Donate</title>
   </head>
@@ -19,7 +19,7 @@
         <nav class="navigation header__nav">
           <ul class="list header__list">
             <li class="list__item">
-              <a href="#" class="list__link list__link--active">About</a>
+              <a href="index.html" class="list__link">About</a>
             </li>
             <li class="list__item">
               <a href="#" class="list__link">Map</a>
@@ -28,7 +28,7 @@
               <a href="#" class="list__link">Zoos</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__link">Donate</a>
+              <a href="#" class="list__link list__link--active">Donate</a>
             </li>
             <li class="list__item">
               <a href="#contacts" class="list__link">Contact us</a>
@@ -44,9 +44,248 @@
             >Designed by ©</a
           >
         </div>
-        <!-- close header__copyright-auther --  >
+        <!-- close header__copyright-auther -->
       </div>
       <!-- container -->
     </header>
+    <main>
+      <section class="hero donate__hero"></section>
+      <section class="pick-and-feed donate__pick-and-feed">
+        <div class="container pick-and-feed__container donate__container">
+          <h3 class="donate__title">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </h3>
+          <p class="donate__text">
+            Even though the Zoo has been able to reopen, we are at a greatly
+            reduced capacity with educational programs and public and private
+            events cancelled or postponed for additional months. We need you now
+            more than ever to help ensure that we overcome these challenges. We
+            have been actively raising funds in the community, and we are
+            grateful for the generosity. But much more support is still needed,
+            and we need your help! Please consider a gift today – no matter what
+            size – to help us sustain our mission.
+          </p>
+          <h3 class="donate__accent">Donation Information</h3>
+          <div class="pick-and-feed__content donate-pick-and__content">
+            <div class="pick-and-feed__inner donate-pick-and-feed__inner">
+              <div class="pick-and-feed__text-info">
+                <h2 class="pick-and-feed__title">Pick and feed a friend</h2>
+                <p class="pick-and-feed__subtitle">
+                  We know the animals bring you joy, and in these extraordinary
+                  times, we’re glad.
+                </p>
+              </div>
+              <!-- close pick-and-feed__text-info -->
+              <div class="donate__info">
+                <div class="amount-of-days">
+                  <span class="amount-of-days__donate">4</span>
+                  <p class="amount-of-days__info">Panda diet for the day.</p>
+                </div>
+                <!-- close amount-of-days -->
+                <span class="icon icon--multiply amount__multiply"></span>
+                <div class="animal-widget">
+                  <span class="icon icon--panda-widget"></span>
+                </div>
+                <!-- close animal-widget -->
+              </div>
+              <div class="amount">
+                <h5 class="amount__title">Amount</h5>
+                <div class="progress-bar dontaion__progress-bar">
+                  <div class="progress-line">
+                    <div class="progress-rollers">
+                      <span class="progress-roller"></span
+                      ><span class="progress-roller"></span
+                      ><span class="progress-roller"></span
+                      ><span
+                        class="progress-roller progress-roller--active"
+                      ></span
+                      ><span class="progress-roller"></span
+                      ><span class="progress-roller"></span
+                      ><span class="progress-roller"></span
+                      ><span class="progress-roller"></span>
+                    </div>
+                    <!-- progress-rollers -->
+                  </div>
+                  <!-- close progress-rollers -->
+                </div>
+                <div class="prices">
+                  <div class="price">
+                    <span class="icon icon--price"></span>
+                    <span class="price__number">5000</span>
+                  </div>
+                  <!-- close price -->
+                  <div class="price">
+                    <span class="icon icon--price"></span>
+                    <span class="price__number">2000</span>
+                  </div>
+                  <!-- close price -->
+                  <div class="price price--active"">
+                  <span class="icon icon--price"></span>
+                  <span class="price__number">1000</span>
+                </div>
+                <!-- close price -->
+                <div class="price">
+                  <span class="icon icon--price"></span>
+                  <span class="price__number">500</span>
+                </div>
+                <!-- close price -->
+                <div class="price">
+                  <span class="icon icon--price"></span>
+                  <span class="price__number">250</span>
+                </div>
+                <!-- close price -->
+                <div class="price">
+                  <span class="icon icon--price"></span>
+                  <span class="price__number">100</span>
+                </div>
+                <!-- close price -->
+                <div class="price">
+                  <span class="icon icon--price"></span>
+                  <span class="price__number">50</span>
+                </div>
+                <!-- close price -->
+                <div class="price">
+                  <span class="icon icon--price"></span>
+                  <span class="price__number">25</span>
+                </div>
+                <!-- close price -->
+              </div>
+              <!-- prices -->
+              <div class="another-amount__wrapper">
+                <input
+                  class="another-amount"
+                  type="number"
+                  placeholder="Another amount"
+                  min="1"
+                  max="9999"
+                  required
+                />
+                <div class="another-amount__controls">
+                  <label class="another-amount__control">
+                    <input id="once" type="radio" name="radio" />
+                    Monthly
+                  </label>
+                  <label class="another-amount__control">
+                    <input id="once" type="radio" name="radio" checked />
+                    Once
+                  </label>
+                </div>
+                <!-- close another-amount__content -->
+                <div class="donation-pick-and-feed__button">
+                  <a class="button button--main" href="#">Feed a friend now</a>
+                </div>
+                <!-- pick-and-feed__button" -->
+                <p class="donate__message">
+                  Share with your friends on social networks
+                </p>
+              </div>
+              <!-- close another-amount__wrapper -->
+            </div>
+            <!-- close donate__info -->
+          </div>
+          <!-- close donat-pick-and-feed__inner -->
+          <!-- close pick-and-feed__content"-->
+        </div>
+        <!-- close container -->
+      </section>
+    </main>
+    <footer id="#contacts" class="footer">
+      <div class="container footer__container">
+        <div class="footer__content">
+          <a href="index.html" class="logo footer__logo">
+            <span class="icon icon--logo"></span>
+            <h1 class="logo__title">PetStory online</h1>
+          </a>
+          <!-- close logo -->
+          <div class="footer__button">
+            <button class="button button--second">donate for volunteers</button>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--meta"></span>
+              </span>
+              <a href="https://www.facebook.com/" class="social__link"
+                >Facebook</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--twitter"></span>
+              </span>
+              <a href="https://twitter.com/?lang=en" class="social__link"
+                >Twitter</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--instagram"></span>
+              </span>
+              <a href="https://www.instagram.com/" class="social__link"
+                >Instagram</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+            <li class="social__item">
+              <span class="icon-round">
+                <span class="icon icon--youtube"></span>
+              </span>
+              <a href="https://www.youtube.com/" class="social__link"
+                >YouTube</a
+              >
+              <!-- icon-round -->
+            </li>
+            <!-- social__item -->
+          </ul>
+          <!-- close social-list- -->
+          <nav class="navigation footer__nav">
+            <ul class="list footer__list">
+              <li class="list__item">
+                <a href="#" class="list__link list__link--active">About</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Map</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link">Zoos</a>
+              </li>
+              <li class="list__item">
+                <a href="#contacts" class="list__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- footer-nav -->
+          <div class="subscribe footer__subscribe">
+            <h4 class="subscribe__title">Subscribe to our news</h4>
+            <div class="subscribe">
+              <form class="subscribe__form" action method="POST">
+                <input
+                  class="subscribe-line"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="button button--submit mistake">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="copyright footer__copyright">
+            <p class="copyright__auther">Designed by Alisa Samborskaya</p>
+            <p class="copyright__company">©RSSchool & ©Yem Digital 2021</p>
+          </div>
+          <!-- close copyright -->
+        </div>
+        <!-- footer__content -->
+      </div>
+      <!-- container -->
+    </footer>
   </body>
 </html>

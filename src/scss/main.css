@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-.social__item, .social, .user__content, .testimonial__content, .testimonial__inner, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .how-it-works__cards, .pick-and-feed__content, .hero__content, .hero__container, .header__container, .scroll, .card__description, .card__description-wrapper, .cards, .list, .icon-round, .logo, body {
+input[type=radio], .another-amount__control, .another-amount__controls, .price, .prices, .progress-bar, .amount-of-days, .donate__info, .social__item, .social, .user__content, .testimonial__content, .testimonial__inner, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .how-it-works__cards, .pick-and-feed__content, .hero__content, .hero__container, .header__container, .scroll, .card__description, .card__description-wrapper, .cards, .list, .icon-round, .logo, body {
   display: flex;
 }
 
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 
-.social, .testimonial__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .pick-and-feed__content, .hero__content, .card__description, .logo, body {
+.amount-of-days, .social, .testimonial__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .pick-and-feed__content, .hero__content, .card__description, .logo, body {
   flex-direction: column;
 }
 
@@ -31,11 +31,11 @@
   justify-content: space-between;
 }
 
-.testimonial, .how-it-works__card-icon-block, .pick-and-feed__content, .arrow__button, .icon-round, .logo {
+input[type=radio], .progress-bar, .donate__info, .testimonial, .how-it-works__card-icon-block, .pick-and-feed__content, .arrow__button, .icon-round, .logo {
   justify-content: center;
 }
 
-.user__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .icon-round, .logo {
+input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-days, .donate__info, .user__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .icon-round, .logo {
   align-items: center;
 }
 
@@ -63,7 +63,7 @@
   font-style: normal;
 }
 
-.social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, .card__title, .list__link, .button, h5 {
+.another-amount__control, .another-amount, .donate__message, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, .card__title, .list__link, .button, h5 {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-weight: 500;
@@ -395,7 +395,7 @@ template {
 /* Base */
 body {
   min-height: 100vh;
-  font-family: Roboto, Verdana, sans-serif;
+  font-family: "Roboto, Verdana", sans-serif;
   color: #333b41;
   background: #ffffff;
 }
@@ -572,11 +572,10 @@ h5 {
 /* Components */
 .button {
   display: inline-block;
-  padding: 1.6rem 5.739rem;
+  padding: 1.6rem 5.7rem;
   color: #ffffff;
   border: none;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  content: "Foo Bar";
 }
 .button:hover {
   background: #e47209;
@@ -589,7 +588,7 @@ h5 {
   border-radius: 2.5rem;
 }
 .button--second {
-  min-width: 29px;
+  min-width: 297px;
   border-radius: 0.5rem;
   padding: 1.6rem 0;
 }
@@ -723,6 +722,27 @@ h5 {
   width: 16px;
   height: 16px;
   background: url("../icons/social/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--panda-widget {
+  width: 284px;
+  height: 246px;
+  background: url("../icons/animals/panda.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--multiply {
+  width: 14px;
+  height: 14px;
+  background: url("../icons/multiply.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--price {
+  width: 10px;
+  height: 20px;
+  background: url("../icons/donation/dollar.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -956,8 +976,8 @@ h5 {
 
 .backstage__position-img {
   position: absolute;
-  top: 10px;
-  right: -294px;
+  top: 13px;
+  right: -293px;
   height: 605px;
   width: 293px;
   background: url("../images/page/flower.png");
@@ -992,8 +1012,8 @@ h5 {
   height: 460px;
   background: url("../images/page/palm.png");
   background-repeat: no-repeat;
-  bottom: 0px;
-  left: -41px;
+  left: 0;
+  bottom: 1px;
 }
 
 .pets__section-img--right {
@@ -1001,7 +1021,7 @@ h5 {
   height: 275px;
   background: url("../images/page/strelitzia.png");
   background-repeat: no-repeat;
-  right: -40px;
+  right: 0px;
   bottom: 1px;
 }
 
@@ -1012,12 +1032,13 @@ h5 {
 
 .pick-and-feed__container {
   max-width: 1163px;
-  background: rgba(253, 253, 255, 0.52);
   border-radius: 2.5rem;
 }
 
 .pick-and-feed__content {
   padding: 4.1rem 0 6rem;
+  background: rgba(253, 253, 255, 0.5215686275);
+  border-radius: 2rem;
 }
 
 .pick-and-feed__text-info {
@@ -1163,7 +1184,7 @@ h5 {
   height: 295.45px;
   background: url("../images/page/leav.png");
   background-repeat: no-repeat;
-  right: -93px;
+  right: -54px;
   bottom: -20px;
 }
 
@@ -1174,7 +1195,7 @@ h5 {
 
 .footer__content {
   display: grid;
-  grid-template-areas: "logo nav subscribe" "donate nav subscribe" "social nav copyright";
+  grid-template-areas: "logo nav nav subscribe" "donate nav nav subscribe" "social nav nav copyright";
 }
 
 .logo {
@@ -1213,11 +1234,10 @@ h5 {
 
 .footer__nav {
   align-self: end;
-  padding: 0 0 0 0.4rem;
 }
 
 .footer__subscribe {
-  padding: 0 0 0 4.1rem;
+  justify-self: end;
 }
 
 .footer__copyright {
@@ -1240,7 +1260,265 @@ h5 {
 }
 
 /* Pages */
-/* @import "pages/pets-page";
- */
+.donate__hero {
+  width: 100%;
+  min-height: 390px;
+  background: url("../images/bg/donation-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.donate__container {
+  max-width: 1190px;
+}
+
+.donate__pick-and-feed {
+  padding: 3.5rem 0 18rem;
+}
+
+.donate-pick-and__content {
+  padding: 4.1rem 0 3rem;
+}
+
+.donate__title {
+  color: #ffffff;
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.donate__text {
+  color: #ffffff;
+  margin: 0 0 4.7rem;
+}
+
+.donate__accent {
+  color: #fe9013;
+  margin: 0 0 6rem;
+}
+
+.donate-pick-and-feed__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+.donate-pick-and-feed__inner .pick-and-feed__text-info {
+  padding: 0;
+}
+.donate-pick-and-feed__inner .pick-and-feed__title {
+  margin: 0 0 2rem 0;
+  padding: 0 2rem 0 0;
+}
+.donate-pick-and-feed__inner .pick-and-feed__subtitle {
+  font-size: 2.37rem;
+}
+
+.donate__info {
+  position: relative;
+  gap: 8.9rem;
+  padding: 1.9rem 1.1rem 4.5rem 0;
+}
+
+.amount-of-days {
+  gap: 1.1rem;
+  padding: 5.2rem 0 0;
+}
+
+.amount-of-days__donate {
+  font-size: 72px;
+  line-height: 58px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
+
+.amount-of-days__info {
+  font-weight: 400;
+}
+
+.amount__multiply {
+  position: absolute;
+  top: 149px;
+  left: 386px;
+}
+
+.donate__message {
+  font-weight: 400;
+}
+
+/* Amount */
+.amount__title {
+  padding: 0 0 0 0.4rem;
+  margin: 0 0 1.7rem 0;
+}
+
+/* Progress bar */
+.dontaion__progress-bar {
+  margin: 0 0 1.3rem 0;
+}
+
+.progress-bar {
+  max-width: 976px;
+  width: 100%;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+}
+
+.progress-line {
+  position: relative;
+  max-width: 915px;
+  width: 100%;
+  height: 2px;
+  background: #72828e;
+}
+
+.progress-rollers {
+  position: absolute;
+  bottom: -3.1px;
+  left: -4.5px;
+  display: flex;
+  gap: 12rem;
+}
+
+.progress-roller {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ffee2e;
+  border-radius: 50%;
+}
+
+/* Prices */
+.prices {
+  max-width: 952px;
+  width: 100%;
+}
+
+.price {
+  gap: 0.2rem;
+}
+.price--active {
+  color: #fe9013;
+}
+.price--active .icon--price {
+  filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg) brightness(101%) contrast(99%);
+}
+
+.price:nth-child(2) {
+  margin: 0 0 0 6rem;
+}
+.price:nth-child(3) {
+  margin: 0 0 0 6rem;
+}
+.price:nth-child(4) {
+  margin: 0 0 0 6rem;
+}
+.price:nth-child(5) {
+  margin: 0 0 0 7.4rem;
+}
+.price:nth-child(6) {
+  margin: 0 0 0 7.4rem;
+}
+.price:nth-child(7) {
+  margin: 0 0 0 7.4rem;
+}
+.price:nth-child(8) {
+  margin: 0 0 0 7.6rem;
+}
+.price:last-child {
+  margin: 0 0 0 9rem;
+}
+
+.price__number {
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Another amount */
+.another-amount__wrapper {
+  position: relative;
+}
+.another-amount__wrapper::before {
+  position: absolute;
+  z-index: 100;
+  top: 66px;
+  right: 365px;
+  content: "";
+  width: 10px;
+  height: 20px;
+  background: url("../icons/donation/dollar.svg");
+  background-position: center;
+  filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg) brightness(93%) contrast(89%);
+}
+
+.another-amount {
+  max-width: 268px;
+  width: 100%;
+  padding: 1.3rem 1rem 1.6rem 0.9rem;
+  font-weight: 400;
+  background: rgba(253, 253, 255, 0.5215686275);
+  border: 1px solid #929699;
+  border-radius: 2px;
+  color: #000000;
+}
+.another-amount::placeholder {
+  color: #929699;
+}
+
+.another-amount__controls {
+  gap: 5rem;
+  padding: 2.5rem 1.8rem 3rem 0;
+}
+
+.another-amount__control {
+  gap: 1rem;
+}
+.another-amount__control:focus-within {
+  color: #f9804b;
+}
+
+input[type=radio] {
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type=radio]::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: ease-in-out 120ms transform;
+  box-shadow: inset 1em 1em #e47209;
+}
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+input[type=radio]:focus {
+  outline: max(2px, 0.2rem) solid #f9804b;
+  outline-offset: max(2px, 0.2rem);
+}
+
+.another-amount__wrapper {
+  padding: 5rem 0 3.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-pick-and-feed__button {
+  margin: 0 0 0 0.65rem;
+}
+
+.donate__message {
+  padding: 3.1rem 0 0;
+}
 
 /*# sourceMappingURL=main.css.map */
