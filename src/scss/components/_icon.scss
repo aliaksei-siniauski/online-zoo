@@ -51,6 +51,7 @@
     background: url("../icons/donation/pay.svg");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: auto;
   }
   &--step {
     width: 70px;
@@ -58,6 +59,7 @@
     background: url("../icons/donation/step-first.svg");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: auto;
   }
 
   &--zoo {
@@ -66,6 +68,7 @@
     background: url("../icons/donation/zoo.svg");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: auto;
   }
   &--monkey {
     width: 124.75px;
@@ -73,11 +76,14 @@
     background: url("../icons/donation/monkey.svg");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: auto;
   }
   &--user {
     width: 37px;
     height: 37px;
     background: url("../icons/user.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--meta {

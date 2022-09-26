@@ -78,7 +78,7 @@ input[type=radio], .another-amount__control, .progress-bar, .amount-of-days, .do
   text-transform: uppercase;
 }
 
-.social__title, .social__link:hover .icon-round, .social__link:hover .social__title, .social__link, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper:hover, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
+.social__title, .social__link:hover .icon-round, .social__link:hover .social__title, .social__link, .support-fundation, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper:hover, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
@@ -663,6 +663,7 @@ h5 {
   background: url("../icons/donation/pay.svg");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: auto;
 }
 .icon--step {
   width: 70px;
@@ -670,6 +671,7 @@ h5 {
   background: url("../icons/donation/step-first.svg");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: auto;
 }
 .icon--zoo {
   width: 85px;
@@ -677,6 +679,7 @@ h5 {
   background: url("../icons/donation/zoo.svg");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: auto;
 }
 .icon--monkey {
   width: 124.75px;
@@ -684,11 +687,14 @@ h5 {
   background: url("../icons/donation/monkey.svg");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: auto;
 }
 .icon--user {
   width: 37px;
   height: 37px;
   background: url("../icons/user.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .icon--meta {
   width: 8px;
@@ -896,19 +902,19 @@ h5 {
   margin: 0 0 1.4rem;
 }
 
-.subscribe__form {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-around;
+.subscribe__form label {
+  width: 100%;
 }
 
 .subscribe-line {
+  width: 228px;
   outline: none;
   border: 0.8px solid transparent;
   padding: 1rem 0.7rem 1rem 1rem;
   background: linear-gradient(#111115, #111115) padding-box, linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%), border-box;
   color: #ffffff;
   font-size: 1.6rem;
+  margin-right: 0.7rem;
 }
 .subscribe-line::placeholder {
   font-weight: 400;
@@ -1075,7 +1081,7 @@ h5 {
 }
 
 .pick-and-feed__container {
-  max-width: 1163px;
+  max-width: 1190px;
   border-radius: 2.5rem;
 }
 
@@ -1126,6 +1132,9 @@ h5 {
   height: 1px;
   bottom: -2px;
   background: #fe9013;
+}
+.support-fundation:hover {
+  color: #e47209;
 }
 
 .how-it-works {
@@ -1287,6 +1296,7 @@ h5 {
 
 .footer__nav {
   align-self: end;
+  justify-self: end;
 }
 
 .footer__subscribe {
@@ -1329,10 +1339,6 @@ h5 {
   background-position: center;
 }
 
-.donate__container {
-  max-width: 1190px;
-}
-
 .donate__pick-and-feed {
   padding: 3.5rem 0 18rem;
 }
@@ -1343,7 +1349,6 @@ h5 {
 
 .donate__title {
   color: #ffffff;
-  font-size: 3.3rem;
   text-transform: uppercase;
   margin: 0 0 1rem;
 }
@@ -1369,9 +1374,6 @@ h5 {
 .donate-pick-and-feed__inner .pick-and-feed__title {
   margin: 0 0 2rem 0;
   padding: 0 2rem 0 0;
-}
-.donate-pick-and-feed__inner .pick-and-feed__subtitle {
-  font-size: 2.37rem;
 }
 
 .donate__info {
@@ -1528,10 +1530,6 @@ h5 {
 }
 
 /* Another amount */
-.another-amount__wrapper {
-  position: relative;
-}
-
 .amount__block {
   max-width: 268px;
   width: 100%;

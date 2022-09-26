@@ -4,12 +4,13 @@
 }
 
 .subscribe__form {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-around;
+  label {
+    width: 100%;
+  }
 }
 
 .subscribe-line {
+  width: 228px;
   outline: none;
   border: 0.8px solid transparent;
   padding: 1rem 0.7rem 1rem 1rem;
@@ -17,6 +18,7 @@
     $main-gradient, border-box;
   color: $color-light;
   font-size: $main-size;
+  margin-right: 0.7rem;
   &::placeholder {
     @extend %font-style-main;
     font-weight: $regular;

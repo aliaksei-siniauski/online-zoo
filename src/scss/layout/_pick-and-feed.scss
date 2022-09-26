@@ -4,7 +4,7 @@
 }
 
 .pick-and-feed__container {
-  max-width: 1163px;
+  max-width: 1190px;
   border-radius: $button-radius-main;
 }
 
@@ -55,6 +55,7 @@
 
 .support-fundation {
   position: relative;
+  @extend %transition;
   &::before {
     position: absolute;
     content: "";
@@ -62,6 +63,9 @@
     height: 1px;
     bottom: -2px;
     background: $color-accent-second;
+  }
+  &:hover {
+    color: $color-button-hover;
   }
 }
 
