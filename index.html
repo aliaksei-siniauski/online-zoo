@@ -555,15 +555,21 @@
             <h4 class="subscribe__title">Subscribe to our news</h4>
             <div class="subscribe">
               <form class="subscribe__form" action method="POST">
-                <input
-                  class="subscribe-line"
-                  type="email"
-                  name="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  placeholder="Enter your email"
-                  required
-                />
-                <input type="submit" class="" />
+                <label>
+                  <input
+                    class="subscribe-line"
+                    type="email"
+                    name="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <input
+                    type="submit"
+                    class="subscribe-submit"
+                    value="Submit"
+                  />
+                </label>
               </form>
             </div>
           </div>

@@ -63,7 +63,7 @@ input[type=radio], .another-amount__control, .progress-bar, .amount-of-days, .do
   font-style: normal;
 }
 
-.donate__message, .another-amount__control, .another-amount, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, input[type=submit], .card__title, .list__link, .button, h5 {
+.donate__message, .another-amount__control, .another-amount, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe__form input[type=submit], .subscribe-line::placeholder, .card__title, .list__link, .button, h5 {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-weight: 500;
@@ -82,7 +82,7 @@ input[type=radio], .another-amount__control, .progress-bar, .amount-of-days, .do
   transition: ease-in-out 0.5s;
 }
 
-.prices, .progress-roller, input[type=submit], .scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
+.prices, .progress-roller, .subscribe__form input[type=submit], .scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
   cursor: pointer;
 }
 
@@ -901,23 +901,7 @@ h5 {
   justify-content: space-around;
 }
 
-input[type=submit] {
-  max-width: 129px;
-  width: 100%;
-  padding: 0.8rem 3.9rem;
-  background: #f1f3f2;
-  color: #000000;
-  border: 1px solid #333b41;
-}
-
-input[type=submit]:invalid {
-  background: #f1f3f2;
-  color: #d31414;
-  border: 1px solid red;
-}
-
 .subscribe-line {
-  width: 100%;
   outline: none;
   border: 0.8px solid transparent;
   padding: 1rem 0.7rem 1rem 1rem;
@@ -930,22 +914,43 @@ input[type=submit]:invalid {
   color: #bdbdbd;
 }
 
-input[type=email]:focus {
+.subscribe__form input[type=email]:focus {
   background: #f1f3f2;
   color: #d31414;
   border: 1px solid #d31414;
 }
-input[type=email]:focus::placeholder {
+.subscribe__form input[type=email]:focus::placeholder {
   color: #d31414;
 }
 
-input[type=email]:active {
-  background: transparent;
-  color: #bdbdbd;
-  border: 1px solid #4b9200;
+.subscribe__form input[type=email]:valid {
+  background: #f1f3f2;
+  color: #d31414;
+  border: 1px solid #d31414;
 }
-input[type=email]:active::placeholder {
-  color: #bdbdbd;
+.subscribe__form input[type=email]:valid::placeholder {
+  color: #d31414;
+}
+
+.subscribe__form input[type=submit] {
+  max-width: 129px;
+  width: 100%;
+  padding: 0.8rem 3.9rem;
+  background: #f1f3f2;
+  color: #000000;
+  border: 1px solid #333b41;
+}
+
+.subscribe-line:focus ~ .subscribe-submit {
+  background: #f1f3f2;
+  color: #d31414;
+  border-color: #d31414;
+}
+
+.subscribe-line:valid ~ .subscribe-submit {
+  background: #f1f3f2;
+  color: #000000;
+  border-color: #333b41;
 }
 
 /* Layout  */
@@ -1452,12 +1457,12 @@ input[type=email]:active::placeholder {
 .progress-roller--active::before {
   content: "";
   position: absolute;
-  bottom: -15.5px;
+  bottom: -16.5px;
   left: -15px;
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 3px solid #fe9013;
+  border: 2px solid #fe9013;
   border-radius: 50%;
 }
 
