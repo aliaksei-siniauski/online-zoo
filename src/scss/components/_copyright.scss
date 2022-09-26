@@ -2,6 +2,7 @@
   @include font($main-size, $line-height-info, $thin);
   color: $color-light;
   @extend %transition;
+  @extend %cursor-pointer;
   &:hover {
     color: $color-button-active;
   }
