@@ -215,19 +215,12 @@
   max-width: 268px;
   width: 100%;
   position: relative;
-  &::before {
-    position: absolute;
-    z-index: 100;
-    top: 17px;
-    right: 10px;
-    content: "";
-    width: 10px;
-    height: 20px;
-    background: url("../icons/donation/dollar.svg");
-    background-position: center;
-    filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg)
-      brightness(93%) contrast(89%);
-  }
+}
+
+.amount__icon {
+  position: absolute;
+  top: 17px;
+  right: 10px;
 }
 
 .amount__block input {
@@ -250,6 +243,10 @@
     &::placeholder {
       color: $color-button-active;
     }
+  }
+  &:focus + .amount__icon {
+    filter: invert(34%) sepia(94%) saturate(1276%) hue-rotate(61deg)
+      brightness(100%) contrast(101%);
   }
 }
 
@@ -309,9 +306,9 @@ input[type="radio"] {
 }
 
 .another-amount__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
   padding: 5rem 0 3.1rem;
 }
 

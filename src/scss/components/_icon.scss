@@ -130,13 +130,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  /*   &--price {
+  &--price {
     width: 10px;
     height: 20px;
     background: url("../icons/donation/dollar.svg");
     background-repeat: no-repeat;
     background-position: center;
-  } */
+    filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg)
+      brightness(93%) contrast(89%);
+  }
 }
 
 .icon-round {
