@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-input[type=radio], .another-amount__control, .another-amount__controls, .prices, .progress-bar, .amount-of-days, .donate__info, .social__link, .social, .user__content, .testimonial__content, .testimonial__inner, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .how-it-works__cards, .pick-and-feed__content, .hero__content, .hero__container, .header__container, .scroll, .card__description, .card__description-wrapper, .cards, .list, .icon-round, .logo, body {
+.another-amount__wrapper, input[type=radio], .another-amount__control, .another-amount__controls, .prices, .progress-bar, .amount-of-days, .donate__info, .social__link, .social, .user__content, .testimonial__content, .testimonial__inner, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .how-it-works__cards, .pick-and-feed__content, .hero__content, .hero__container, .header__container, .scroll, .card__description, .card__description-wrapper, .cards, .list, .icon-round, .logo, body {
   display: flex;
 }
 
@@ -23,7 +23,7 @@ input[type=radio], .another-amount__control, .another-amount__controls, .prices,
   flex-wrap: wrap;
 }
 
-.amount-of-days, .social, .testimonial__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .pick-and-feed__content, .hero__content, .card__description, .logo, body {
+.another-amount__wrapper, .amount-of-days, .social, .testimonial__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .pick-and-feed__content, .hero__content, .card__description, .logo, body {
   flex-direction: column;
 }
 
@@ -35,7 +35,7 @@ input[type=radio], .progress-bar, .donate__info, .testimonial, .how-it-works__ca
   justify-content: center;
 }
 
-input[type=radio], .another-amount__control, .progress-bar, .amount-of-days, .donate__info, .user__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .icon-round, .logo {
+.another-amount__wrapper, input[type=radio], .another-amount__control, .progress-bar, .amount-of-days, .donate__info, .user__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .icon-round, .logo {
   align-items: center;
 }
 
@@ -615,13 +615,6 @@ h5 {
 
 .icon {
   display: inline-block;
-  /*   &--price {
-    width: 10px;
-    height: 20px;
-    background: url("../icons/donation/dollar.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  } */
 }
 .icon--logo {
   position: absolute;
@@ -737,6 +730,14 @@ h5 {
   background: url("../icons/multiply.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.icon--price {
+  width: 10px;
+  height: 20px;
+  background: url("../icons/donation/dollar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg) brightness(93%) contrast(89%);
 }
 
 .icon-round {
@@ -1535,17 +1536,11 @@ h5 {
   width: 100%;
   position: relative;
 }
-.amount__block::before {
+
+.amount__icon {
   position: absolute;
-  z-index: 100;
   top: 17px;
   right: 10px;
-  content: "";
-  width: 10px;
-  height: 20px;
-  background: url("../icons/donation/dollar.svg");
-  background-position: center;
-  filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg) brightness(93%) contrast(89%);
 }
 
 .amount__block input {
@@ -1568,6 +1563,9 @@ h5 {
 }
 .amount__block input:focus::placeholder {
   color: #4b9200;
+}
+.amount__block input:focus + .amount__icon {
+  filter: invert(34%) sepia(94%) saturate(1276%) hue-rotate(61deg) brightness(100%) contrast(101%);
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -1616,9 +1614,6 @@ input[type=radio]:focus {
 }
 
 .another-amount__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 5rem 0 3.1rem;
 }
 
