@@ -163,7 +163,6 @@
   max-width: 952px;
   width: 100%;
   @extend %flex;
-  @extend %cursor-pointer;
   justify-content: space-between;
 }
 
@@ -222,11 +221,17 @@
 
 .another-amount__wrapper {
   position: relative;
+}
+
+.amount__block {
+  max-width: 268px;
+  width: 100%;
+  position: relative;
   &::before {
     position: absolute;
     z-index: 100;
-    top: 66px;
-    right: 365px;
+    top: 17px;
+    right: 10px;
     content: "";
     width: 10px;
     height: 20px;
@@ -237,8 +242,7 @@
   }
 }
 
-.another-amount {
-  max-width: 268px;
+.amount__block input {
   width: 100%;
   padding: 1.3rem 1rem 1.6rem 0.9rem;
   @extend %font-style-main;
@@ -250,22 +254,22 @@
   &::placeholder {
     color: $color-placeholder-amount;
   }
+  &:focus {
+    border: none;
+    border: 1px solid $color-button-active;
+    color: $color-button-active;
+    outline: none;
+    &::placeholder {
+      color: $color-button-active;
+    }
+  }
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.another-amount__wrapper input:focus {
-  border: none;
-  border: 1px solid $color-button-active;
-  color: $color-button-active;
-  outline: none;
-  &::placeholder {
-    color: $color-button-active;
-  }
 }
 
 .another-amount__controls {

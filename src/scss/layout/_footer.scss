@@ -63,12 +63,14 @@
   gap: 1rem;
 }
 
-.social__item {
+.social__link {
+  max-width: 111px;
+  width: 100%;
   @extend %flex;
   gap: 1rem;
   @extend %transition;
   &:hover {
-    .social__link {
+    .social__title {
       @extend %transition;
       color: $color-button-active;
     }
@@ -79,7 +81,7 @@
   }
 }
 
-.social__link {
+.social__title {
   color: $color-light;
   @extend %font-style-main;
   font-weight: $regular;
