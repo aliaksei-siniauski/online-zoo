@@ -95,11 +95,11 @@
                     <div class="progress-rollers">
                       <span class="progress-roller"></span
                       ><span class="progress-roller"></span
-                      ><span class="progress-roller"></span
                       ><span
                         class="progress-roller progress-roller--active"
-                      ></span
-                      ><span class="progress-roller"></span
+                      ></span>
+                      <span class="progress-roller"></span>
+                      <span class="progress-roller"></span
                       ><span class="progress-roller"></span
                       ><span class="progress-roller"></span
                       ><span class="progress-roller"></span>
@@ -109,82 +109,54 @@
                   <!-- close progress-rollers -->
                 </div>
                 <div class="prices">
-                  <div class="price">
-                    <span class="icon icon--price"></span>
-                    <span class="price__number">5000</span>
-                  </div>
+                  <span class="price">5000</span>
+                  <span class="price">2000</span>
+                  <span class="price price--active">1000</span>
+                  <span class="price">500</span>
+                  <span class="price">250</span>
+                  <span class="price">100</span>
+                  <span class="price">50</span>
+                  <span class="price">25</span>
                   <!-- close price -->
-                  <div class="price">
-                    <span class="icon icon--price"></span>
-                    <span class="price__number">2000</span>
+                </div>
+                <!-- prices -->
+                <div class="another-amount__wrapper">
+                  <input
+                    class="another-amount"
+                    type="number"
+                    placeholder="Another amount"
+                    min="1"
+                    max="9999"
+                    required
+                  />
+                  <div class="another-amount__controls">
+                    <label class="another-amount__control">
+                      <input id="once" type="radio" name="radio" />
+                      Monthly
+                    </label>
+                    <label class="another-amount__control">
+                      <input id="once" type="radio" name="radio" checked />
+                      Once
+                    </label>
                   </div>
-                  <!-- close price -->
-                  <div class="price price--active"">
-                  <span class="icon icon--price"></span>
-                  <span class="price__number">1000</span>
+                  <!-- close another-amount__content -->
+                  <div class="donation-pick-and-feed__button">
+                    <a class="button button--main" href="#"
+                      >Feed a friend now</a
+                    >
+                  </div>
+                  <!-- pick-and-feed__button" -->
+                  <p class="donate__message">
+                    Share with your friends on social networks
+                  </p>
                 </div>
-                <!-- close price -->
-                <div class="price">
-                  <span class="icon icon--price"></span>
-                  <span class="price__number">500</span>
-                </div>
-                <!-- close price -->
-                <div class="price">
-                  <span class="icon icon--price"></span>
-                  <span class="price__number">250</span>
-                </div>
-                <!-- close price -->
-                <div class="price">
-                  <span class="icon icon--price"></span>
-                  <span class="price__number">100</span>
-                </div>
-                <!-- close price -->
-                <div class="price">
-                  <span class="icon icon--price"></span>
-                  <span class="price__number">50</span>
-                </div>
-                <!-- close price -->
-                <div class="price">
-                  <span class="icon icon--price"></span>
-                  <span class="price__number">25</span>
-                </div>
-                <!-- close price -->
+                <!-- close another-amount__wrapper -->
               </div>
-              <!-- prices -->
-              <div class="another-amount__wrapper">
-                <input
-                  class="another-amount"
-                  type="number"
-                  placeholder="Another amount"
-                  min="1"
-                  max="9999"
-                  required
-                />
-                <div class="another-amount__controls">
-                  <label class="another-amount__control">
-                    <input id="once" type="radio" name="radio" />
-                    Monthly
-                  </label>
-                  <label class="another-amount__control">
-                    <input id="once" type="radio" name="radio" checked />
-                    Once
-                  </label>
-                </div>
-                <!-- close another-amount__content -->
-                <div class="donation-pick-and-feed__button">
-                  <a class="button button--main" href="#">Feed a friend now</a>
-                </div>
-                <!-- pick-and-feed__button" -->
-                <p class="donate__message">
-                  Share with your friends on social networks
-                </p>
-              </div>
-              <!-- close another-amount__wrapper -->
+              <!-- close donate__info -->
             </div>
-            <!-- close donate__info -->
+            <!-- close donat-pick-and-feed__inner -->
+            <!-- close pick-and-feed__content"-->
           </div>
-          <!-- close donat-pick-and-feed__inner -->
-          <!-- close pick-and-feed__content"-->
         </div>
         <!-- close container -->
       </section>
@@ -287,4 +259,5 @@
       <!-- container -->
     </footer>
   </body>
+  <script type="module" src="src/index.js"></script>
 </html>

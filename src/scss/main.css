@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-input[type=radio], .another-amount__control, .another-amount__controls, .price, .prices, .progress-bar, .amount-of-days, .donate__info, .social__item, .social, .user__content, .testimonial__content, .testimonial__inner, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .how-it-works__cards, .pick-and-feed__content, .hero__content, .hero__container, .header__container, .scroll, .card__description, .card__description-wrapper, .cards, .list, .icon-round, .logo, body {
+input[type=radio], .another-amount__control, .another-amount__controls, .prices, .progress-bar, .amount-of-days, .donate__info, .social__item, .social, .user__content, .testimonial__content, .testimonial__inner, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .how-it-works__card, .how-it-works__cards, .pick-and-feed__content, .hero__content, .hero__container, .header__container, .scroll, .card__description, .card__description-wrapper, .cards, .list, .icon-round, .logo, body {
   display: flex;
 }
 
@@ -35,7 +35,7 @@ input[type=radio], .progress-bar, .donate__info, .testimonial, .how-it-works__ca
   justify-content: center;
 }
 
-input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-days, .donate__info, .user__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .icon-round, .logo {
+input[type=radio], .another-amount__control, .progress-bar, .amount-of-days, .donate__info, .user__content, .testimonial, .testimonials__container, .how-it-works__card-icon-block, .pick-and-feed__content, .hero__content, .header__container, .arrow__button, .card__description-wrapper, .icon-round, .logo {
   align-items: center;
 }
 
@@ -78,11 +78,11 @@ input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-d
   text-transform: uppercase;
 }
 
-.social__link, .social__item:hover .icon-round, .social__item:hover .social__link, .social__item, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
+.social__link, .social__item:hover .icon-round, .social__item:hover .social__link, .social__item, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper:hover, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
-input[type=submit], .scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
+.prices, .progress-roller, input[type=submit], .scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
   cursor: pointer;
 }
 
@@ -614,6 +614,13 @@ h5 {
 
 .icon {
   display: inline-block;
+  /*   &--price {
+    width: 10px;
+    height: 20px;
+    background: url("../icons/donation/dollar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
 }
 .icon--logo {
   position: absolute;
@@ -724,13 +731,6 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.icon--price {
-  width: 10px;
-  height: 20px;
-  background: url("../icons/donation/dollar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .icon-round {
   height: 26px;
@@ -749,6 +749,7 @@ h5 {
 
 .list__link--active {
   color: #f9804b;
+  pointer-events: none;
 }
 
 .header__list {
@@ -798,7 +799,6 @@ h5 {
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  height: 366px;
 }
 .card:hover .card__img {
   transform: scale(1.028);
@@ -816,12 +816,13 @@ h5 {
 .card__description-wrapper {
   padding-inline: 1.3rem;
 }
+.card__description-wrapper:hover {
+  transform: translateY(-90%);
+  background: rgba(0, 0, 0, 0.4);
+}
 
 .card__description {
   padding: 0.75rem 0 0.7rem;
-}
-.card__description:hover {
-  mix-blend-mode: darken;
 }
 
 .card__info {
@@ -1430,10 +1431,33 @@ input[type=email]:active::placeholder {
 }
 
 .progress-roller {
+  position: relative;
   display: block;
   width: 10px;
   height: 10px;
   background: #ffee2e;
+  border-radius: 50%;
+}
+.progress-roller--active:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7.1px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 2px solid #fe9013;
+  border-radius: 50%;
+}
+.progress-roller--active::before {
+  content: "";
+  position: absolute;
+  bottom: -15.5px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 3px solid #fe9013;
   border-radius: 50%;
 }
 
@@ -1441,18 +1465,35 @@ input[type=email]:active::placeholder {
 .prices {
   max-width: 952px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .price {
-  gap: 0.2rem;
+  position: relative;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.price::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background: url("../icons/donation/dollar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .price--active {
   color: #fe9013;
-}
-.price--active .icon--price {
   filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg) brightness(101%) contrast(99%);
 }
 
+.price:first-child {
+  margin: 0 0 0 1rem;
+}
 .price:nth-child(2) {
   margin: 0 0 0 6rem;
 }
@@ -1476,13 +1517,6 @@ input[type=email]:active::placeholder {
 }
 .price:last-child {
   margin: 0 0 0 9rem;
-}
-
-.price__number {
-  font-size: 2.6rem;
-  line-height: 3.6rem;
-  font-weight: 500;
-  font-style: normal;
 }
 
 /* Another amount */

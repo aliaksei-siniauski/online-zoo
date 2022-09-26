@@ -122,11 +122,38 @@
   gap: 12rem;
 }
 .progress-roller {
+  position: relative;
   display: block;
   width: 10px;
   height: 10px;
   background: $color-accent;
   border-radius: 50%;
+  @extend %cursor-pointer;
+
+  &--active {
+    &:after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7.1px;
+      width: 25px;
+      height: 25px;
+      background: transparent;
+      border: 2px solid #fe9013;
+      border-radius: 50%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -15.5px;
+      left: -15px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 3px solid #fe9013;
+      border-radius: 50%;
+    }
+  }
 }
 
 /* Prices */
@@ -135,22 +162,35 @@
   max-width: 952px;
   width: 100%;
   @extend %flex;
+  @extend %cursor-pointer;
+  justify-content: space-between;
 }
 
 .price {
-  @extend %flex;
-  @extend %al-items-center;
-  gap: 0.2rem;
+  position: relative;
+  @include font($price-size, $line-price-number, $medium);
+  &::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: url("../icons/donation/dollar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   &--active {
     color: $color-accent-second;
-    .icon--price {
-      filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
-        brightness(101%) contrast(99%);
-    }
+    filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
+      brightness(101%) contrast(99%);
   }
 }
 
 .price {
+  &:first-child {
+    margin: 0 0 0 1rem;
+  }
   &:nth-child(2) {
     margin: 0 0 0 6rem;
   }
@@ -178,7 +218,6 @@
 }
 
 .price__number {
-  @include font($price-size, $line-price-number, $medium);
 }
 
 /* Another amount */
