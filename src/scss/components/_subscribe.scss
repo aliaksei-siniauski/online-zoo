@@ -9,25 +9,7 @@
   justify-content: space-around;
 }
 
-input[type="submit"] {
-  max-width: 129px;
-  width: 100%;
-  padding: 0.8rem 3.9rem;
-  @extend %font-style-main;
-  background: $color-block;
-  color: $color-dark;
-  @extend %cursor-pointer;
-  border: 1px solid $color-text;
-}
-
-input[type="submit"]:invalid {
-  background: $color-block;
-  color: $color-error;
-  border: 1px solid red;
-}
-
 .subscribe-line {
-  width: 100%;
   outline: none;
   border: 0.8px solid transparent;
   padding: 1rem 0.7rem 1rem 1rem;
@@ -42,7 +24,7 @@ input[type="submit"]:invalid {
   }
 }
 
-input[type="email"]:focus {
+.subscribe__form input[type="email"]:focus {
   background: $color-block;
   color: $color-error;
   border: 1px solid $color-error;
@@ -50,11 +32,35 @@ input[type="email"]:focus {
     color: $color-error;
   }
 }
-input[type="email"]:active {
-  background: transparent;
-  color: $color-placeholder;
-  border: 1px solid $color-button-active;
+
+.subscribe__form input[type="email"]:valid {
+  background: $color-block;
+  color: $color-error;
+  border: 1px solid $color-error;
   &::placeholder {
-    color: $color-placeholder;
+    color: $color-error;
   }
+}
+
+.subscribe__form input[type="submit"] {
+  max-width: 129px;
+  width: 100%;
+  padding: 0.8rem 3.9rem;
+  @extend %font-style-main;
+  background: $color-block;
+  color: $color-dark;
+  border: 1px solid $color-text;
+  @extend %cursor-pointer;
+}
+
+.subscribe-line:focus ~ .subscribe-submit {
+  background: $color-block;
+  color: $color-error;
+  border-color: $color-error;
+}
+
+.subscribe-line:valid ~ .subscribe-submit {
+  background: $color-block;
+  color: $color-dark;
+  border-color: $color-text;
 }

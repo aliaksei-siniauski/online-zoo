@@ -22,7 +22,6 @@
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    height: 366px;
     .card__img {
       @extend %transition;
       transform: scale(1.028);
@@ -47,15 +46,17 @@
   @extend %js-content-space-between;
   padding-inline: 1.3rem;
   @extend %transition;
+  &:hover {
+    @extend %transition;
+    transform: translateY(-90%);
+    background: rgba(0, 0, 0, 0.4);
+  }
 }
 
 .card__description {
   @extend %flex;
   @extend %flex-column;
   padding: 0.75rem 0 0.7rem;
-  &:hover {
-    mix-blend-mode: darken;
-  }
 }
 .card__title {
   @extend %font-style-main;

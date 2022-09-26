@@ -122,11 +122,39 @@
   gap: 12rem;
 }
 .progress-roller {
+  position: relative;
   display: block;
   width: 10px;
   height: 10px;
   background: $color-accent;
   border-radius: 50%;
+  @extend %cursor-pointer;
+
+  &--active {
+    &:after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7.1px;
+      width: 25px;
+      height: 25px;
+
+      background: transparent;
+      border: 2px solid #fe9013;
+      border-radius: 50%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -16.5px;
+      left: -15px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid #fe9013;
+      border-radius: 50%;
+    }
+  }
 }
 
 /* Prices */
@@ -135,22 +163,34 @@
   max-width: 952px;
   width: 100%;
   @extend %flex;
+  justify-content: space-between;
 }
 
 .price {
-  @extend %flex;
-  @extend %al-items-center;
-  gap: 0.2rem;
+  position: relative;
+  @include font($price-size, $line-price-number, $medium);
+  &::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: url("../icons/donation/dollar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   &--active {
     color: $color-accent-second;
-    .icon--price {
-      filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
-        brightness(101%) contrast(99%);
-    }
+    filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
+      brightness(101%) contrast(99%);
   }
 }
 
 .price {
+  &:first-child {
+    margin: 0 0 0 1rem;
+  }
   &:nth-child(2) {
     margin: 0 0 0 6rem;
   }
@@ -177,19 +217,21 @@
   }
 }
 
-.price__number {
-  @include font($price-size, $line-price-number, $medium);
-}
-
 /* Another amount */
 
 .another-amount__wrapper {
   position: relative;
+}
+
+.amount__block {
+  max-width: 268px;
+  width: 100%;
+  position: relative;
   &::before {
     position: absolute;
     z-index: 100;
-    top: 66px;
-    right: 365px;
+    top: 17px;
+    right: 10px;
     content: "";
     width: 10px;
     height: 20px;
@@ -200,8 +242,7 @@
   }
 }
 
-.another-amount {
-  max-width: 268px;
+.amount__block input {
   width: 100%;
   padding: 1.3rem 1rem 1.6rem 0.9rem;
   @extend %font-style-main;
@@ -213,22 +254,22 @@
   &::placeholder {
     color: $color-placeholder-amount;
   }
+  &:focus {
+    border: none;
+    border: 1px solid $color-button-active;
+    color: $color-button-active;
+    outline: none;
+    &::placeholder {
+      color: $color-button-active;
+    }
+  }
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.another-amount__wrapper input:focus {
-  border: none;
-  border: 1px solid $color-button-active;
-  color: $color-button-active;
-  outline: none;
-  &::placeholder {
-    color: $color-button-active;
-  }
 }
 
 .another-amount__controls {

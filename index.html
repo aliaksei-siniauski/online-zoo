@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1190" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="src/icons/animals.ico" />
     <link rel="stylesheet" href="src/scss/main.css" />
     <title>Online-Zoo</title>
@@ -487,48 +487,54 @@
           </a>
           <!-- close logo -->
           <div class="footer__button">
-            <button class="button button--second">donate for volunteers</button>
+            <a class="button button--second" href="donate.html"
+              >donate for volunteers</a
+            >
           </div>
           <ul class="social">
-            <li class="social__item">
+            <a
+              class="social__link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
               <span class="icon-round">
                 <span class="icon icon--meta"></span>
               </span>
-              <a href="https://www.facebook.com/" class="social__link"
-                >Facebook</a
-              >
+              <span class="social__title">Facebook</span>
               <!-- icon-round -->
-            </li>
+            </a>
             <!-- social__item -->
-            <li class="social__item">
+            <a class="social__link" href="https://twitter.com/" target="_blank">
               <span class="icon-round">
                 <span class="icon icon--twitter"></span>
               </span>
-              <a href="https://twitter.com/?lang=en" class="social__link"
-                >Twitter</a
-              >
+              <span class="social__title">Twitter</span>
               <!-- icon-round -->
-            </li>
+            </a>
             <!-- social__item -->
-            <li class="social__item">
+            <a
+              class="social__link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
               <span class="icon-round">
                 <span class="icon icon--instagram"></span>
               </span>
-              <a href="https://www.instagram.com/" class="social__link"
-                >Instagram</a
-              >
+              <span class="social__title">Instagram</span>
               <!-- icon-round -->
-            </li>
+            </a>
             <!-- social__item -->
-            <li class="social__item">
+            <a
+              class="social__link"
+              href="https://www.youtube.com/"
+              target="_blank"
+            >
               <span class="icon-round">
                 <span class="icon icon--youtube"></span>
               </span>
-              <a href="https://www.youtube.com/" class="social__link"
-                >YouTube</a
-              >
+              <span class="social__title">YouTube</span>
               <!-- icon-round -->
-            </li>
+            </a>
             <!-- social__item -->
           </ul>
           <!-- close social-list- -->
@@ -553,15 +559,21 @@
             <h4 class="subscribe__title">Subscribe to our news</h4>
             <div class="subscribe">
               <form class="subscribe__form" action method="POST">
-                <input
-                  class="subscribe-line"
-                  type="email"
-                  name="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  placeholder="Enter your email"
-                  required
-                />
-                <input type="submit" class="" />
+                <label>
+                  <input
+                    class="subscribe-line"
+                    type="email"
+                    name="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <input
+                    type="submit"
+                    class="subscribe-submit"
+                    value="Submit"
+                  />
+                </label>
               </form>
             </div>
           </div>
