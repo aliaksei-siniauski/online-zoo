@@ -10,6 +10,7 @@
 }
 
 .card {
+  position: relative;
   flex-basis: 366px;
   padding: 0 0 0.6rem 0;
   border: 1px solid transparent;
@@ -17,20 +18,23 @@
   background: $border-background;
   @extend %cursor-pointer;
   @extend %transition;
+  overflow: hidden;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background: rgba(5, 4, 4, 0.4);
+    height: 366px;
+    .card__img {
+      @extend %transition;
+      transform: scale(1.028);
+      opacity: 0.6;
+    }
     .card__description-wrapper {
       @extend %transition;
-      opacity: 1;
-    }
-    .card__img {
-      transform: scale(1.028);
+      transform: translateY(-90%);
+      background: rgba(0, 0, 0, 0.4);
     }
   }
 }
-
 .card__img {
   @extend %transition;
   &:hover {
@@ -42,7 +46,7 @@
   @extend %al-items-center;
   @extend %js-content-space-between;
   padding-inline: 1.3rem;
-  opacity: 0;
+  @extend %transition;
 }
 
 .card__description {

@@ -27,24 +27,4 @@
     border-radius: $button-radius-second;
     padding: 1.6rem 0;
   }
-  &--submit {
-    width: 129px;
-    padding: 0.8rem 3.9rem;
-    background: $color-block;
-    color: $color-dark;
-    border: 1px solid $color-text;
-    &:active {
-      border: 1px solid $color-button-active;
-      color: $color-button-active;
-    }
-    &.mistake {
-      color: $color-error;
-      border: 1px solid $color-error;
-    }
-    &:hover {
-      background: $color-block;
-      border: 1px solid $color-button-active;
-      color: $color-button-active;
-    }
-  }
 }

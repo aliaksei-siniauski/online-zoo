@@ -12,6 +12,7 @@ $color-button-active: #4b9200;
 $color-button-disabeld: #767474;
 $color-error: #d31414;
 $color-background: #111115;
+$color-animation: rgba(17, 17, 21, 0.5);
 $color-feedback-background: #f5f7f6;
 $color-feed-background: #fdfdff85;
 $color-progress-bar-background: #404950;
@@ -89,7 +90,7 @@ $section-radius: 2rem;
 
 /* Font */
 
-$font-family-main: "Roboto, Verdana", sans-serif;
+$font-family-main: "Roboto", sans-serif;
 $thin: 100;
 $light: 300;
 $regular: 400;

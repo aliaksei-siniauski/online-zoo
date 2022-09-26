@@ -9,17 +9,52 @@
   justify-content: space-around;
 }
 
+input[type="submit"] {
+  max-width: 129px;
+  width: 100%;
+  padding: 0.8rem 3.9rem;
+  @extend %font-style-main;
+  background: $color-block;
+  color: $color-dark;
+  @extend %cursor-pointer;
+  border: 1px solid $color-text;
+}
+
+input[type="submit"]:invalid {
+  background: $color-block;
+  color: $color-error;
+  border: 1px solid red;
+}
+
 .subscribe-line {
-  width: 228px;
+  width: 100%;
+  outline: none;
   border: 0.8px solid transparent;
+  padding: 1rem 0.7rem 1rem 1rem;
   background: linear-gradient($color-background, $color-background) padding-box,
     $main-gradient, border-box;
   color: $color-light;
   font-size: $main-size;
   &::placeholder {
-    padding: 1rem 0.7rem 1rem 1rem;
     @extend %font-style-main;
     font-weight: $regular;
+    color: $color-placeholder;
+  }
+}
+
+input[type="email"]:focus {
+  background: $color-block;
+  color: $color-error;
+  border: 1px solid $color-error;
+  &::placeholder {
+    color: $color-error;
+  }
+}
+input[type="email"]:active {
+  background: transparent;
+  color: $color-placeholder;
+  border: 1px solid $color-button-active;
+  &::placeholder {
     color: $color-placeholder;
   }
 }

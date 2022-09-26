@@ -34,10 +34,15 @@
   &--arrow-next {
     @extend %arrow-icon;
     background: url("../icons/arrows/arrow-next.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
+
   &--arrow-prev {
     @extend %arrow-icon;
     background: url("../icons/arrows/arrow-prev.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &--pay {

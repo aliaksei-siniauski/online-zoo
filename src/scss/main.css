@@ -63,7 +63,7 @@ input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-d
   font-style: normal;
 }
 
-.donate__message, .another-amount__control, .another-amount, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, .card__title, .list__link, .button, h5 {
+.donate__message, .another-amount__control, .another-amount, .amount-of-days__info, .donate__text, .social__link, .pick-and-feed__description, .pick-and-feed__accent, .header-copyright, .subscribe-line::placeholder, input[type=submit], .card__title, .list__link, .button, h5 {
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-weight: 500;
@@ -78,11 +78,11 @@ input[type=radio], .another-amount__control, .price, .progress-bar, .amount-of-d
   text-transform: uppercase;
 }
 
-.header-copyright, .scroll__line, .arrow__button, .card__img, .card:hover .card__description-wrapper, .card, .list__link, .button {
+.social__link, .social__item:hover .icon-round, .social__item:hover .social__link, .social__item, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
-.scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
+input[type=submit], .scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
   cursor: pointer;
 }
 
@@ -396,7 +396,7 @@ template {
 body {
   min-width: 1190px;
   min-height: 100vh;
-  font-family: "Roboto, Verdana", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333b41;
   background: #ffffff;
 }
@@ -593,26 +593,6 @@ h5 {
   border-radius: 0.5rem;
   padding: 1.6rem 0;
 }
-.button--submit {
-  width: 129px;
-  padding: 0.8rem 3.9rem;
-  background: #f1f3f2;
-  color: #000000;
-  border: 1px solid #333b41;
-}
-.button--submit:active {
-  border: 1px solid #4b9200;
-  color: #4b9200;
-}
-.button--submit.mistake {
-  color: #d31414;
-  border: 1px solid #d31414;
-}
-.button--submit:hover {
-  background: #f1f3f2;
-  border: 1px solid #4b9200;
-  color: #4b9200;
-}
 
 .logo {
   position: relative;
@@ -661,9 +641,13 @@ h5 {
 }
 .icon--arrow-next {
   background: url("../icons/arrows/arrow-next.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .icon--arrow-prev {
   background: url("../icons/arrows/arrow-prev.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .icon--pay {
   width: 120px;
@@ -786,6 +770,9 @@ h5 {
   font-style: normal;
   color: #ffffff;
 }
+.copyright:hover {
+  color: #4b9200;
+}
 
 .copyright__company {
   padding: 1rem 0 0;
@@ -801,21 +788,25 @@ h5 {
 }
 
 .card {
+  position: relative;
   flex-basis: 366px;
   padding: 0 0 0.6rem 0;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%) border-box;
+  overflow: hidden;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  background: rgba(5, 4, 4, 0.4);
-}
-.card:hover .card__description-wrapper {
-  opacity: 1;
+  height: 366px;
 }
 .card:hover .card__img {
   transform: scale(1.028);
+  opacity: 0.6;
+}
+.card:hover .card__description-wrapper {
+  transform: translateY(-90%);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .card__img:hover {
@@ -824,7 +815,6 @@ h5 {
 
 .card__description-wrapper {
   padding-inline: 1.3rem;
-  opacity: 0;
 }
 
 .card__description {
@@ -910,16 +900,50 @@ h5 {
   justify-content: space-around;
 }
 
+input[type=submit] {
+  max-width: 129px;
+  width: 100%;
+  padding: 0.8rem 3.9rem;
+  background: #f1f3f2;
+  color: #000000;
+  border: 1px solid #333b41;
+}
+
+input[type=submit]:invalid {
+  background: #f1f3f2;
+  color: #d31414;
+  border: 1px solid red;
+}
+
 .subscribe-line {
-  width: 228px;
+  width: 100%;
+  outline: none;
   border: 0.8px solid transparent;
+  padding: 1rem 0.7rem 1rem 1rem;
   background: linear-gradient(#111115, #111115) padding-box, linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%), border-box;
   color: #ffffff;
   font-size: 1.6rem;
 }
 .subscribe-line::placeholder {
-  padding: 1rem 0.7rem 1rem 1rem;
   font-weight: 400;
+  color: #bdbdbd;
+}
+
+input[type=email]:focus {
+  background: #f1f3f2;
+  color: #d31414;
+  border: 1px solid #d31414;
+}
+input[type=email]:focus::placeholder {
+  color: #d31414;
+}
+
+input[type=email]:active {
+  background: transparent;
+  color: #bdbdbd;
+  border: 1px solid #4b9200;
+}
+input[type=email]:active::placeholder {
   color: #bdbdbd;
 }
 
@@ -1274,6 +1298,12 @@ h5 {
 .social__item {
   gap: 1rem;
 }
+.social__item:hover .social__link {
+  color: #4b9200;
+}
+.social__item:hover .icon-round {
+  background: #4b9200;
+}
 
 .social__link {
   color: #ffffff;
@@ -1484,6 +1514,23 @@ h5 {
 }
 .another-amount::placeholder {
   color: #929699;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.another-amount__wrapper input:focus {
+  border: none;
+  border: 1px solid #4b9200;
+  color: #4b9200;
+  outline: none;
+}
+.another-amount__wrapper input:focus::placeholder {
+  color: #4b9200;
 }
 
 .another-amount__controls {

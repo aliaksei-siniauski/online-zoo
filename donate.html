@@ -246,7 +246,7 @@
           <nav class="navigation footer__nav">
             <ul class="list footer__list">
               <li class="list__item">
-                <a href="#" class="list__link list__link--active">About</a>
+                <a href="#" class="list__link">About</a>
               </li>
               <li class="list__item">
                 <a href="#" class="list__link">Map</a>
@@ -268,12 +268,11 @@
                   class="subscribe-line"
                   type="email"
                   name="email"
-                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   placeholder="Enter your email"
+                  required
                 />
-                <button type="submit" class="button button--submit mistake">
-                  Submit
-                </button>
+                <input type="submit" class="" />
               </form>
             </div>
           </div>

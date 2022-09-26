@@ -49,6 +49,22 @@
       <!-- container -->
     </header>
     <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__cicle"></div>
+          <div class="hero__content">
+            <h2 class="hero__title">
+              Watch your
+              <span class="hero__title--accent">favorite</span> animal online
+            </h2>
+            <div class="hero__button">
+              <button class="button button--main">wath online</button>
+            </div>
+          </div>
+          <!-- close hero__content -->
+        </div>
+        <!-- close container -->
+      </section>
       <section class="backstage">
         <div class="container backstage__container">
           <div class="backstage__position-img"></div>
@@ -462,7 +478,7 @@
         <!-- close container -->
       </section>
     </main>
-    <footer id="#contacts" class="footer">
+    <footer id="contacts" class="footer">
       <div class="container footer__container">
         <div class="footer__content">
           <a href="index.html" class="logo footer__logo">
@@ -541,12 +557,11 @@
                   class="subscribe-line"
                   type="email"
                   name="email"
-                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   placeholder="Enter your email"
+                  required
                 />
-                <button type="submit" class="button button--submit mistake">
-                  Submit
-                </button>
+                <input type="submit" class="" />
               </form>
             </div>
           </div>

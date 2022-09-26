@@ -66,6 +66,17 @@
 .social__item {
   @extend %flex;
   gap: 1rem;
+  @extend %transition;
+  &:hover {
+    .social__link {
+      @extend %transition;
+      color: $color-button-active;
+    }
+    .icon-round {
+      @extend %transition;
+      background: $color-button-active;
+    }
+  }
 }
 
 .social__link {
@@ -73,4 +84,5 @@
   @extend %font-style-main;
   font-weight: $regular;
   align-self: end;
+  @extend %transition;
 }
