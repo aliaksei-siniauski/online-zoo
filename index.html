@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1190" />
     <link rel="icon" type="image/x-icon" href="src/icons/animals.ico" />
     <link rel="stylesheet" href="src/scss/main.css" />
     <title>Online-Zoo</title>
@@ -28,7 +28,7 @@
               <a href="#" class="list__link">Zoos</a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__link">Donate</a>
+              <a href="donate.html" class="list__link">Donate</a>
             </li>
             <li class="list__item">
               <a href="#contacts" class="list__link">Contact us</a>
@@ -44,7 +44,7 @@
             >Designed by ©</a
           >
         </div>
-        <!-- close header__copyright-auther --  >
+        <!-- close header__copyright-auther -->
       </div>
       <!-- container -->
     </header>
@@ -65,7 +65,6 @@
         </div>
         <!-- close container -->
       </section>
-      <!-- close hero -->
       <section class="backstage">
         <div class="container backstage__container">
           <div class="backstage__position-img"></div>
@@ -111,6 +110,8 @@
                 <img
                   class="card__img"
                   src="src/images/animal/animal-1.jpg"
+                  width="366"
+                  height="366"
                   alt="pandas"
                 />
                 <div class="card__description-wrapper">
@@ -128,6 +129,8 @@
                 <img
                   class="card__img"
                   src="src/images/animal/animal-2.jpg"
+                  width="366"
+                  height="366"
                   alt="eagles"
                 />
                 <div class="card__description-wrapper">
@@ -145,6 +148,8 @@
                 <img
                   class="card__img"
                   src="src/images/animal/animal-3.jpg"
+                  width="366"
+                  height="366"
                   alt="gorillas"
                 />
                 <div class="card__description-wrapper">
@@ -162,6 +167,8 @@
                 <img
                   class="card__img"
                   src="src/images/animal/animal-4.jpg"
+                  width="366"
+                  height="366"
                   alt="two-toed sloth"
                 />
                 <div class="card__description-wrapper">
@@ -179,6 +186,8 @@
                 <img
                   class="card__img"
                   src="src/images/animal/animal-5.jpg"
+                  width="366"
+                  height="366"
                   alt="cheetahs"
                 />
                 <div class="card__description-wrapper">
@@ -196,6 +205,8 @@
                 <img
                   class="card__img"
                   src="src/images/animal/animal-6.jpg"
+                  width="366"
+                  height="366"
                   alt="penguins"
                 />
                 <div class="card__description-wrapper">
@@ -458,7 +469,7 @@
           <!-- close testimonials__inner -->
           <div class="scroll testimonials__scroll">
             <span class="scroll__line"></span>
-            <input type="range" class="scroll__line--progress"></input>
+            <input type="range" class="scroll__line--progress" />
           </div>
           <div class="testimonials__button">
             <button class="button button--second">leave feedback</button>
@@ -467,7 +478,7 @@
         <!-- close container -->
       </section>
     </main>
-    <footer id="#contacts" class="footer">
+    <footer id="contacts" class="footer">
       <div class="container footer__container">
         <div class="footer__content">
           <a href="index.html" class="logo footer__logo">
@@ -522,7 +533,7 @@
           </ul>
           <!-- close social-list- -->
           <nav class="navigation footer__nav">
-            <ul class="list header__list">
+            <ul class="list footer__list">
               <li class="list__item">
                 <a href="#" class="list__link list__link--active">About</a>
               </li>
@@ -546,12 +557,11 @@
                   class="subscribe-line"
                   type="email"
                   name="email"
-                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   placeholder="Enter your email"
+                  required
                 />
-                <button type="submit" class="button button--submit mistake">
-                  Submit
-                </button>
+                <input type="submit" class="" />
               </form>
             </div>
           </div>

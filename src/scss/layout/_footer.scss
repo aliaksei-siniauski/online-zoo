@@ -6,9 +6,9 @@
 .footer__content {
   display: grid;
   grid-template-areas:
-    "logo nav subscribe"
-    "donate nav subscribe"
-    "social nav copyright";
+    "logo nav nav subscribe"
+    "donate nav nav subscribe"
+    "social nav nav copyright";
 }
 
 .logo {
@@ -46,11 +46,10 @@
 
 .footer__nav {
   align-self: end;
-  padding: 0 0 0 0.4rem;
 }
 
 .footer__subscribe {
-  padding: 0 0 0 4.1rem;
+  justify-self: end;
 }
 
 .footer__copyright {
@@ -67,6 +66,17 @@
 .social__item {
   @extend %flex;
   gap: 1rem;
+  @extend %transition;
+  &:hover {
+    .social__link {
+      @extend %transition;
+      color: $color-button-active;
+    }
+    .icon-round {
+      @extend %transition;
+      background: $color-button-active;
+    }
+  }
 }
 
 .social__link {
@@ -74,4 +84,5 @@
   @extend %font-style-main;
   font-weight: $regular;
   align-self: end;
+  @extend %transition;
 }

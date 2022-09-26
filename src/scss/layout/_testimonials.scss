@@ -47,6 +47,17 @@
   @extend %font-info;
 }
 
+.testimonials__scroll {
+  input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+}
+
 .user__content {
   @extend %flex;
   @extend %al-items-center;
@@ -69,6 +80,6 @@
   height: 295.45px;
   background: url("../images/page/leav.png");
   background-repeat: no-repeat;
-  right: -93px;
+  right: -54px;
   bottom: -20px;
 }

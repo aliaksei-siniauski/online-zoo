@@ -5,7 +5,6 @@
 
 .pick-and-feed__container {
   max-width: 1163px;
-  background: $color-feed-background;
   border-radius: $button-radius-main;
 }
 
@@ -15,6 +14,8 @@
   @extend %js-content-center;
   @extend %al-items-center;
   padding: 4.1rem 0 6rem;
+  background: $color-feed-background;
+  border-radius: $section-radius;
 }
 
 .pick-and-feed__text-info {
