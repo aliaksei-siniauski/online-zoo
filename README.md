@@ -2,9 +2,6 @@
 
 [Online-zoo](https://rolling-scopes-school.github.io/aliaksei-siniauski-JSFE2022Q3/)
 
-# [shelter-project](https://aliaksei-siniauski.github.io/shelter-project/)
-
-![shelter-project](https://user-images.githubusercontent.com/92273438/190927032-f50a41ef-c2d7-4bfc-9434-d08545abdb31.png)
 
 ## Project Description:
 
