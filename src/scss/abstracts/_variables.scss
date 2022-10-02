@@ -62,6 +62,7 @@ $feedback-gradient: linear-gradient($color-block, $color-block) padding-box,
     border-box;
 
 /*Size*/
+
 $accent-size: 10.65rem; /* 106.496px */
 $main-size: 1.6rem;
 $second-size: 1.5rem;
@@ -105,3 +106,8 @@ $content-tablet: 630px;
 $content-mobile: 330px;
 
 $inline-padding-content: 1.5rem;
+
+/* Media width */
+
+$small-desktop-width: 999px;
+$tablet-width: 639px;

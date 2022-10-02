@@ -6,6 +6,7 @@
 /* Border-radius */
 /* Font */
 /* Width */
+/* Media width */
 /* Meida quaries */
 .testimonials {
   overflow: hidden;
@@ -78,11 +79,11 @@ input[type=radio], .progress-bar, .donate__info, .testimonial, .how-it-works__ca
   text-transform: uppercase;
 }
 
-.social__title, .social__link:hover .icon-round, .social__link:hover .social__title, .social__link, .support-fundation, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper:hover, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
+.progress-roller, .social__title, .social__link:hover .icon-round, .social__link:hover .social__title, .social__link, .support-fundation, .header-copyright, .scroll__line, .arrow__button, .card__description-wrapper:hover, .card__description-wrapper, .card__img, .card:hover .card__description-wrapper, .card:hover .card__img, .card, .copyright, .list__link, .button {
   transition: ease-in-out 0.5s;
 }
 
-.progress-roller, .subscribe__form input[type=submit], .scroll__line--progress, .arrow__button, .card, .icon, .logo, .button {
+.progress-roller, .subscribe__form input[type=submit], .scroll__line--progress, .arrow__button, .card, .copyright, .icon, .logo, .button {
   cursor: pointer;
 }
 
@@ -1443,11 +1444,14 @@ h5 {
 
 .progress-roller {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 10px;
   height: 10px;
   background: #ffee2e;
   border-radius: 50%;
+}
+.progress-roller:hover {
+  background: #fe9013;
 }
 .progress-roller--active:after {
   content: "";
