@@ -1,15 +1,20 @@
 .header__nav {
   margin-right: auto;
+  @include media-tablet {
+    display: none;
+  }
+  .list__item {
+    &:not(:last-child) {
+      margin: 0 5.8rem 0 0;
+      @include media-small-desktop {
+        margin: 0 4.8rem 0 0;
+      }
+    }
+  }
 }
 
 .list {
   @extend %flex;
-}
-
-.list__item {
-  &:not(:last-child) {
-    margin: 0 5.8rem 0 0;
-  }
 }
 
 .list__link {

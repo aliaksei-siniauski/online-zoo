@@ -18,6 +18,10 @@
   flex-direction: column;
 }
 
+%al-self-end {
+  align-self: flex-end;
+}
+
 %js-content-space-between {
   justify-content: space-between;
 }
@@ -67,4 +71,12 @@
 
 %cursor-pointer {
   cursor: pointer;
+}
+
+%position-relative {
+  position: relative;
+}
+
+%position-absolute {
+  position: absolute;
 }
