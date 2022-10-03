@@ -16,13 +16,26 @@
     background: url("../icons/bamboo.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    @include media-tablet {
+      bottom: -2px;
+      left: 4px;
+      width: 7px;
+      height: 17px;
+    }
   }
+
   &--banana {
     width: 33px;
     height: 37px;
     background: url("../icons/fruit/banana.svg");
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: cover;
+    @include media-tablet {
+      width: 25.72px;
+      height: 28.84px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
   &--meet-fish {
     width: 48px;
@@ -30,6 +43,13 @@
     background: url("../icons/fruit/meet-fish.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-tablet {
+      width: 37.41px;
+      height: 29.62px;
+      background-repeat: no-repeat;
+    }
   }
   &--arrow-next {
     @extend %arrow-icon;

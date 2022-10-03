@@ -18,7 +18,13 @@
 
 /* Meida quaries */
 
-@mixin small-desktop-width {
+@mixin media-desktop {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin media-small-desktop {
   @media (max-width: $small-desktop-width) {
     @content;
   }
@@ -30,8 +36,14 @@
   }
 }
 
-@mixin media-mobile {
-  @media (max-width: $mobile-width) {
+@mixin media-mobile-big-width {
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
+}
+
+@mixin media-small-mobile {
+  @media (max-width: $mobile-small-width) {
     @content;
   }
 }

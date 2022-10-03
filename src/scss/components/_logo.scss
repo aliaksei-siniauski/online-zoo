@@ -6,14 +6,19 @@
   @extend %flex-column;
   @extend %al-items-center;
   @extend %js-content-center;
-  padding: 0.3.55rem 0.4.75rem;
   border: 1px solid $color-light;
   $border-radius: $logo-radius;
   @extend %cursor-pointer;
+  @include media-tablet {
+    min-height: auto;
+  }
 }
 
 .logo__title {
   padding: 0.2rem 0 0;
   color: $color-light;
   @extend %text-center;
+  @include media-tablet {
+    @include font($logo-size-mb, $line-height-logo-mb);
+  }
 }

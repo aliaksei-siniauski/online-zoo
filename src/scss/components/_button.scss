@@ -18,12 +18,12 @@
   }
 
   &--main {
-    min-width: 298px;
+    width: 298px;
     border-radius: $button-radius-main;
   }
 
   &--second {
-    min-width: 297px;
+    width: 297px;
     border-radius: $button-radius-second;
     padding: 1.6rem 0;
   }

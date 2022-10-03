@@ -64,6 +64,8 @@ $feedback-gradient: linear-gradient($color-block, $color-block) padding-box,
 /*Size*/
 
 $accent-size: 10.65rem; /* 106.496px */
+$accent-size-sm-desktop: 8.5rem;
+
 $main-size: 1.6rem;
 $second-size: 1.5rem;
 $subtitle-size: 2.4rem;
@@ -72,11 +74,34 @@ $description-size: 3.6rem;
 $logo-title-size: 1.9rem; /* 19.0145 */
 $price-size: 2.6rem;
 
+/* Size tablet  */
+
+$accent-size-tablet: 5.429rem;
+$header-size-tablet: 4.2rem;
+$subtitle-size-tablet: 2.2rem;
+$line-height-subtitle-tablet: 2.6rem;
+$line-height-tablet: 5rem;
+$line-height-accent-tablet: 4.1rem;
+
+/* Size Mobile */
+
+$logo-size-mb: 1.229rem;
+$accent-size-mb: 2.8rem;
+$card-title-size-mb: 1.247rem;
+$card-subtitle-size-mb: 1.169rem;
+$line-height-logo-mb: 1.5rem;
+$line-height-card-mb: 1.7rem;
+$line-height-card-subtitle-mb: 1.4rem;
+$mb-gap: 2rem;
+
+/* Line height */
+
 $line-height-logo: 2.3rem;
 $line-height-main: 2.2rem;
 $line-height-info: 2.1rem;
 $line-height-second: 1.8rem;
 $line-height-accent: 8rem;
+$line-heigth-accent-size-sm-desktop: 6.4rem;
 $line-height-title: 5.8rem;
 $line-height-subtitle: 2.9rem;
 $line-height-description: 4.7rem;
@@ -103,11 +128,14 @@ $bold: 700;
 $content-width: 1190px;
 $content-small-desktop: 970px;
 $content-tablet: 630px;
-$content-mobile: 330px;
+$content-mobile: 320px;
 
 $inline-padding-content: 1.5rem;
 
 /* Media width */
 
-$small-desktop-width: 999px;
-$tablet-width: 639px;
+$desktop-width: 1600px;
+$small-desktop-width: 1200px;
+$tablet-width: 971px;
+$mobile-big-width: 480px;
+$mobile-small-width: 320px;

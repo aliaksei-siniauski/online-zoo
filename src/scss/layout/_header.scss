@@ -1,6 +1,14 @@
 .header {
+  @extend %position-relative;
+  z-index: 1000;
   padding: 1.4rem 0;
   background: $color-dark;
+  @include media-tablet {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.12rem 0 0;
+  }
 }
 
 .header__container {
@@ -13,4 +21,14 @@
   @extend %font-style-main;
   @extend %link-style;
   @extend %transition;
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.header__logo {
+  @include media-tablet {
+    max-width: 46.86px;
+    border: none;
+  }
 }

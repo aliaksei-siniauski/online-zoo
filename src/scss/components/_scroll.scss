@@ -1,9 +1,14 @@
 .scroll {
   position: relative;
-  width: 599px;
-  min-height: 9px;
+  max-width: 599px;
+  width: 100%;
+  min-height: 8px;
   @extend %flex;
+  @include media-small-desktop {
+    max-width: 390px;
+  }
 }
+
 .scroll__line {
   display: block;
   width: 100%;
@@ -13,26 +18,21 @@
   @extend %transition;
   &--progress {
     position: absolute;
+    top: 0;
     left: 0;
     width: 115.1px;
-    height: 7px;
+    height: 8px;
     background: $color-accent-second;
+    border-radius: $button-radius-second;
     @extend %cursor-pointer;
     &:hover {
       background: $color-button-hover;
     }
+    @include media-small-desktop {
+      top: 0.5px;
+      left: -4px;
+      width: 75px;
+      height: 7px;
+    }
   }
-}
-
-.testimonials__scroll {
-  margin: 0 0.4rem 0 0;
-}
-
-.testimonials__section-img {
-  width: 368px;
-  height: 275px;
-  background: url("../images/page/strelitzia.png");
-  background-repeat: no-repeat;
-  right: -40px;
-  bottom: 1px;
 }
