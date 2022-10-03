@@ -4,36 +4,56 @@
   background: url("../images/bg/donation-bg.jpg");
   background-size: cover;
   background-position: center;
+  @include media-small-desktop {
+    background: url("../images/bg/donation/sm-desktop/panda.jpg");
+    background-position: bottom;
+  }
 }
 
 .donate__pick-and-feed {
   padding: 3.5rem 0 18rem;
+  @include media-small-desktop {
+    padding: 3.5rem 0 4.3rem;
+  }
 }
 
 .donate-pick-and__content {
   padding: 4.1rem 0 3rem;
+  @include media-small-desktop {
+    padding: 2.1rem 0 0;
+  }
 }
 
 .donate__title {
   color: $color-light;
   text-transform: uppercase;
   margin: 0 0 1rem;
+  @include media-small-desktop {
+    margin: 0 0 3.5rem;
+    padding-right: 93px;
+  }
 }
 
 .donate__text {
   @extend %font-style-main;
   color: $color-light;
-  margin: 0 0 4.7rem;
+  margin: 0 0 4.6rem;
 }
 .donate__accent {
   color: $color-accent-second;
   margin: 0 0 6rem;
+  @include media-small-desktop {
+    margin: 0 0 4rem;
+  }
 }
 
 .donate-pick-and-feed__inner {
   max-width: 976px;
   width: 100%;
   margin: 0 auto;
+  @include media-small-desktop {
+    max-width: 849px;
+  }
 
   .pick-and-feed__text-info {
     padding: 0;
@@ -41,6 +61,9 @@
   .pick-and-feed__title {
     margin: 0 0 2rem 0;
     padding: 0 2rem 0 0;
+    @include media-small-desktop {
+      margin: 0 0 1rem 0;
+    }
   }
 }
 
@@ -51,6 +74,9 @@
   position: relative;
   gap: 8.9rem;
   padding: 1.9rem 1.1rem 4.5rem 0;
+  @include media-small-desktop {
+    padding: 4rem 2rem 4.5rem 0;
+  }
 }
 
 .amount-of-days {
@@ -78,7 +104,13 @@
 }
 
 /* Amount */
-
+.amount {
+  @include media-small-desktop {
+    /*     max-width: 830px;
+    width: 100%;
+    overflow-x: hidden; */
+  }
+}
 .amount__title {
   padding: 0 0 0 0.4rem;
   margin: 0 0 1.7rem 0;

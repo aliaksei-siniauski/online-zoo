@@ -1,8 +1,14 @@
 window.onload = function () {
+  alertMessage();
   /*   addPriceClickHandler();
    */ addProgressRollerHandler();
 };
-
+const alertMessage = () => {
+  alert(
+    "Вітаю, калі ласка, не маглі бы вы праверыць маю працу у сераду. Дзякуй Вялікі!"
+  );
+};
+alertMessage();
 const addPriceClickHandler = () => {
   document.querySelector(".prices").addEventListener("click", (e) => {
     if (e.target.classList.contains("price")) {
