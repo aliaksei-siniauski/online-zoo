@@ -115,12 +115,16 @@
 }
 .progress-roller {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 10px;
   height: 10px;
   background: $color-accent;
   border-radius: 50%;
   @extend %cursor-pointer;
+  @extend %transition;
+  &:hover {
+    background: $color-accent-second;
+  }
 
   &--active {
     &:after {

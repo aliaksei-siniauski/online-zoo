@@ -1,0 +1,15 @@
+.burger {
+  display: none;
+  @extend %flex-column;
+  gap: 0.2rem;
+  @include media-tablet {
+    display: flex;
+  }
+}
+
+.burger__line {
+  width: 18px;
+  height: 2px;
+  background: $color-light;
+  border-radius: $logo-radius;
+}
