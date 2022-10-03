@@ -2582,13 +2582,29 @@ h5 {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 1200px) {
+  .donate__hero {
+    background: url("../images/bg/donation/sm-desktop/panda.jpg");
+    background-position: bottom;
+  }
+}
 
 .donate__pick-and-feed {
   padding: 3.5rem 0 18rem;
 }
+@media (max-width: 1200px) {
+  .donate__pick-and-feed {
+    padding: 3.5rem 0 4.3rem;
+  }
+}
 
 .donate-pick-and__content {
   padding: 4.1rem 0 3rem;
+}
+@media (max-width: 1200px) {
+  .donate-pick-and__content {
+    padding: 2.1rem 0 0;
+  }
 }
 
 .donate__title {
@@ -2596,21 +2612,37 @@ h5 {
   text-transform: uppercase;
   margin: 0 0 1rem;
 }
+@media (max-width: 1200px) {
+  .donate__title {
+    margin: 0 0 3.5rem;
+    padding-right: 93px;
+  }
+}
 
 .donate__text {
   color: #ffffff;
-  margin: 0 0 4.7rem;
+  margin: 0 0 4.6rem;
 }
 
 .donate__accent {
   color: #fe9013;
   margin: 0 0 6rem;
 }
+@media (max-width: 1200px) {
+  .donate__accent {
+    margin: 0 0 4rem;
+  }
+}
 
 .donate-pick-and-feed__inner {
   max-width: 976px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .donate-pick-and-feed__inner {
+    max-width: 849px;
+  }
 }
 .donate-pick-and-feed__inner .pick-and-feed__text-info {
   padding: 0;
@@ -2619,11 +2651,21 @@ h5 {
   margin: 0 0 2rem 0;
   padding: 0 2rem 0 0;
 }
+@media (max-width: 1200px) {
+  .donate-pick-and-feed__inner .pick-and-feed__title {
+    margin: 0 0 1rem 0;
+  }
+}
 
 .donate__info {
   position: relative;
   gap: 8.9rem;
   padding: 1.9rem 1.1rem 4.5rem 0;
+}
+@media (max-width: 1200px) {
+  .donate__info {
+    padding: 4rem 2rem 4.5rem 0;
+  }
 }
 
 .amount-of-days {
@@ -2650,6 +2692,14 @@ h5 {
 }
 
 /* Amount */
+@media (max-width: 1200px) {
+  .amount {
+    /*     max-width: 830px;
+    width: 100%;
+    overflow-x: hidden; */
+  }
+}
+
 .amount__title {
   padding: 0 0 0 0.4rem;
   margin: 0 0 1.7rem 0;
