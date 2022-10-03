@@ -85,6 +85,9 @@
   margin: 0 0 3.1rem 0;
   @extend %font-text;
   line-height: $line-height-info;
+  @include media-small-desktop {
+    margin: 0 0 5.4rem;
+  }
   @include media-mobile-big-width {
     margin: 0 0 2rem;
     padding-left: 0.1rem;

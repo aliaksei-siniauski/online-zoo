@@ -171,12 +171,16 @@
   max-width: 764px;
   @extend %flex;
   @extend %js-content-space-between;
+  @include media-small-desktop {
+    gap: 3.1rem;
+  }
   @include media-tablet {
     max-width: 600px;
     width: 100%;
     gap: 4.2rem;
     justify-content: flex-start;
   }
+
   @include media-mobile-big-width {
     flex-direction: column;
     align-items: center;
