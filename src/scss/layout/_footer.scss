@@ -151,6 +151,7 @@
   @include media-small-desktop {
     padding: 0 0 0 0.8rem;
     justify-self: center;
+    grid-column: 5/3;
   }
 }
 
