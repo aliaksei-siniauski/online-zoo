@@ -3074,9 +3074,22 @@ h5 {
   border: 2px solid #fe9013;
   border-radius: 50%;
 }
-@media (max-width: 971px) {
+@media (max-width: 1200px) {
   .progress-roller--active:after {
     display: none;
+  }
+}
+@media (max-width: 971px) {
+  .progress-roller--active:after {
+    display: block;
+  }
+}
+@media (max-width: 551px) {
+  .progress-roller--active:after {
+    width: 12px;
+    height: 12px;
+    top: -3.2px;
+    left: -3.2px;
   }
 }
 .progress-roller--active::before {
@@ -3090,51 +3103,64 @@ h5 {
   border: 2px solid #fe9013;
   border-radius: 50%;
 }
-@media (max-width: 971px) {
+@media (max-width: 1200px) {
   .progress-roller--active::before {
     display: none;
   }
 }
 @media (max-width: 971px) {
-  .progress-roller--active-sm:after {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: -7.1px;
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    border: 2px solid #fe9013;
-    border-radius: 50%;
+  .progress-roller--active::before {
+    display: block;
   }
 }
-@media (max-width: 971px) and (max-width: 551px) {
-  .progress-roller--active-sm:after {
-    width: 12px;
-    height: 12px;
-    top: -3.2px;
-    left: -3.2px;
-  }
-}
-@media (max-width: 971px) {
-  .progress-roller--active-sm::before {
-    content: "";
-    position: absolute;
-    bottom: -16.5px;
-    left: -15px;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #fe9013;
-    border-radius: 50%;
-  }
-}
-@media (max-width: 971px) and (max-width: 551px) {
-  .progress-roller--active-sm::before {
+@media (max-width: 551px) {
+  .progress-roller--active::before {
     width: 20px;
     height: 20px;
     bottom: -7.5px;
     left: -7.5px;
+  }
+}
+.progress-roller--active-sm:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7.1px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 2px solid #fe9013;
+  border-radius: 50%;
+}
+@media (max-width: 971px) {
+  .progress-roller--active-sm:after {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .progress-roller--active-sm:after {
+    display: none;
+  }
+}
+.progress-roller--active-sm::before {
+  content: "";
+  position: absolute;
+  bottom: -16.5px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fe9013;
+  border-radius: 50%;
+}
+@media (max-width: 971px) {
+  .progress-roller--active-sm::before {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .progress-roller--active-sm::before {
+    display: none;
   }
 }
 
