@@ -161,16 +161,16 @@
   align-self: end;
   justify-self: end;
   @include media-small-desktop {
-    padding-right: 4px;
+    padding-right: 0.4rem;
+    opacity: 0.7;
   }
   @include media-tablet {
-    padding-top: 23px;
-    padding-right: 2px;
+    padding-top: 2.3rem;
+    padding-right: 0.2rem;
   }
   @include media-small-mobile {
     margin: 0 0 3rem 0;
     @include font($second-size, $line-height-second, $thin);
-    opacity: 0.7;
     .copyright__company {
       padding: 1.3rem 0 0;
     }
