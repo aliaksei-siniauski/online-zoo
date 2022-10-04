@@ -53,6 +53,10 @@
   @include media-tablet {
     max-width: 600px;
   }
+
+  @include media-mobile-big-width {
+    max-width: $content-mobile;
+  }
 }
 
 .donate-pick-and__content {
@@ -102,7 +106,6 @@
 
 .donate-pick-and-feed__inner {
   overflow: hidden;
-
   max-width: 976px;
   width: 100%;
   margin: 0 auto;
@@ -293,7 +296,7 @@
 
 .progress-rollers {
   position: absolute;
-  bottom: -4.1px;
+  bottom: -2.1px;
   left: -4.5px;
   display: flex;
   gap: 12rem;
@@ -306,6 +309,7 @@
   @include media-mobile-big-width {
     bottom: -1.1px;
     left: -1.3px;
+    gap: 6rem;
   }
 }
 
@@ -337,6 +341,9 @@
       background: transparent;
       border: 2px solid $color-accent-second;
       border-radius: 50%;
+      @include media-tablet {
+        display: none;
+      }
     }
     &::before {
       content: "";
@@ -348,6 +355,48 @@
       background: transparent;
       border: 2px solid $color-accent-second;
       border-radius: 50%;
+      @include media-tablet {
+        display: none;
+      }
+    }
+  }
+  &--active-sm {
+    @include media-tablet {
+      &:after {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: -7.1px;
+        width: 25px;
+        height: 25px;
+
+        background: transparent;
+        border: 2px solid $color-accent-second;
+        border-radius: 50%;
+        @include media-mobile-big-width {
+          width: 12px;
+          height: 12px;
+          top: -3.2px;
+          left: -3.2px;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -16.5px;
+        left: -15px;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid $color-accent-second;
+        border-radius: 50%;
+        @include media-mobile-big-width {
+          width: 20px;
+          height: 20px;
+          bottom: -7.5px;
+          left: -7.5px;
+        }
+      }
     }
   }
 }
@@ -397,12 +446,10 @@
       brightness(101%) contrast(99%);
   }
   &--active-sm {
-    display: none;
-    color: $color-accent-second;
-    filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
-      brightness(101%) contrast(99%);
     @include media-tablet {
-      display: block;
+      color: $color-accent-second;
+      filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
+        brightness(101%) contrast(99%);
     }
   }
 }
