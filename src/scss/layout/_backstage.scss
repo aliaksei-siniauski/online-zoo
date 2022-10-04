@@ -88,6 +88,11 @@
   @include media-small-desktop {
     margin: 0 0 5.4rem;
   }
+
+  @include media-tablet {
+    margin: 0 0 3rem;
+  }
+
   @include media-mobile-big-width {
     margin: 0 0 2rem;
     padding-left: 0.1rem;
