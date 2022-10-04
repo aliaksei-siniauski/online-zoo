@@ -3,6 +3,10 @@
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 700px;
+  background-size: cover;
+  @media (min-width: 1600px) {
+    background-position: center;
+  }
   @include media-small-desktop {
     background: url("../images/bg/bg-sm-desktop.jpg");
     background-repeat: no-repeat;
