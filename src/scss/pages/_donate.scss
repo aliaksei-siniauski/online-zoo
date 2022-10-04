@@ -341,7 +341,59 @@
       background: transparent;
       border: 2px solid $color-accent-second;
       border-radius: 50%;
+      @include media-small-desktop {
+        display: none;
+      }
       @include media-tablet {
+        display: block;
+      }
+      @include media-mobile-big-width {
+        width: 12px;
+        height: 12px;
+        top: -3.2px;
+        left: -3.2px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -16.5px;
+      left: -15px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid $color-accent-second;
+      border-radius: 50%;
+      @include media-small-desktop {
+        display: none;
+      }
+      @include media-tablet {
+        display: block;
+      }
+      @include media-mobile-big-width {
+        width: 20px;
+        height: 20px;
+        bottom: -7.5px;
+        left: -7.5px;
+      }
+    }
+  }
+  &--active-sm {
+    &:after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7.1px;
+      width: 25px;
+      height: 25px;
+
+      background: transparent;
+      border: 2px solid $color-accent-second;
+      border-radius: 50%;
+      @include media-tablet {
+        display: none;
+      }
+      @media (min-width: 1201px) {
         display: none;
       }
     }
@@ -358,44 +410,8 @@
       @include media-tablet {
         display: none;
       }
-    }
-  }
-  &--active-sm {
-    @include media-tablet {
-      &:after {
-        content: "";
-        position: absolute;
-        top: -7px;
-        left: -7.1px;
-        width: 25px;
-        height: 25px;
-
-        background: transparent;
-        border: 2px solid $color-accent-second;
-        border-radius: 50%;
-        @include media-mobile-big-width {
-          width: 12px;
-          height: 12px;
-          top: -3.2px;
-          left: -3.2px;
-        }
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -16.5px;
-        left: -15px;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 2px solid $color-accent-second;
-        border-radius: 50%;
-        @include media-mobile-big-width {
-          width: 20px;
-          height: 20px;
-          bottom: -7.5px;
-          left: -7.5px;
-        }
+      @media (min-width: 1201px) {
+        display: none;
       }
     }
   }
