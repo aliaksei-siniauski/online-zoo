@@ -17,5 +17,6 @@ h4 {
 
 h5 {
   @extend %font-style-main;
+  font-weight: $regular;
   color: $color-dark;
 }
