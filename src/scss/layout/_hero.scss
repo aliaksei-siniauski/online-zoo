@@ -12,6 +12,7 @@
   }
   @include media-tablet {
     min-height: 339px;
+    padding: 0 0 8.5rem;
   }
   @include media-mobile-big-width {
     min-height: 187px;
@@ -45,8 +46,8 @@
     padding: 4.2rem 0 0 0;
   }
   @include media-tablet {
-    max-width: 128.2px;
-    padding: 4.8rem 0 0 0;
+    max-width: 293px;
+    padding: 8.3rem 0 0 0;
   }
   @include media-mobile-big-width {
     padding: 4.2rem 0 0 0;
@@ -61,18 +62,21 @@
   height: 465px;
   background: $main-gradient;
   border-radius: 50%;
+
   @include media-small-desktop {
     width: 367px;
     height: 367px;
     top: -11px;
     right: 162px;
   }
+
   @include media-tablet {
     width: 237.6px;
     height: 237.6px;
-    top: 11px;
+    top: 45px;
     right: 67px;
   }
+
   @include media-mobile-big-width {
     width: 119.09px;
     height: 119.09px;
