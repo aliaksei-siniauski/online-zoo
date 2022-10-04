@@ -101,6 +101,8 @@
 }
 
 .donate-pick-and-feed__inner {
+  overflow: hidden;
+
   max-width: 976px;
   width: 100%;
   margin: 0 auto;
@@ -299,7 +301,7 @@
     left: -2.5px;
   }
   @include media-tablet {
-    gap: 6rem;
+    gap: 12rem;
   }
   @include media-mobile-big-width {
     bottom: -1.1px;
@@ -323,72 +325,29 @@
   &:hover {
     background: $color-accent-second;
   }
-  &--active-sm {
-    @include media-tablet {
-      display: block;
-      &:after {
-        content: "";
-        position: absolute;
-        top: -7px;
-        left: -7.1px;
-        width: 25px;
-        height: 25px;
-        background: transparent;
-        border: 2px solid $color-accent-second;
-        border-radius: 50%;
-        @include media-mobile-big-width {
-          width: 11.48px;
-          height: 11.48px;
-          top: -3.3px;
-          left: -3.9px;
-        }
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -16.5px;
-        left: -15px;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 2px solid $color-accent-second;
-        border-radius: 50%;
-        @include media-mobile-big-width {
-          bottom: -7.5px;
-          left: -8px;
-          width: 20px;
-          height: 20px;
-        }
-      }
-    }
-  }
-
   &--active {
-    @include media-tablet {
-      display: none;
-      &:after {
-        content: "";
-        position: absolute;
-        top: -7px;
-        left: -7.1px;
-        width: 25px;
-        height: 25px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -7.1px;
+      width: 25px;
+      height: 25px;
 
-        background: transparent;
-        border: 2px solid $color-accent-second;
-        border-radius: 50%;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -16.5px;
-        left: -15px;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 2px solid $color-accent-second;
-        border-radius: 50%;
-      }
+      background: transparent;
+      border: 2px solid $color-accent-second;
+      border-radius: 50%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -16.5px;
+      left: -15px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid $color-accent-second;
+      border-radius: 50%;
     }
   }
 }
@@ -401,9 +360,10 @@
   @extend %flex;
   @extend %js-content-space-between;
   @include media-mobile-big-width {
-    max-width: 281px;
+    max-width: 285px;
     gap: 4.3rem;
     padding: 0.6rem 0 0 1.4rem;
+    margin: 0 auto;
   }
 }
 
