@@ -269,6 +269,10 @@
     top: 342.5px;
     left: 223px;
   }
+  @media (min-width: 550px) and (max-width: 631px) {
+    top: 285px;
+    left: 180px;
+  }
 }
 
 .arrow-next {
@@ -281,6 +285,10 @@
   @include media-tablet {
     top: 343px;
     right: 224px;
+  }
+  @media (min-width: 550px) and (max-width: 631px) {
+    top: 285px;
+    right: 180px;
   }
 }
 
