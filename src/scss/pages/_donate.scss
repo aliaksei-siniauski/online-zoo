@@ -26,6 +26,7 @@
   }
   @include media-mobile-big {
     min-height: 221px;
+    margin: 0;
     background: url("../images/bg/donation/mobile/panda.jpg");
     background-repeat: no-repeat;
     background-position: bottom;

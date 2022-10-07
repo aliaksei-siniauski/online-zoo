@@ -1057,6 +1057,7 @@ h5 {
     background: url("../images/bg/bg-sm-desktop.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 504px;
   }
@@ -1065,6 +1066,7 @@ h5 {
   .hero {
     min-height: 339px;
     padding: 0 0 8.5rem;
+    background-repeat: no-repeat;
   }
 }
 @media (max-width: 551px) {
@@ -1550,14 +1552,19 @@ h5 {
   border-radius: 0;
   transform: translateY(-50px);
 }
-@media (max-width: 971px) {
-  .pet-card:hover .pet-card__content {
-    transform: translateY(-35px);
-  }
-}
 @media (max-width: 1200px) {
   .pet-card:hover .pet-card__content {
     transform: translateY(-40px);
+  }
+}
+@media (max-width: 971px) {
+  .pet-card:hover .pet-card__content {
+    transform: translateY(-30px);
+  }
+}
+@media (max-width: 551px) {
+  .pet-card:hover .pet-card__content {
+    transform: translateY(-20px);
   }
 }
 .pet-card:hover .pet-card--opacity {
@@ -2691,6 +2698,7 @@ h5 {
 @media (max-width: 551px) {
   .donate__hero {
     min-height: 221px;
+    margin: 0;
     background: url("../images/bg/donation/mobile/panda.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
