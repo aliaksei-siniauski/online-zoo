@@ -8,7 +8,7 @@
   @include media-tablet {
     padding: 3rem 0 10rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 3rem 0 6rem;
   }
 }
@@ -42,7 +42,7 @@
     background: url("../images/flowers/tablet/palm.png");
     background-repeat: no-repeat;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     width: 138px;
     height: 72px;
     bottom: 0px;
@@ -75,7 +75,7 @@
     background: url("../images/flowers/tablet/strelitzia.png");
     background-repeat: no-repeat;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     width: 68px;
     height: 78px;
     bottom: -11px;
@@ -90,7 +90,7 @@
   @include media-tablet {
     padding: 0 0 6.2rem 0rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 0 0 2.2rem 0rem;
   }
 }
@@ -109,10 +109,10 @@
     gap: 9.3rem 2rem;
     justify-content: center;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     justify-content: flex-start;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     gap: 2.5rem;
   }
   @media (min-width: 375px) {
@@ -142,7 +142,7 @@
   @media (max-width: 635px) {
     flex-basis: 220px;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     flex-basis: 282.2px;
   }
 
@@ -243,7 +243,7 @@
   border-radius: 50%;
   @extend %transition;
   @extend %cursor-pointer;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     display: none;
   }
 
