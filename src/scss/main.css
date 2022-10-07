@@ -1295,7 +1295,7 @@ h5 {
   .backstage__position-img {
     width: 34px;
     height: 400px;
-    top: 40px;
+    top: -6px;
     right: 0;
     background: url("../images/flowers/mobile/flower.png");
     background-repeat: no-repeat;
