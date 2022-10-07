@@ -158,6 +158,12 @@
       border: 0;
       border-radius: 0;
       transform: translateY(-50px);
+      @include media-tablet {
+        transform: translateY(-35px);
+      }
+      @include media-small-desktop {
+        transform: translateY(-40px);
+      }
     }
     .pet-card--opacity {
       opacity: 1;
