@@ -4,8 +4,8 @@
   @include media-tablet {
     padding: 1.2rem 0;
   }
-  @include media-small-mobile {
-    padding: 2rem 0 3rem;
+  @include media-mobile-big {
+    padding: 2rem 0 2rem;
   }
 }
 
@@ -21,7 +21,7 @@
       "donate donate social"
       "nav copyright copyright";
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     grid-template-areas:
       "logo logo"
       "social social"
@@ -86,14 +86,14 @@
       left: 9px;
       width: 12px;
       height: 21px;
-      @include media-mobile-big-width {
+      @include media-mobile-big {
         bottom: 6px;
         left: 72px;
         width: 12px;
         height: 21px;
       }
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       width: fit-content;
       border: none;
       justify-self: center;
@@ -107,7 +107,7 @@
 
 .footer__button {
   margin: 0 0 4.4rem 0;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     margin: 3.2rem 0 0.5rem;
   }
 }
@@ -125,7 +125,7 @@
   @include media-tablet {
     padding: 0 4rem 0 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 0 0 0 0.9rem;
   }
 }
@@ -139,7 +139,7 @@
   @include media-tablet {
     gap: 3.7rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     gap: 3.1rem;
   }
 }
@@ -168,7 +168,7 @@
     padding-top: 2.3rem;
     padding-right: 0.2rem;
   }
-  @include media-small-mobile {
+  @include media-mobile-big {
     margin: 0 0 3rem 0;
     @include font($second-size, $line-height-second, $thin);
     .copyright__company {
@@ -188,7 +188,7 @@
     gap: 2rem;
     justify-self: end;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     flex-direction: row;
     justify-self: center;
     gap: 3rem;

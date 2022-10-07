@@ -142,7 +142,7 @@
     background: url("../icons/animals/panda.svg");
     background-repeat: no-repeat;
     background-position: center;
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       width: 160px;
       height: 138px;
       background: url("../icons/donation/panda-widget-sm.svg");
@@ -155,7 +155,7 @@
     background: url("../icons/multiply.svg");
     background-repeat: no-repeat;
     background-position: center;
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       width: 8px;
       height: 8px;
       background: url("../icons/multiply-sm.svg");

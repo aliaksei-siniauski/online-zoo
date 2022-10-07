@@ -3,6 +3,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 700px;
+  margin-top: 33px;
   background-size: cover;
   @media (min-width: 1600px) {
     background-position: center;
@@ -18,12 +19,17 @@
     min-height: 339px;
     padding: 0 0 8.5rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     min-height: 187px;
     background: url("../images/bg/bg-mb.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    @include media-small-mobile {
+      background-size: contain;
+      background-position: center top;
+      padding-top: 2.2rem;
+    }
   }
 }
 
@@ -53,8 +59,8 @@
     max-width: 293px;
     padding: 8.3rem 0 0 0;
   }
-  @include media-mobile-big-width {
-    padding: 4.2rem 0 0 0;
+  @include media-mobile-big {
+    padding: 2rem 0.1rem 0 0;
   }
 }
 
@@ -81,11 +87,11 @@
     right: 67px;
   }
 
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     width: 119.09px;
     height: 119.09px;
-    top: 21px;
-    right: 38.5px;
+    top: 0;
+    right: 38px;
   }
 }
 
@@ -101,7 +107,9 @@
     max-width: 255.64px;
     @include font($accent-size-tablet, $line-height-accent-tablet, $bold);
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
+    max-width: 146px;
+    padding-left: 1.7rem;
     @include font($accent-size-mb, $line-height-info, $bold);
   }
   &--accent {
@@ -117,7 +125,7 @@
     bottom: -46.5px;
     align-self: auto;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     bottom: -115px;
   }
 }

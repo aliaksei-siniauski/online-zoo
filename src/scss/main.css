@@ -596,7 +596,7 @@ h5 {
     max-width: 630px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 551px) {
   .container {
     max-width: 320px;
     padding-inline: 1rem;
@@ -1045,6 +1045,7 @@ h5 {
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 700px;
+  margin-top: 33px;
   background-size: cover;
 }
 @media (min-width: 1600px) {
@@ -1074,6 +1075,13 @@ h5 {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+  }
+}
+@media (max-width: 551px) and (max-width: 320px) {
+  .hero {
+    background-size: contain;
+    background-position: center top;
+    padding-top: 2.2rem;
   }
 }
 
@@ -1111,7 +1119,7 @@ h5 {
 }
 @media (max-width: 551px) {
   .hero__content {
-    padding: 4.2rem 0 0 0;
+    padding: 2rem 0.1rem 0 0;
   }
 }
 
@@ -1144,8 +1152,8 @@ h5 {
   .hero__cicle {
     width: 119.09px;
     height: 119.09px;
-    top: 21px;
-    right: 38.5px;
+    top: 0;
+    right: 38px;
   }
 }
 
@@ -1176,6 +1184,8 @@ h5 {
 }
 @media (max-width: 551px) {
   .hero__title {
+    max-width: 146px;
+    padding-left: 1.7rem;
     font-size: 2.8rem;
     line-height: 2.1rem;
     font-weight: 700;
@@ -1223,7 +1233,7 @@ h5 {
 }
 @media (max-width: 551px) {
   .backstage {
-    padding: 10.7rem 0 1.1rem;
+    padding: 6rem 0 1.1rem;
   }
 }
 
@@ -1815,6 +1825,11 @@ h5 {
     padding: 0 0 6rem;
   }
 }
+@media (max-width: 551px) {
+  .pick-and-feed__content {
+    padding: 0 0 4rem;
+  }
+}
 
 .pick-and-feed__text-info {
   padding: 0 0 5.9rem 4rem;
@@ -2201,9 +2216,9 @@ h5 {
     padding: 3rem 0 4rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 551px) {
   .testimonial__inner {
-    padding: 2.4rem 0 3.4rem;
+    padding: 2.4rem 0 3.3rem;
   }
 }
 @media (max-width: 1200px) {
@@ -2246,7 +2261,7 @@ h5 {
 }
 @media (max-width: 551px) {
   .testimonial {
-    padding: 6.1px 2.3rem 0.6rem 1.2rem;
+    padding: 0.51rem 2.3rem 0.9rem 1.2rem;
   }
 }
 @media (max-width: 1200px) {
@@ -2376,9 +2391,9 @@ h5 {
     padding: 1.2rem 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 551px) {
   .footer {
-    padding: 2rem 0 3rem;
+    padding: 2rem 0 2rem;
   }
 }
 
@@ -2572,7 +2587,7 @@ h5 {
     padding-right: 0.2rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 551px) {
   .footer__copyright {
     margin: 0 0 3rem 0;
     font-size: 1.5rem;
