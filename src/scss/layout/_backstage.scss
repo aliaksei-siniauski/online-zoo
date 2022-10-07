@@ -11,8 +11,8 @@
   @include media-tablet {
     padding: 6rem 0 5rem;
   }
-  @include media-mobile-big-width {
-    padding: 10.7rem 0 1.1rem;
+  @include media-mobile-big {
+    padding: 6rem 0 1.1rem;
   }
 }
 
@@ -60,10 +60,10 @@
     background: url("../images/flowers/tablet/flower.png");
     background-repeat: no-repeat;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     width: 34px;
     height: 400px;
-    top: 40px;
+    top: -6px;
     right: 0;
     background: url("../images/flowers/mobile/flower.png");
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
   @include media-tablet {
     margin: 0 0 2rem 0.3rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font($subtitle-size, $line-height-subtitle, $regular);
     margin: 0 0 0.9rem 0;
   }
@@ -93,7 +93,7 @@
     margin: 0 0 3rem;
   }
 
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     margin: 0 0 2rem;
     padding-left: 0.1rem;
   }
@@ -103,7 +103,7 @@
   margin: 0 0 3.4rem 0;
   @include media-tablet {
     margin: 0 0 2rem 3px;
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       margin: 0 0 1rem 3px;
     }
   }

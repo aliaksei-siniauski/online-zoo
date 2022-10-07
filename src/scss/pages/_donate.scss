@@ -24,7 +24,7 @@
       background-position: center;
     }
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     min-height: 221px;
     background: url("../images/bg/donation/mobile/panda.jpg");
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
   @include media-tablet {
     padding: 3rem 0 4.4rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 3rem 0 2.1rem;
   }
 }
@@ -54,7 +54,7 @@
     max-width: 600px;
   }
 
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     max-width: $content-mobile;
   }
 }
@@ -99,7 +99,7 @@
   @include media-tablet {
     margin: 0 0 3rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font($subtitle-size, $line-height-subtitle);
   }
 }
@@ -118,7 +118,7 @@
     @include media-tablet {
       padding-top: 0.8rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       padding: 0;
     }
   }
@@ -134,7 +134,7 @@
       text-align: center;
       padding: 0;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       @include font($subtitle-size, $line-height-subtitle);
       margin: 0 0 0.9rem;
     }
@@ -146,7 +146,7 @@
       text-align: center;
       padding-inline: 1rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       @include font($main-size, $line-height-main, $medium);
       font-weight: $regular;
       padding-inline: 0.1rem;
@@ -168,7 +168,7 @@
   @include media-tablet {
     padding: 2.8rem 1.4rem 4rem 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 1.028rem 0 2px;
     gap: 4.9rem;
   }
@@ -180,7 +180,7 @@
   @extend %al-items-center;
   gap: 1.1rem;
   padding: 5.2rem 0 0;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 2.6rem 0.1rem 0 0;
     gap: 0.9rem;
   }
@@ -189,7 +189,7 @@
 .amount-of-days__donate {
   @include font(7.2rem, 5.8rem, $bold);
   color: $color-dark;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font(4.06rem, 3.2rem);
   }
 }
@@ -197,7 +197,7 @@
 .amount-of-days__info {
   @extend %font-style-main;
   font-weight: $regular;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font(0.902rem, 1.3rem);
   }
 }
@@ -214,7 +214,7 @@
     left: 196px;
     top: 159px;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     left: 95px;
     top: 83px;
   }
@@ -242,7 +242,7 @@
   @include media-tablet {
     margin: 0 0 0.7rem 1.3rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     margin: 0 0 0.9rem;
   }
 }
@@ -254,7 +254,7 @@
   @include media-tablet {
     margin: 0 0 1.16rem 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     margin: 0;
   }
 }
@@ -271,7 +271,7 @@
   @include media-small-desktop {
     max-width: 830px;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     height: 13.5px;
   }
 }
@@ -289,7 +289,7 @@
   @include media-tablet {
     max-width: 524px;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     max-width: 262px;
   }
 }
@@ -306,7 +306,7 @@
   @include media-tablet {
     gap: 12rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     bottom: -1.1px;
     left: -1.3px;
     gap: 6rem;
@@ -322,7 +322,7 @@
   border-radius: 50%;
   @extend %cursor-pointer;
   @extend %transition;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     width: 5px;
     height: 5px;
   }
@@ -347,7 +347,7 @@
       @include media-tablet {
         display: block;
       }
-      @include media-mobile-big-width {
+      @include media-mobile-big {
         width: 12px;
         height: 12px;
         top: -3.2px;
@@ -370,7 +370,7 @@
       @include media-tablet {
         display: block;
       }
-      @include media-mobile-big-width {
+      @include media-mobile-big {
         width: 20px;
         height: 20px;
         bottom: -7.5px;
@@ -424,7 +424,7 @@
   width: 100%;
   @extend %flex;
   @extend %js-content-space-between;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     max-width: 285px;
     gap: 4.3rem;
     padding: 0.6rem 0 0 1.4rem;
@@ -435,7 +435,7 @@
 .price {
   position: relative;
   @include font($price-size, $line-price-number, $medium);
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font(1.3rem, 1.8rem);
   }
   &::before {
@@ -448,7 +448,7 @@
     background: url("../icons/donation/dollar.svg");
     background-repeat: no-repeat;
     background-position: center;
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       top: 3px;
       left: -6px;
       width: 5px;
@@ -508,7 +508,7 @@
     @include media-tablet {
       margin: 0 0 0 2.9rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       margin: 0 0 0 0;
     }
   }
@@ -520,7 +520,7 @@
     @include media-tablet {
       margin: 0 0 0 8.36rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       margin: 0 0 0;
     }
   }
@@ -532,7 +532,7 @@
     @include media-tablet {
       margin: 0 0 0 8.3rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       margin: 0 0 0;
     }
   }
@@ -544,7 +544,7 @@
     @include media-tablet {
       margin: 0 0 0 9.16rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       margin: 0 0 0;
     }
   }
@@ -559,7 +559,7 @@
     @include media-tablet {
       margin: 0 0 0 7rem;
     }
-    @include media-mobile-big-width {
+    @include media-mobile-big {
       margin: 0 0 0;
       padding-left: 0.7rem;
       &::before {
@@ -637,7 +637,7 @@ input[type="number"]::-webkit-outer-spin-button {
   @include media-tablet {
     padding: 3.2rem 1.8rem 3rem 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 2.2rem 1.8rem 3rem 0;
   }
 }
@@ -695,7 +695,7 @@ input[type="radio"] {
   @include media-tablet {
     padding-bottom: 3.2rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 2.7rem 0 2rem;
   }
 }
@@ -714,7 +714,7 @@ input[type="radio"] {
   @include media-tablet {
     padding: 2.9rem 0 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     font-size: 1.59rem;
   }
 }
@@ -728,7 +728,7 @@ input[type="radio"] {
   @include media-tablet {
     padding: 1.2rem 0 1.2rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 1.8rem 0 2rem;
   }
 }
@@ -737,7 +737,7 @@ input[type="radio"] {
   @include media-small-desktop {
     padding: 0 3.1rem 0 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 0.19rem 0.9rem 0;
   }
 }

@@ -10,7 +10,7 @@
   @include media-tablet {
     max-width: $content-tablet;
   }
-  @include media-small-mobile {
+  @include media-mobile-big {
     max-width: $content-mobile;
     padding-inline: 1rem;
   }

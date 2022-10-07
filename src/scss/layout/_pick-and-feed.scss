@@ -19,7 +19,7 @@
     max-width: 640px;
     padding-inline: 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     max-width: 320px;
     padding-inline: 1rem;
   }
@@ -41,6 +41,9 @@
     width: 100%;
     padding: 0 0 6rem;
   }
+  @include media-mobile-big {
+    padding: 0 0 4rem;
+  }
 }
 
 .pick-and-feed__text-info {
@@ -55,7 +58,7 @@
     width: 100%;
     padding: 1rem 0 3rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 2rem 0 0;
   }
 }
@@ -77,7 +80,7 @@
     @include font($header-size-tablet, $line-height-tablet, $regular);
     margin: 0 0 2.1rem 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     margin: 0 0 1.1rem 0;
     @include font($subtitle-size, $line-height-subtitle, $regular);
   }
@@ -92,7 +95,7 @@
   @include media-tablet {
     @include font($subtitle-size-tablet, $line-height-subtitle-tablet);
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font(1.8rem, $line-height-main);
     text-align: center;
   }
@@ -108,7 +111,7 @@
   @include media-tablet {
     margin: 0 0 1rem 0;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     display: none;
   }
 }
@@ -117,7 +120,7 @@
   @extend %font-style-main;
   line-height: $line-height-info;
   font-weight: $regular;
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     display: none;
   }
 }
@@ -150,7 +153,7 @@
   @include media-tablet {
     padding: 0 0 4.4rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     padding: 0 0 3.9rem;
   }
 }
@@ -161,7 +164,7 @@
   @include media-tablet {
     margin: 0 0 2rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     @include font($subtitle-size, $line-height-subtitle, $regular);
   }
 }
@@ -181,7 +184,7 @@
     justify-content: flex-start;
   }
 
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -200,7 +203,7 @@
   @include media-tablet {
     gap: 3.1rem;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     gap: 1rem;
     min-height: 222px;
   }
@@ -240,7 +243,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     right: 0;
     left: 134px;
     top: 159px;
@@ -261,7 +264,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  @include media-mobile-big-width {
+  @include media-mobile-big {
     right: 0;
     left: 134px;
     top: 438px;
