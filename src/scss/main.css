@@ -1550,14 +1550,19 @@ h5 {
   border-radius: 0;
   transform: translateY(-50px);
 }
-@media (max-width: 971px) {
-  .pet-card:hover .pet-card__content {
-    transform: translateY(-35px);
-  }
-}
 @media (max-width: 1200px) {
   .pet-card:hover .pet-card__content {
     transform: translateY(-40px);
+  }
+}
+@media (max-width: 971px) {
+  .pet-card:hover .pet-card__content {
+    transform: translateY(-30px);
+  }
+}
+@media (max-width: 551px) {
+  .pet-card:hover .pet-card__content {
+    transform: translateY(-20px);
   }
 }
 .pet-card:hover .pet-card--opacity {
