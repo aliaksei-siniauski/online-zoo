@@ -1,3 +1,5 @@
+import { toggleMenu } from "./js/BurgerMenu.js";
+
 window.onload = function () {
   /*   addPriceClickHandler();
    */ addProgressRollerHandler();
