@@ -42,7 +42,7 @@
   }
 }
 
-@mixin media-small-mobile {
+@mixin media-mobile-small {
   @media (max-width: $mobile-small-width) {
     @content;
   }
