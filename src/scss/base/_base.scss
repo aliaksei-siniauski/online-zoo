@@ -6,5 +6,11 @@ body {
   font-family: $font-family-main;
   color: $color-text;
   background: $color-light;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.boody-hidden {
+  height: 100vh;
+  overflow-y: hidden;
+  min-height: auto;
 }

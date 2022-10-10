@@ -9,6 +9,7 @@
     <title>Online-Zoo</title>
   </head>
   <body>
+    <div id="overlay-screen"></div>
     <header class="header">
       <div class="container header__container">
         <a href="index.html" class="logo header__logo">
@@ -18,6 +19,10 @@
         <!-- logo -->
         <nav class="navigation header__nav">
           <ul class="list header__list">
+            <a href="index.html" class="burger__logo">
+              <span class="icon icon--logo"></span>
+              <h1 class="logo__title">PetStory online</h1>
+            </a>
             <li class="list__item">
               <a href="#" class="list__link list__link--active">About</a>
             </li>
@@ -33,6 +38,14 @@
             <li class="list__item">
               <a href="#contacts" class="list__link">Contact us</a>
             </li>
+            <li class="list__item list__item--burger">
+              <a
+                class="list__link"
+                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                target="_blank"
+                >Designed by ©</a
+              >
+            </li>
           </ul>
         </nav>
         <!-- close nav -->
@@ -46,10 +59,11 @@
         </div>
         <!-- close header__copyright-auther -->
         <div class="burger">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
+          <span class="burger__line line1"></span>
+          <span class="burger__line line2"></span>
+          <span class="burger__line line3"></span>
         </div>
+
         <!-- close burger -->
       </div>
       <!-- container -->
@@ -658,12 +672,63 @@
               <!-- close testimonial-content -->
             </div>
             <!-- close testimonial -->
+            <div class="testimonial">
+              <div class="testimonial__content">
+                <div class="user">
+                  <div class="user__content">
+                    <img
+                      class="user__avatar"
+                      src="src/images/testimonials/user-4.png"
+                      width="37"
+                      height="37"
+                      alt="Mila Riksha"
+                    />
+                    <div class="user__info">
+                      <h5 class="user__name">Mila Riksha</h5>
+                      <span class="user__location">Local Austria</span>
+                      <span class="user__dot">•</span>
+                      <span class="user__day">Yesterday</span>
+                    </div>
+                    <!-- close user__info -->
+                  </div>
+                  <!-- close user__content -->
+                </div>
+                <!-- close user -->
+                <p class="testimonial__text">
+                  My son delighted very much ljves to watch gouillas. Online zoo
+                  is one jf the ways to instill a love for animals.The best
+                  online zoo I’ve met. My son delighted very much ljves to watch
+                  gouillas. Online zoo is one jf the ways to instill a love for
+                  animals.The best online zoo I’ve met. My son delighted very
+                  much ljves to watch gouillas. Online zoo is one jf the ways to
+                  instill a love for animals.The best online zoo I’ve met. My
+                  son delighted very much ljves to watch gouillas. <br />The
+                  best online zoo I’ve met. My son delighted very much ljves to
+                  watch gouillas. Online zoo is one jf<span class="hide-text">
+                    the ways to instill a love for animals.The best online zoo
+                    I’ve met. My son delighted very much ljves to watch
+                    gouillas. Online zoo is one jf the ways to instill a love
+                    for animals.</span
+                  >
+                </p>
+              </div>
+              <!-- close testimonial-content -->
+            </div>
+            <!-- close testimonial -->
+            <div class="scroll testimonials__scroll">
+              <span class="scroll__line"></span>
+              <input
+                type="range"
+                class="scroll__line--progress"
+                min="0"
+                max="7"
+                step="1"
+              />
+            </div>
+            <!-- close testimonial -->
           </div>
           <!-- close testimonials__inner -->
-          <div class="scroll testimonials__scroll">
-            <span class="scroll__line"></span>
-            <input type="range" class="scroll__line--progress" />
-          </div>
+
           <div class="testimonials__button">
             <button class="button button--second">leave feedback</button>
           </div>

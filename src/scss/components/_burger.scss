@@ -2,8 +2,22 @@
   display: none;
   @extend %flex-column;
   gap: 0.2rem;
+  z-index: 100;
+  @extend %cursor-pointer;
+
   @include media-tablet {
     display: flex;
+  }
+  &.open-menu .line1 {
+    transform: rotate(-45deg) translate(4px, -1px);
+    background: $color-dark;
+  }
+  &.open-menu .line2 {
+    opacity: 0;
+  }
+  &.open-menu .line3 {
+    transform: rotate(45deg) translate(-6px, -11px);
+    background: $color-dark;
   }
 }
 
@@ -12,4 +26,36 @@
   height: 2px;
   background: $color-light;
   border-radius: $logo-radius;
+  z-index: 150;
+}
+
+.list__item--burger {
+  display: none;
+  @include media-tablet {
+    display: block;
+  }
+}
+
+.burger__logo {
+  position: relative;
+  display: none;
+  width: 65.6px;
+  height: 41.6px;
+  border: 0.950725px solid $color-accent-second;
+  border-radius: $logo-radius;
+  &--show {
+    display: block;
+  }
+  .icon--logo {
+    bottom: 6.8px;
+    left: 7.7px;
+    width: 12px;
+    height: 17px;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(57%) saturate(4179%)
+      hue-rotate(349deg) brightness(100%) contrast(102%);
+  }
+  .logo__title {
+    @include font(1.521rem, $line-height-second);
+    color: $color-accent-second;
+  }
 }
