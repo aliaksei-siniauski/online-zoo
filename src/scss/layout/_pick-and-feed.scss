@@ -223,7 +223,7 @@
 
 .how-it-works__card-title {
   @include font($main-size, $line-height-info, $regular);
-  @include media-small-mobile {
+  @include media-mobile-big {
     max-width: 168px;
     width: 100%;
   }

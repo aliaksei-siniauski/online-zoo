@@ -1,36 +1,34 @@
 .scroll {
-  position: relative;
-  max-width: 599px;
-  width: 100%;
-  min-height: 8px;
+  width: 600px;
+  height: 8px;
   @extend %flex;
+  align-items: center;
+  justify-content: center;
+  background: $feedback-gradient;
+  border: 1px solid transparent;
+  border-radius: $button-radius-second;
+  @extend %transition;
   @include media-small-desktop {
     max-width: 390px;
   }
 }
 
-.scroll__line {
+.scroll__range {
+  position: relative;
   display: block;
   width: 100%;
-  background: $feedback-gradient;
-  border: 1px solid transparent;
+  height: 6px;
   border-radius: $button-radius-second;
-  @extend %transition;
-  &--progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 115.1px;
-    height: 8px;
+  outline: none;
+  overflow: hidden;
+  @extend %cursor-pointer;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 115.19px;
+    height: 6px;
     background: $color-accent-second;
-    border-radius: $button-radius-second;
-    @extend %cursor-pointer;
-    &:hover {
-      background: $color-button-hover;
-    }
+    border-radius: 5px;
     @include media-small-desktop {
-      top: 0.5px;
-      left: -4px;
       width: 75px;
       height: 7px;
     }

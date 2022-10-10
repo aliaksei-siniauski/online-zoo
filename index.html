@@ -9,6 +9,7 @@
     <title>Online-Zoo</title>
   </head>
   <body>
+    <div id="overlay-screen"></div>
     <header class="header">
       <div class="container header__container">
         <a href="index.html" class="logo header__logo">
@@ -18,6 +19,10 @@
         <!-- logo -->
         <nav class="navigation header__nav">
           <ul class="list header__list">
+            <a href="index.html" class="burger__logo">
+              <span class="icon icon--logo"></span>
+              <h1 class="logo__title">PetStory online</h1>
+            </a>
             <li class="list__item">
               <a href="#" class="list__link list__link--active">About</a>
             </li>
@@ -33,6 +38,14 @@
             <li class="list__item">
               <a href="#contacts" class="list__link">Contact us</a>
             </li>
+            <li class="list__item list__item--burger">
+              <a
+                class="list__link"
+                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                target="_blank"
+                >Designed by ©</a
+              >
+            </li>
           </ul>
         </nav>
         <!-- close nav -->
@@ -46,10 +59,11 @@
         </div>
         <!-- close header__copyright-auther -->
         <div class="burger">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
+          <span class="burger__line line1"></span>
+          <span class="burger__line line2"></span>
+          <span class="burger__line line3"></span>
         </div>
+
         <!-- close burger -->
       </div>
       <!-- container -->
@@ -309,7 +323,7 @@
                     srcset="src/images/animal/tablet/animal-4.jpg"
                   />
                   <source
-                    media="(max-width: 1000px)"
+                    media="(max-width: 1200px)"
                     srcset="src/images/animal/sm-desktop/animal-5.jpg"
                   />
                   <img
@@ -449,221 +463,502 @@
         <div class="position__img testimonials__section-img"></div>
         <div class="container testimonials__container">
           <h3 class="testimonials__title">Testimonials</h3>
-          <div class="testimonial__inner">
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <span class="user__avatar icon icon--user user-icon"></span>
-                    <div class="user__info">
-                      <h5 class="user__name">Michael John</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Today</span>
+          <div class="testimonial__slider">
+            <div class="testimonial__wrapper">
+              <div class="testimonial" data-user="user-1">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <span
+                        class="user__avatar icon icon--user user-icon"
+                      ></span>
+                      <div class="user__info">
+                        <h5 class="user__name">Michael John</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Today</span>
+                      </div>
+                      <!-- close user__info -->
                     </div>
-                    <!-- close user__info -->
+                    <!-- close user__content -->
                   </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  The best online zoo I’ve met. My son delighted very much ljves
-                  to watch gouillas. Online zoo is one jf the ways to instill a
-                  love for animals.The best online zoo I’ve met. My son
-                  delighted very much ljves to watch gouillas. Online zoo is one
-                  jf the ways to instill a love for animals.<br />The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for <span class="hide-text"> animals.</span>
-                </p>
-              </div>
-              <!-- close testimonial-content -->
-            </div>
-            <!-- close testimonial -->
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-2.png"
-                      width="37"
-                      height="37"
-                      alt="Oskar Samborsky"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Oskar Samborsky</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas.<br />The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for<span class="hide-text">
-                    >animals. The best online zoo I’ve met. My son delighted
-                    very much ljves to watch gouillas. Online zoo is one jf the
-                    ways to instill a love for animals.The best online zoo I’ve
-                    met. My son delighted very much ljves to watch gouillas.
-                    Online zoo is one jf the ways to instill a love for
-                    animals.</span
-                  >
-                </p>
-              </div>
-              <!-- close testimonial-content -->
-            </div>
-            <!-- close testimonial -->
-            <div class="testimonial testimonial-sm-desktop">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-4.png"
-                      width="37"
-                      height="37"
-                      alt="Oskar Samborsky"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Oska Samborska</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas. <br />
-
-                  The best online zoo I’ve met. My son delighted very much ljves
-                  to watch gouillas. Online zoo is one jf the ways to instill a
-                  love for animals.The best online zoo I’ve met. My son
-                  delighted very much ljves to watch gouillas. Online zoo is one
-                  jf the ways to instill a love for animals.
-                </p>
-              </div>
-              <!-- testimonial content -->
-            </div>
-            <!-- close testimonial -->
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-3.png"
-                      width="37"
-                      height="37"
-                      alt="Fredericka Michelin"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Fredericka Michelin</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
-                </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  <span class="hide-for-sm-desktop"
-                    >The best online zoo I’ve met.</span
-                  >My son delighted very much ljves to watch gouillas. Online
-                  zoo is one jf the ways to instill a love for animals.The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.<br class="hide-for-sm-desktop" /><span
-                    class="hide-for-sm-desktop"
-                    >The best online zoo I’ve met. >My son delighted very much
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
                     ljves to watch gouillas. Online zoo is one jf the ways to
-                    instill a love for<br />
-                    animals.</span
-                  >The best online zoo I’ve met.<br />The best online zoo I’ve
-                  met. My son delighted very much ljves to<span
-                    class="hide-text"
-                  >
-                    watch gouillas. Online zoo is one jf the ways to instill a
-                    love for animals.The best online zoo I’ve met. My son
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.<br />The
+                    best online zoo I’ve met. My son delighted very much ljves
+                    to watch gouillas. Online zoo is one jf the ways to instill
+                    a love for animals.The best online zoo I’ve met. My son
                     delighted very much ljves to watch gouillas. Online zoo is
-                    one jf the ways to instill a love for animals.</span
-                  >
-                </p>
-              </div>
-              <!-- close testimonial-content -->
-            </div>
-            <!-- close testimonial -->
-            <div class="testimonial">
-              <div class="testimonial__content">
-                <div class="user">
-                  <div class="user__content">
-                    <img
-                      class="user__avatar"
-                      src="src/images/testimonials/user-4.png"
-                      width="37"
-                      height="37"
-                      alt="Mila Riksha"
-                    />
-                    <div class="user__info">
-                      <h5 class="user__name">Mila Riksha</h5>
-                      <span class="user__location">Local Austria</span>
-                      <span class="user__dot">•</span>
-                      <span class="user__day">Yesterday</span>
-                    </div>
-                    <!-- close user__info -->
-                  </div>
-                  <!-- close user__content -->
+                    one jf the ways to instill a love for
+                    <span class="hide-text"> animals.</span>
+                  </p>
                 </div>
-                <!-- close user -->
-                <p class="testimonial__text">
-                  My son delighted very much ljves to watch gouillas. Online zoo
-                  is one jf the ways to instill a love for animals.The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas. <br />The
-                  best online zoo I’ve met. My son delighted very much ljves to
-                  watch gouillas. Online zoo is one jf<span class="hide-text">
-                    the ways to instill a love for animals.The best online zoo
-                    I’ve met. My son delighted very much ljves to watch
-                    gouillas. Online zoo is one jf the ways to instill a love
-                    for animals.</span
-                  >
-                </p>
+                <!-- close testimonial-content -->
               </div>
-              <!-- close testimonial-content -->
+              <!-- close testimonial -->
+              <div class="testimonial">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-2.png"
+                        width="37"
+                        height="37"
+                        alt="Oskar Samborsky"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Oskar Samborsky</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Yesterday</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    Online zoo is one jf the ways to instill a love for
+                    animals.The best online zoo I’ve met. My son delighted very
+                    much ljves to watch gouillas. Online zoo is one jf the ways
+                    to instill a love for animals.The best online zoo I’ve met.
+                    My son delighted very much ljves to watch gouillas.<br />The
+                    best online zoo I’ve met. My son delighted very much ljves
+                    to watch gouillas. Online zoo is one jf the ways to instill
+                    a love for animals.The best online zoo I’ve met. My son
+                    delighted very much ljves to watch gouillas. Online zoo is
+                    one jf the ways to instill a love for<span
+                      class="hide-text"
+                    >
+                      >animals. The best online zoo I’ve met. My son delighted
+                      very much ljves to watch gouillas. Online zoo is one jf
+                      the ways to instill a love for animals.The best online zoo
+                      I’ve met. My son delighted very much ljves to watch
+                      gouillas. Online zoo is one jf the ways to instill a love
+                      for animals.</span
+                    >
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div
+                class="testimonial testimonial-sm-desktop"
+                data-user="user-2"
+              >
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-4.png"
+                        width="37"
+                        height="37"
+                        alt="Oskar Samborsky"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Oska Samborska</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Yesterday</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    Online zoo is one jf the ways to instill a love for
+                    animals.The best online zoo I’ve met. My son delighted very
+                    much ljves to watch gouillas. Online zoo is one jf the ways
+                    to instill a love for animals.The best online zoo I’ve met.
+                    My son delighted very much ljves to watch gouillas. <br />
+
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals.
+                  </p>
+                </div>
+                <!-- testimonial content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial" data-user="user-3">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-3.png"
+                        width="37"
+                        height="37"
+                        alt="Fredericka Michelin"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Fredericka Michelin</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Yesterday</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    <span class="hide-for-sm-desktop"
+                      >The best online zoo I’ve met.</span
+                    >My son delighted very much ljves to watch gouillas. Online
+                    zoo is one jf the ways to instill a love for animals.The
+                    best online zoo I’ve met. My son delighted very much ljves
+                    to watch gouillas. Online zoo is one jf the ways to instill
+                    a love for animals.<br class="hide-for-sm-desktop" /><span
+                      class="hide-for-sm-desktop"
+                      >The best online zoo I’ve met. >My son delighted very much
+                      ljves to watch gouillas. Online zoo is one jf the ways to
+                      instill a love for<br />
+                      animals.</span
+                    >The best online zoo I’ve met.<br />The best online zoo I’ve
+                    met. My son delighted very much ljves to<span
+                      class="hide-text"
+                    >
+                      watch gouillas. Online zoo is one jf the ways to instill a
+                      love for animals.The best online zoo I’ve met. My son
+                      delighted very much ljves to watch gouillas. Online zoo is
+                      one jf the ways to instill a love for animals.</span
+                    >
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-4.png"
+                        width="37"
+                        height="37"
+                        alt="Mila Riksha"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Mila Riksha</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Yesterday</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    My son delighted very much ljves to watch gouillas. Online
+                    zoo is one jf the ways to instill a love for animals.The
+                    best online zoo I’ve met. My son delighted very much ljves
+                    to watch gouillas. Online zoo is one jf the ways to instill
+                    a love for animals.The best online zoo I’ve met. My son
+                    delighted very much ljves to watch gouillas. Online zoo is
+                    one jf the ways to instill a love for animals.The best
+                    online zoo I’ve met. My son delighted very much ljves to
+                    watch gouillas. <br />The best online zoo I’ve met. My son
+                    delighted very much ljves to watch gouillas. Online zoo is
+                    one jf<span class="hide-text">
+                      the ways to instill a love for animals.The best online zoo
+                      I’ve met. My son delighted very much ljves to watch
+                      gouillas. Online zoo is one jf the ways to instill a love
+                      for animals.</span
+                    >
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-5.png"
+                        width="37"
+                        height="37"
+                        alt="Michael John"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Michael John</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Today</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar user__avatar--cicle"
+                        src="src/images/testimonials/user-6.png"
+                        width="37"
+                        height="37"
+                        alt="Alisa Smith"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Alisa Smith</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Yesterday</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial testimonial-slide">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-7.png"
+                        width="37"
+                        height="37"
+                        alt="Sabrina Lincoln"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Sabrina Lincoln</h5>
+                        <span class="user__location">Local Germany</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Today</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial testimonial-slide">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-8.png"
+                        width="37"
+                        height="37"
+                        alt="Tom Cooper"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Tom Cooper</h5>
+                        <span class="user__location">Local USA</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Today</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial testimonial-slide">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img class="user__avatar"
+                      src="src/images/testimonials/user-9.png" width="37"
+                      height="37" alt="Nelly Mason" " />
+                      <div class="user__info">
+                        <h5 class="user__name">Nelly Mason</h5>
+                        <span class="user__location">Local France</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Yesterday</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial testimonial-slide">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-10.png"
+                        width="37"
+                        height="37"
+                        alt="Crag Bauer"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Crag Bauer</h5>
+                        <span class="user__location">Local Austria</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Recently</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
+              <div class="testimonial testimonial-slide">
+                <div class="testimonial__content">
+                  <div class="user">
+                    <div class="user__content">
+                      <img
+                        class="user__avatar"
+                        src="src/images/testimonials/user-11.png"
+                        width="37"
+                        height="37"
+                        alt="Julia Colbat"
+                      />
+                      <div class="user__info">
+                        <h5 class="user__name">Julia Colbat</h5>
+                        <span class="user__location">Local Irland</span>
+                        <span class="user__dot">•</span>
+                        <span class="user__day">Today</span>
+                      </div>
+                      <!-- close user__info -->
+                    </div>
+                    <!-- close user__content -->
+                  </div>
+                  <!-- close user -->
+                  <p class="testimonial__text">
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for animals. <br />
+                    The best online zoo I’ve met. My son delighted very much
+                    ljves to watch gouillas. Online zoo is one jf the ways to
+                    instill a love for animals.The best online zoo I’ve met. My
+                    son delighted very much ljves to watch gouillas. Online zoo
+                    is one jf the ways to instill a love for
+                  </p>
+                </div>
+                <!-- close testimonial-content -->
+              </div>
+              <!-- close testimonial -->
             </div>
-            <!-- close testimonial -->
+            <!-- close testimonials__inner -->
           </div>
-          <!-- close testimonials__inner -->
+          <!-- sldier -->
           <div class="scroll testimonials__scroll">
-            <span class="scroll__line"></span>
-            <input type="range" class="scroll__line--progress" />
+            <input
+              class="scroll__range"
+              type="range"
+              min="0"
+              max="7"
+              step="1"
+              value="0"
+            />
           </div>
+
           <div class="testimonials__button">
             <button class="button button--second">leave feedback</button>
           </div>
@@ -780,6 +1075,142 @@
       </div>
       <!-- container -->
     </footer>
+
+    <div class="modals">
+      <div class="modal__overlay">
+        <div class="modal modal-1" data-target="user-1">
+          <div class="modal__close-icon">
+            <span class="icon icon--close"></span>
+          </div>
+          <div class="testimonial modal__testimonial">
+            <div class="testimonial__content">
+              <div class="user">
+                <div class="user__content">
+                  <span class="user__avatar icon icon--user user-icon"></span>
+                  <div class="user__info">
+                    <h5 class="user__name">Michael John</h5>
+                    <span class="user__location">Local Austria</span>
+                    <span class="user__dot">•</span>
+                    <span class="user__day">Today</span>
+                  </div>
+                  <!-- close user__info -->
+                </div>
+                <!-- close user__content -->
+              </div>
+              <!-- close user -->
+              <p class="testimonial__text">
+                The best online zoo I’ve met. My son delighted very much ljves
+                to watch gouillas. Online zoo is one jf the ways to instill a
+                love for animals.The best online zoo I’ve met. My son delighted
+                very much ljves to watch gouillas. Online zoo is one jf the ways
+                to instill a love for animals.<br />The best online zoo I’ve
+                met. My son delighted very much ljves to watch gouillas. Online
+                zoo is one jf the ways to instill a love for animals.The best
+                online zoo I’ve met. My son delighted very much ljves to watch
+                gouillas. Online zoo is one jf the ways to instill a love for
+                <span class="hide-text"> animals.</span>
+              </p>
+            </div>
+            <!-- close testimonial-content -->
+          </div>
+        </div>
+        <div class="modal modal-2" data-target="user-2">
+          <div class="modal__close-icon">
+            <span class="icon icon--close"></span>
+          </div>
+          <div class="testimonial modal__testimonial">
+            <div class="testimonial__content">
+              <div class="user">
+                <div class="user__content">
+                  <img
+                    class="user__avatar"
+                    src="src/images/testimonials/user-4.png"
+                    width="37"
+                    height="37"
+                    alt="Oskar Samborsky"
+                  />
+                  <div class="user__info">
+                    <h5 class="user__name">Oska Samborska</h5>
+                    <span class="user__location">Local Austria</span>
+                    <span class="user__dot">•</span>
+                    <span class="user__day">Yesterday</span>
+                  </div>
+                  <!-- close user__info -->
+                </div>
+                <!-- close user__content -->
+              </div>
+              <!-- close user -->
+              <p class="testimonial__text">
+                Online zoo is one jf the ways to instill a love for animals.The
+                best online zoo I’ve met. My son delighted very much ljves to
+                watch gouillas. Online zoo is one jf the ways to instill a love
+                for animals.The best online zoo I’ve met. My son delighted very
+                much ljves to watch gouillas. <br />
+
+                The best online zoo I’ve met. My son delighted very much ljves
+                to watch gouillas. Online zoo is one jf the ways to instill a
+                love for animals.The best online zoo I’ve met. My son delighted
+                very much ljves to watch gouillas. Online zoo is one jf the ways
+                to instill a love for animals.
+              </p>
+            </div>
+            <!-- testimonial content -->
+          </div>
+        </div>
+        <div class="modal modal-3" data-target="user-3">
+          <div class="modal__close-icon">
+            <span class="icon icon--close"></span>
+          </div>
+          <div class="testimonial modal__testimonial">
+            <div class="testimonial__content">
+              <div class="user">
+                <div class="user__content">
+                  <img
+                    class="user__avatar"
+                    src="src/images/testimonials/user-3.png"
+                    width="37"
+                    height="37"
+                    alt="Fredericka Michelin"
+                  />
+                  <div class="user__info">
+                    <h5 class="user__name">Fredericka Michelin</h5>
+                    <span class="user__location">Local Austria</span>
+                    <span class="user__dot">•</span>
+                    <span class="user__day">Yesterday</span>
+                  </div>
+                  <!-- close user__info -->
+                </div>
+                <!-- close user__content -->
+              </div>
+              <!-- close user -->
+              <p class="testimonial__text">
+                <span class="hide-for-sm-desktop"
+                  >The best online zoo I’ve met.</span
+                >My son delighted very much ljves to watch gouillas. Online zoo
+                is one jf the ways to instill a love for animals.The best online
+                zoo I’ve met. My son delighted very much ljves to watch
+                gouillas. Online zoo is one jf the ways to instill a love for
+                animals.<br class="hide-for-sm-desktop" /><span
+                  class="hide-for-sm-desktop"
+                  >The best online zoo I’ve met. >My son delighted very much
+                  ljves to watch gouillas. Online zoo is one jf the ways to
+                  instill a love for<br />
+                  animals.</span
+                >The best online zoo I’ve met.<br />The best online zoo I’ve
+                met. My son delighted very much ljves to<span class="hide-text">
+                  watch gouillas. Online zoo is one jf the ways to instill a
+                  love for animals.The best online zoo I’ve met. My son
+                  delighted very much ljves to watch gouillas. Online zoo is one
+                  jf the ways to instill a love for animals.</span
+                >
+              </p>
+            </div>
+            <!-- close testimonial-content -->
+          </div>
+        </div>
+      </div>
+      <!-- close modal overlay -->
+    </div>
   </body>
   <script type="module" src="src/index.js"></script>
 </html>
