@@ -172,6 +172,14 @@
     filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg)
       brightness(93%) contrast(89%);
   }
+
+  &--close {
+    width: 26px;
+    height: 26px;
+    background: url("../icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .icon-round {

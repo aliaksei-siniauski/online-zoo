@@ -10,14 +10,14 @@
   }
   &.open-menu .line1 {
     transform: rotate(-45deg) translate(4px, -1px);
-    background: $color-dark;
+    background: $color-accent-second;
   }
   &.open-menu .line2 {
     opacity: 0;
   }
   &.open-menu .line3 {
     transform: rotate(45deg) translate(-6px, -11px);
-    background: $color-dark;
+    background: $color-accent-second;
   }
 }
 
