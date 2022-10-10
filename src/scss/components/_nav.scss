@@ -1,7 +1,18 @@
 .header__nav {
   margin-right: auto;
   @include media-tablet {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: -1000px;
+    z-index: 100;
+    width: 100%;
+    min-height: 329px;
+    margin-right: 0;
+    background: $color-light;
+    transition: ease-in-out 2s;
+  }
+  &.open-menu {
+    right: 0;
   }
   .list__item {
     &:not(:last-child) {
@@ -15,18 +26,53 @@
 
 .list {
   @extend %flex;
+  @include media-tablet {
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 4rem;
+    gap: 1.5rem;
+    padding: 1rem 0 4rem 1rem;
+  }
 }
 
 .list__link {
   @extend %font-style-main;
   @extend %link-style;
   @extend %transition;
+  @include media-tablet {
+    position: relative;
+    width: fit-content;
+    @include font($main-size, $line-height-logo);
+    color: $color-text;
+    &:hover {
+      &::before {
+        transition: ease-in-out 2s;
+        opacity: 1;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      width: 100%;
+      height: 3px;
+      background: $color-accent-second;
+      opacity: 0;
+    }
+  }
   &--active {
     color: $color-main;
     pointer-events: none;
+    @include media-tablet {
+      color: $color-text;
+    }
   }
 }
 
 .header__list {
   margin: 0 0 0 6.3rem;
+  @include media-tablet {
+    margin: 0;
+  }
 }
