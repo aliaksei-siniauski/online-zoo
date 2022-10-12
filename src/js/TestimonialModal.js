@@ -10,6 +10,7 @@ const addTestimonialHandler = () => {
     testimonials.forEach((el) => {
       el.addEventListener("click", (e) => {
         let testimonialUser = e.currentTarget.getAttribute("data-user");
+
         document
           .querySelector(`[data-target="${testimonialUser}"]`)
           .classList.add("modal--show");
@@ -18,12 +19,13 @@ const addTestimonialHandler = () => {
     });
     closeModalByButton();
     removeModalOverlay();
+    closeModalByKey();
   }
 };
 
 const closeModalByButton = () => {
   iconClose.forEach((el) => {
-    el.addEventListener("click", (e) => {
+    el.addEventListener("click", () => {
       modalOverlay.classList.remove("modal__overlay--show");
       modals.forEach((el) => {
         el.classList.remove("modal--show");
@@ -33,11 +35,22 @@ const closeModalByButton = () => {
 };
 
 const removeModalOverlay = () => {
-  modalOverlay.addEventListener("click", (e) => {
-    if (e.target.classList.contains("modal__overlay")) {
+  modalOverlay.addEventListener("click", (el) => {
+    if (el.target.classList.contains("modal__overlay")) {
       modalOverlay.classList.remove("modal__overlay--show");
       modals.forEach((el) => {
         el.classList.remove("modal--show");
+      });
+    }
+  });
+};
+
+const closeModalByKey = () => {
+  document.addEventListener("keydown", (el) => {
+    if (el.key === "Escape") {
+      modals.forEach((el) => {
+        el.classList.remove("modal--show");
+        modalOverlay.classList.remove("modal__overlay--show");
       });
     }
   });
