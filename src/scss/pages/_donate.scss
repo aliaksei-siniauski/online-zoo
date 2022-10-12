@@ -248,74 +248,80 @@
   }
 }
 
-/* Progress bar */
+/* Amount-block*/
 
-.dontaion__progress-bar {
-  margin: 0 0 1.3rem 0;
+.donation__amount-progress {
+  width: 976px;
+  padding: 1.7rem 0 5rem;
+
+  @include media-small-desktop {
+    width: 822px;
+  }
   @include media-tablet {
-    margin: 0 0 1.16rem 0;
+    width: 600px;
+  }
+  @media (max-width: 608px) {
+    width: 95%;
+    margin: 0 auto;
   }
   @include media-mobile-big {
+    padding: 1.7rem 0 3rem;
+    width: 300px;
     margin: 0;
   }
 }
 
-.progress-bar {
-  max-width: 976px;
+.progress__bar {
+  position: relative;
   width: 100%;
-  height: 27px;
+  min-height: 27px;
   @extend %flex;
   @extend %al-items-center;
-  @extend %js-content-center;
+  padding: 0.8rem 3rem 0.9rem 2.6rem;
   background: $color-progress-bar-background;
   border-radius: 2px;
   @include media-small-desktop {
-    max-width: 830px;
+    max-width: 810px;
+    padding: 0.8rem 0.9rem 0.9rem;
+  }
+  @include media-tablet {
+    max-width: 600px;
+    padding: 0.8rem 3.5rem 0.9rem;
   }
   @include media-mobile-big {
-    height: 13.5px;
+    min-height: 13.5px;
+    padding: 0.8rem 1.85rem 0.9rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 61px);
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $color-progress-bar;
+    pointer-events: none;
+    @include media-small-desktop {
+      width: calc(100% - 25px);
+    }
+    @include media-tablet {
+      width: calc(100% - 76px);
+    }
+    @include media-mobile-big {
+      width: calc(100% - 39px);
+    }
   }
 }
-
-.progress-line {
-  position: relative;
-  max-width: 915px;
+.rollers {
   width: 100%;
-  height: 2px;
-  background: $color-progress-bark;
-
-  @include media-small-desktop {
-    max-width: 785px;
-  }
-  @include media-tablet {
-    max-width: 524px;
-  }
-  @include media-mobile-big {
-    max-width: 262px;
-  }
+  @extend %flex;
+  @extend %js-content-space-between;
+  padding: 0 0;
 }
-
-.progress-rollers {
-  position: absolute;
-  bottom: -2.1px;
-  left: -4.5px;
-  display: flex;
-  gap: 12rem;
-  @include media-small-desktop {
-    left: -2.5px;
-  }
-  @include media-tablet {
-    gap: 12rem;
-  }
-  @include media-mobile-big {
-    bottom: -1.1px;
-    left: -1.3px;
-    gap: 6rem;
-  }
-}
-
-.progress-roller {
+.roller {
   position: relative;
+  z-index: 1000;
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -323,122 +329,114 @@
   border-radius: 50%;
   @extend %cursor-pointer;
   @extend %transition;
+  &.active {
+    &::before {
+      opacity: 1;
+    }
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 22.95px;
+    height: 22.95px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid $color-accent-second;
+    border-radius: 50%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    @include media-mobile-big {
+      width: 11.48px;
+      height: 11.48px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-accent-second;
+    border-radius: 50%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    @include media-mobile-big {
+      width: 20px;
+      height: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @include media-small-desktop {
+    &:first-child {
+      display: none;
+    }
+  }
+  @include media-tablet {
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      display: none;
+    }
+  }
   @include media-mobile-big {
     width: 5px;
     height: 5px;
   }
+
   &:hover {
     background: $color-accent-second;
   }
-  &--active {
-    &:after {
-      content: "";
-      position: absolute;
-      top: -7px;
-      left: -7.1px;
-      width: 25px;
-      height: 25px;
-
-      background: transparent;
-      border: 2px solid $color-accent-second;
-      border-radius: 50%;
-      @include media-small-desktop {
-        display: none;
-      }
-      @include media-tablet {
-        display: block;
-      }
-      @include media-mobile-big {
-        width: 12px;
-        height: 12px;
-        top: -3.2px;
-        left: -3.2px;
-      }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -16.5px;
-      left: -15px;
-      width: 40px;
-      height: 40px;
-      background: transparent;
-      border: 2px solid $color-accent-second;
-      border-radius: 50%;
-      @include media-small-desktop {
-        display: none;
-      }
-      @include media-tablet {
-        display: block;
-      }
-      @include media-mobile-big {
-        width: 20px;
-        height: 20px;
-        bottom: -7.5px;
-        left: -7.5px;
-      }
-    }
-  }
-  &--active-sm {
-    &:after {
-      content: "";
-      position: absolute;
-      top: -7px;
-      left: -7.1px;
-      width: 25px;
-      height: 25px;
-
-      background: transparent;
-      border: 2px solid $color-accent-second;
-      border-radius: 50%;
-      @include media-tablet {
-        display: none;
-      }
-      @media (min-width: 1201px) {
-        display: none;
-      }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -16.5px;
-      left: -15px;
-      width: 40px;
-      height: 40px;
-      background: transparent;
-      border: 2px solid $color-accent-second;
-      border-radius: 50%;
-      @include media-tablet {
-        display: none;
-      }
-      @media (min-width: 1201px) {
-        display: none;
-      }
-    }
-  }
 }
 
-/* Prices */
+.roller:checked.roller::before,
+.roller:checked.roller::after {
+  opacity: 1;
+}
 
-.prices {
-  max-width: 952px;
-  width: 100%;
+/* Progress prices */
+
+.progress__prices {
   @extend %flex;
-  @extend %js-content-space-between;
+  justify-content: space-between;
+  padding: 0 3rem 0;
+  @media (min-width: 1601px) {
+    padding: 0;
+  }
+  @include media-small-desktop {
+    padding: 0;
+  }
+  @include media-tablet {
+    padding: 0 1.7rem 0 1.3rem;
+  }
+  @media (max-width: 608px) {
+    padding: 0;
+  }
   @include media-mobile-big {
-    max-width: 285px;
-    gap: 4.3rem;
-    padding: 0.6rem 0 0 1.4rem;
-    margin: 0 auto;
+    padding: 0 0.75rem 0 0.85rem;
   }
 }
 
 .price {
   position: relative;
   @include font($price-size, $line-price-number, $medium);
-  @include media-mobile-big {
-    @include font(1.3rem, 1.8rem);
+  &--active {
+    color: $color-accent-second;
+    filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
+      brightness(101%) contrast(99%);
   }
+  @include media-mobile-big {
+    @include font(1.3rem, 1.8rem, $medium);
+    color: $color-text;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -457,26 +455,7 @@
       background: url("../icons/donation/dollar-sm.svg");
     }
   }
-  &--active {
-    color: $color-accent-second;
-    filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
-      brightness(101%) contrast(99%);
-  }
-  &--active-sm {
-    @include media-tablet {
-      color: $color-accent-second;
-      filter: invert(57%) sepia(93%) saturate(1305%) hue-rotate(350deg)
-        brightness(101%) contrast(99%);
-    }
-  }
-}
 
-.price {
-  @include media-small-desktop {
-    max-width: 830px;
-    width: 100%;
-    padding-left: 0.2px;
-  }
   &:first-child {
     margin: 0 0 0 1rem;
     @include media-small-desktop {
@@ -509,7 +488,7 @@
     @include media-tablet {
       margin: 0 0 0 2.9rem;
     }
-    @include media-mobile-big {
+    @media (max-width: 608px) {
       margin: 0 0 0 0;
     }
   }
@@ -521,7 +500,7 @@
     @include media-tablet {
       margin: 0 0 0 8.36rem;
     }
-    @include media-mobile-big {
+    @media (max-width: 608px) {
       margin: 0 0 0;
     }
   }
@@ -533,7 +512,7 @@
     @include media-tablet {
       margin: 0 0 0 8.3rem;
     }
-    @include media-mobile-big {
+    @media (max-width: 608px) {
       margin: 0 0 0;
     }
   }
@@ -545,35 +524,28 @@
     @include media-tablet {
       margin: 0 0 0 9.16rem;
     }
-    @include media-mobile-big {
+    @media (max-width: 608px) {
       margin: 0 0 0;
     }
   }
-  &:nth-child(8) {
-    margin: 0 0 0 7.6rem;
-  }
   &:last-child {
-    margin: 0 0 0 9rem;
+    margin: 0 0 0 8.6rem;
     @include media-small-desktop {
       margin: 0 0 0 10rem;
     }
-    @include media-tablet {
-      margin: 0 0 0 7rem;
-    }
-    @include media-mobile-big {
-      margin: 0 0 0;
-      padding-left: 0.7rem;
-      &::before {
-        top: 3px;
-        left: 1px;
-        width: 5px;
-        height: 10px;
-      }
+    @media (max-width: 608px) {
+      margin: 0;
     }
   }
 }
 
 /* Another amount */
+
+.another-amount__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .amount__block {
   max-width: 268px;
@@ -581,6 +553,9 @@
   position: relative;
   @include media-tablet {
     max-width: 181px;
+  }
+  @include media-mobile-big {
+    margin: 0 auto;
   }
 }
 
@@ -640,6 +615,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   @include media-mobile-big {
     padding: 2.2rem 1.8rem 3rem 0;
+    justify-content: center;
   }
 }
 
@@ -653,7 +629,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-input[type="radio"] {
+.another-amount__input {
   @extend %flex;
   @extend %al-items-center;
   @extend %js-content-center;
