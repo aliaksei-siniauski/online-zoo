@@ -1451,9 +1451,9 @@ h5 {
 .backstage__position-img {
   position: absolute;
   top: 13px;
-  right: -293px;
+  right: 0;
   height: 605px;
-  width: 293px;
+  width: 202px;
   background: url("../images/page/flower.png");
   background-repeat: no-repeat;
 }
