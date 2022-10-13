@@ -90,7 +90,7 @@
           <div class="backstage__position-img"></div>
           <picture class="backstage__picture">
             <source
-              media="(max-width: 1000px )"
+              media="(max-width: 1200px )"
               srcset="src/images/bamboo/bamboo-sm-desktop.png"
             />
             <source
@@ -129,256 +129,711 @@
       <section class="pets">
         <div class="position__img pets__section-img--left"></div>
         <div class="position__img pets__section-img--right"></div>
-        <div class="container container__pets">
-          <div class="pet-cards__wrapper">
-            <span class="arrow__button arrow-prev">
-              <span class="icon icon--arrow-prev"></span>
-            </span>
-            <div class="pet-cards">
-              <div class="pet-card panda-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-1.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-1.jpg"
-                  />
-                  <img
-                    class="petcard__img"
-                    src="src/images/animal/desktop/animal-1.jpg"
-                    alt="Pandas"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Giant Pandas</h5>
-                    <p class="pet-card__info">Native to Southwest China</p>
+        <div class="container pets__container">
+          <div class="pets__content">
+            <div class="animals-cards__carousel-wrapper">
+              <div class="animals-cards__carousel">
+                <div
+                  class="animal-item animal-item__left"
+                  id="animal-item--left"
+                >
+                  <div class="animal-card panda-card panda-card--left-item">
+                    <div class="animal-card--opacity"></div>
+                    <picture class="animal__picture">
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="src/images/animal/mobile/animal-1.jpg"
+                      />
+                      <source
+                        media="(max-width: 414px)"
+                        srcset="src/images/animal/mobile/animal-1.jpg"
+                      />
+                      <source
+                        media="(max-width: 640px)"
+                        srcset="src/images/animal/tablet/animal-1.jpg"
+                      />
+                      <source
+                        media="(max-width: 1000px)"
+                        srcset="src/images/animal/sm-desktop/animal-1.jpg"
+                      />
+                      <source
+                        media="(max-width: 1220px)"
+                        srcset="src/images/animal/desktop/animal-1.jpg"
+                      />
+                      <img
+                        class="petcard__img"
+                        src="src/images/animal/desktop/animal-1.jpg"
+                        alt="Pandas"
+                      />
+                    </picture>
+                    <div class="animal-card__content">
+                      <div class="animal-card__description">
+                        <h5 class="animal-card__title">Giant Pandas</h5>
+                        <p class="animal-card__info">
+                          Native to Southwest China
+                        </p>
+                      </div>
+                      <!-- close animal-card description -->
+                      <span class="icon icon--banana card__icon"></span>
+                    </div>
+                    <!-- close animal-card content" -->
                   </div>
-                  <!-- close pet-card description -->
-                  <span class="icon icon--banana card__icon"></span>
-                </div>
-                <!-- close pet-card content" -->
-              </div>
-              <!-- close  pet-card -->
-              <div class="pet-card eagle-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-2.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-2.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-2.jpg"
-                    alt="Eagles"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Eagles</h5>
-                    <p class="pet-card__info">Native to South America</p>
+                  <!-- close  animal-card -->
+                  <div class="animal-card eagle-card eagle-card--left-item"">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-2.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-2.jpg"
+                      alt="Eagles"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Eagles</h5>
+                      <p class="animal-card__info">Native to South America</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
                   </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--meet-fish card__icon"></span>
+                  <!-- close description-wrapper" -->
                 </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card gorilas-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-3.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-3.jpg"
-                    alt="gorillas"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Gorillas</h5>
-                    <p class="pet-card__info">Native to Congo</p>
+                <!-- close card -->
+                <div class="animal-card gorilas-card gorilas-card--left-item">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-3.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-3.jpg"
+                      alt="gorillas"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Gorillas</h5>
+                      <p class="animal-card__info">Native to Congo</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--banana card__icon"></span>
                   </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--banana card__icon"></span>
+                  <!-- close description-wrapper" -->
                 </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card sloth-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-4.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-4.jpg"
-                    alt="two-toed sloth"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Two-toed Sloth</h5>
-                    <p class="pet-card__info">Mesoamerica, South America</p>
+                <!-- close card -->
+                <div class="animal-card cheetahs-card cheetahs-card--left-item">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 551px)"
+                      srcset="src/images/animal/sm-desktop/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 971px)"
+                      srcset="src/images/animal/sm-desktop/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-5.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-5.jpg"
+                      alt="cheetahs"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Cheetahs</h5>
+                      <p class="animal-card__info">Native to Africa</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
                   </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--banana card__icon"></span>
+                  <!-- close description-wrapper" -->
                 </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card cheetahs-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-3.jpg"
-                  />
-                  <source
-                    media="(max-width: 1220px)"
-                    srcset="src/images/animal/desktop/animal-5.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-5.jpg"
-                    alt="cheetahs"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Cheetahs</h5>
-                    <p class="pet-card__info">Native to Africa</p>
+                <!-- close card -->
+                <div class="animal-card alligators-card---left-item">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset="src/images/animal/sm-desktop/animal-5.jpg"
+                    />
+                    <img
+                      src="src/images/animal/tablet/animal-4.jpg"
+                      alt="Alligators"
+                      width="366"
+                      height="366"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Alligators</h5>
+                      <p class="animal-card__info">
+                        Native to Southeastern U<span class="add-symball"
+                          >.</span
+                        ><span class="hide-text">nited </span>S<span
+                          class="add-symball"
+                          >.</span
+                        ><span class="hide-text">tates</span>
+                      </p>
+                    </div>
+                    <!-- pet content -->
+                    <span class="icon icon--meet-fish pet__icon"></span>
                   </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--meet-fish card__icon"></span>
+                  <!-- close pet content description -->
                 </div>
-                <!-- close description-wrapper" -->
-              </div>
-              <!-- close card -->
-              <div class="pet-card alligators-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 320px)"
-                    srcset="src/images/animal/mobile/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 414px)"
-                    srcset="src/images/animal/mobile/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 640px)"
-                    srcset="src/images/animal/tablet/animal-4.jpg"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    srcset="src/images/animal/sm-desktop/animal-5.jpg"
-                  />
-                  <img
-                    src="src/images/animal/sm-desktop/animal-4.jpg"
-                    alt="Alligators"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Alligators</h5>
-                    <p class="pet-card__info">
-                      Native to Southeastern U<span class="add-symball">.</span
-                      ><span class="hide-text">nited </span>S<span
-                        class="add-symball"
-                        >.</span
-                      ><span class="hide-text">tates</span>
-                    </p>
+                <!-- animal-alligators -->
+                <div class="animal-card penguins-card-left-item">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-6.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-6.jpg"
+                      alt="penguins"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Penguins</h5>
+                      <p class="animal-card__info">Native to Antarctica</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
                   </div>
-                  <!-- pet content -->
-                  <span class="icon icon--meet-fish pet__icon"></span>
+                  <!-- close description-wrapper" -->
                 </div>
-                <!-- close pet content description -->
               </div>
-              <!-- pet-alligators -->
-              <div class="pet-card penguins-card">
-                <div class="pet-card--opacity"></div>
-                <picture class="pet__picture">
-                  <source
-                    media="(max-width: 1000px)"
-                    srcset="src/images/animal/sm-desktop/animal-6.jpg"
-                  />
-                  <img
-                    class="card__img"
-                    src="src/images/animal/desktop/animal-6.jpg"
-                    alt="penguins"
-                  />
-                </picture>
-                <div class="pet-card__content">
-                  <div class="pet-card__description">
-                    <h5 class="pet-card__title">Penguins</h5>
-                    <p class="pet-card__info">Native to Antarctica</p>
+              <!-- close animal-item -->
+              <div
+                class="animal-item animal-item__active"
+                id="animal-item--active"
+              >
+                <div class="animal-card panda-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-1.jpg"
+                    />
+                    <img
+                      class="petcard__img"
+                      src="src/images/animal/desktop/animal-1.jpg"
+                      alt="Pandas"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Giant Pandas</h5>
+                      <p class="animal-card__info">Native to Southwest China</p>
+                    </div>
+                    <!-- close animal-card description -->
+                    <span class="icon icon--banana card__icon"></span>
                   </div>
-                  <!-- close card__description -->
-                  <span class="icon icon--meet-fish card__icon"></span>
+                  <!-- close animal-card content" -->
                 </div>
-                <!-- close description-wrapper" -->
+                <!-- close  animal-card -->
+                <div class="animal-card eagle-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-2.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-2.jpg"
+                      alt="Eagles"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Eagles</h5>
+                      <p class="animal-card__info">Native to South America</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card gorilas-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-3.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-3.jpg"
+                      alt="gorillas"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Gorillas</h5>
+                      <p class="animal-card__info">Native to Congo</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--banana card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card sloth-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-4.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-4.jpg"
+                      alt="two-toed sloth"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Two-toed Sloth</h5>
+                      <p class="animal-card__info">
+                        Mesoamerica, South America
+                      </p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--banana card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card cheetahs-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-5.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-5.jpg"
+                      alt="cheetahs"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Cheetahs</h5>
+                      <p class="animal-card__info">Native to Africa</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card alligators-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset="src/images/animal/sm-desktop/animal-5.jpg"
+                    />
+                    <img
+                      src="src/images/animal/sm-desktop/animal-4.jpg"
+                      alt="Alligators"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Alligators</h5>
+                      <p class="animal-card__info">
+                        Native to Southeastern U<span class="add-symball"
+                          >.</span
+                        ><span class="hide-text">nited </span>S<span
+                          class="add-symball"
+                          >.</span
+                        ><span class="hide-text">tates</span>
+                      </p>
+                    </div>
+                    <!-- pet content -->
+                    <span class="icon icon--meet-fish pet__icon"></span>
+                  </div>
+                  <!-- close pet content description -->
+                </div>
+                <!-- animal-alligators -->
+                <div class="animal-card penguins-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-6.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-6.jpg"
+                      alt="penguins"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Penguins</h5>
+                      <p class="animal-card__info">Native to Antarctica</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
               </div>
-              <!-- close card -->
+              <!-- close animal-item -->
+              <div
+                class="animal-item animal-item__right"
+                id="animal-item--right"
+              >
+                <div class="animal-card panda-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-1.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-1.jpg"
+                    />
+                    <img
+                      class="petcard__img"
+                      src="src/images/animal/desktop/animal-1.jpg"
+                      alt="Pandas"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Giant Pandas</h5>
+                      <p class="animal-card__info">Native to Southwest China</p>
+                    </div>
+                    <!-- close animal-card description -->
+                    <span class="icon icon--banana card__icon"></span>
+                  </div>
+                  <!-- close animal-card content" -->
+                </div>
+                <!-- close  animal-card -->
+                <div class="animal-card eagle-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-2.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-2.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-2.jpg"
+                      alt="Eagles"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Eagles</h5>
+                      <p class="animal-card__info">Native to South America</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card gorilas-card gorilas-card--right-item">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="src/images/animal/mobile/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 414px)"
+                      srcset="src/images/animal/mobile/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/tablet/animal-3.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-4.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-3.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-3.jpg"
+                      alt="gorillas"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Gorillas</h5>
+                      <p class="animal-card__info">Native to Congo</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--banana card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card bear-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/desktop/animal-7.jpg"
+                    />
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/desktop/animal-7.jpg"
+                    />
+                    <source
+                      media="(max-width: 1220px)"
+                      srcset="src/images/animal/desktop/animal-7.jpg"
+                    />
+                    <img
+                      class="animal-card__img"
+                      src="src/images/animal/desktop/animal-7.jpg"
+                      alt="bear"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Bears</h5>
+                      <p class="animal-card__info">Native to Eeurasian</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--banana card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+                <!-- close card -->
+                <div class="animal-card zebra-card">
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 640px)"
+                      srcset="src/images/animal/desktop/animal-8.jpg"
+                    />
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset="src/images/animal/desktop/animal-8.jpg"
+                    />
+                    <img
+                      src="src/images/animal/desktop/animal-8.jpg"
+                      alt="Zebra"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Zebras</h5>
+                      <p class="animal-card__info">Native to Africa</p>
+                    </div>
+                    <!-- pet content -->
+                    <span class="icon icon--meet-fish pet__icon"></span>
+                  </div>
+                  <!-- close pet content description -->
+                </div>
+                <!-- animal-alligators -->
+                <div
+                  class="animal-card penguins-card penguins-card--right-item"
+                >
+                  <div class="animal-card--opacity"></div>
+                  <picture class="animal__picture">
+                    <source
+                      media="(max-width: 1000px)"
+                      srcset="src/images/animal/sm-desktop/animal-6.jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="src/images/animal/desktop/animal-6.jpg"
+                      alt="penguins"
+                    />
+                  </picture>
+                  <div class="animal-card__content">
+                    <div class="animal-card__description">
+                      <h5 class="animal-card__title">Penguins</h5>
+                      <p class="animal-card__info">Native to Antarctica</p>
+                    </div>
+                    <!-- close card__description -->
+                    <span class="icon icon--meet-fish card__icon"></span>
+                  </div>
+                  <!-- close description-wrapper" -->
+                </div>
+              </div>
+              <!-- close animal-item -->
             </div>
-            <!-- close cards -->
-            <span class="arrow__button arrow-next">
-              <span class="icon icon--arrow-next"></span>
-            </span>
+            <!-- close animals-cards carousel -->
           </div>
-          <!-- close cards__wrapper -->
+          <!-- close animals-cards carousel-wrapper -->
+
+          <span class="arrow__button arrow-prev">
+            <span class="icon icon--arrow-prev"></span>
+          </span>
+          <!-- close arrow-prev -->
+          <span class="arrow__button arrow-next">
+            <span class="icon icon--arrow-next"></span>
+          </span>
+          <!-- close arrow-next -->
+
+          <!-- close animal-cards__content -->
           <div class="pets__button">
             <button class="button button--main">choose your favorite</button>
           </div>
@@ -1075,7 +1530,6 @@
       </div>
       <!-- container -->
     </footer>
-
     <div class="modals">
       <div class="modal__overlay">
         <div class="modal modal-1" data-target="user-1">
