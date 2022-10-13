@@ -9,7 +9,6 @@ const sortPetCardItemLeft = () => {
   [...petItemsCardsLeft.children]
     .sort((a, b) => 0.5 - Math.random())
     .forEach((node) => petItemsCardsLeft.appendChild(node));
-  console.log(petItemsCardsLeft);
 };
 
 const sortPetCardItemRight = () => {
@@ -17,7 +16,6 @@ const sortPetCardItemRight = () => {
   [...petItemsCardsRight.children]
     .sort((a, b) => 0.5 - Math.random())
     .forEach((node) => petItemsCardsRight.appendChild(node));
-  console.log(petItemsCardsRight);
 };
 
 const moveLeft = () => {
