@@ -10,7 +10,6 @@ const addTestimonialHandler = () => {
     testimonials.forEach((el) => {
       el.addEventListener("click", (e) => {
         let testimonialUser = e.currentTarget.getAttribute("data-user");
-
         document
           .querySelector(`[data-target="${testimonialUser}"]`)
           .classList.add("modal--show");

@@ -1,0 +1,59 @@
+@include media-desktop {
+  @keyframes move-left {
+    from {
+      left: -1190px;
+    }
+    to {
+      left: -2380px;
+    }
+  }
+
+  @keyframes move-right {
+    from {
+      left: -1190px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  @keyframes move-left {
+    from {
+      left: -970px;
+    }
+    to {
+      left: -1940px;
+    }
+  }
+
+  @keyframes move-right {
+    from {
+      left: -970px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+
+@include media-tablet {
+  @keyframes move-left {
+    from {
+      left: -600px;
+    }
+    to {
+      left: -1200px;
+    }
+  }
+
+  @keyframes move-right {
+    from {
+      left: -600px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
