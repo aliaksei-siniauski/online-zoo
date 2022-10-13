@@ -137,10 +137,12 @@
     gap: 4.8rem;
   }
   @include media-tablet {
+    flex-direction: row;
     gap: 3.7rem;
   }
   @include media-mobile-big {
-    gap: 3.1rem;
+    gap: 2.8rem;
+    flex-direction: inherit;
   }
 }
 
