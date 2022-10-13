@@ -1733,10 +1733,23 @@ h5 {
   width: 100%;
   height: 872px;
   overflow: hidden;
+  margin-bottom: 8rem;
 }
 @media (max-width: 1320px) {
   .animals-cards__carousel-wrapper {
     height: 800px;
+  }
+}
+@media (max-width: 971px) {
+  .animals-cards__carousel-wrapper {
+    margin-bottom: 2rem;
+    height: 756px;
+    height: 800px;
+  }
+}
+@media (max-width: 551px) {
+  .animals-cards__carousel-wrapper {
+    margin-bottom: 2rem;
   }
 }
 
@@ -1761,27 +1774,12 @@ h5 {
   }
 }
 
-.animal-cards__wrapper {
-  position: relative;
-  padding: 0 0 8rem 0rem;
-}
-@media (max-width: 971px) {
-  .animal-cards__wrapper {
-    padding: 0 0 6.2rem 0rem;
-  }
-}
-@media (max-width: 551px) {
-  .animal-cards__wrapper {
-    padding: 0 0 2.2rem 0rem;
-  }
-}
-
 .animal-item {
   gap: 2rem 2.9rem;
 }
 @media (max-width: 1200px) {
   .animal-item {
-    gap: 9.3rem 2rem;
+    gap: 9.2rem 2rem;
   }
 }
 @media (max-width: 551px) {
