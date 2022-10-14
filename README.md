@@ -1,5 +1,4 @@
-# Online-zoo project
-[Online-zoo](https://rolling-scopes-school.github.io/aliaksei-siniauski-JSFE2022Q3/)
+# Online-zoo project(https://rolling-scopes-school.github.io/aliaksei-siniauski-JSFE2022Q3/)
 
 ![Online-zoo](https://snipboard.io/BJyt3d.jpg)
 
