@@ -4,4 +4,19 @@
 
 .hide-text {
   display: none;
+  @include media-small-desktop {
+    display: contents;
+  }
+}
+
+.hide-for-sm-desktop {
+  @include media-small-desktop {
+    display: none;
+  }
+}
+
+.show-overlay {
+  @extend %overlay;
+  z-index: 1;
+  overflow: auto;
 }

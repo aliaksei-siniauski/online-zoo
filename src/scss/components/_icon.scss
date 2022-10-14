@@ -16,13 +16,26 @@
     background: url("../icons/bamboo.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    @include media-tablet {
+      bottom: -2px;
+      left: 4px;
+      width: 7px;
+      height: 17px;
+    }
   }
+
   &--banana {
     width: 33px;
     height: 37px;
     background: url("../icons/fruit/banana.svg");
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: cover;
+    @include media-tablet {
+      width: 25.72px;
+      height: 28.84px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
   &--meet-fish {
     width: 48px;
@@ -30,6 +43,13 @@
     background: url("../icons/fruit/meet-fish.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @include media-tablet {
+      width: 37.41px;
+      height: 29.62px;
+      background-repeat: no-repeat;
+    }
   }
   &--arrow-next {
     @extend %arrow-icon;
@@ -122,6 +142,12 @@
     background: url("../icons/animals/panda.svg");
     background-repeat: no-repeat;
     background-position: center;
+    @include media-mobile-big {
+      width: 160px;
+      height: 138px;
+      background: url("../icons/donation/panda-widget-sm.svg");
+      background-repeat: no-repeat;
+    }
   }
   &--multiply {
     width: 14px;
@@ -129,6 +155,13 @@
     background: url("../icons/multiply.svg");
     background-repeat: no-repeat;
     background-position: center;
+    @include media-mobile-big {
+      width: 8px;
+      height: 8px;
+      background: url("../icons/multiply-sm.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
   }
   &--price {
     width: 10px;
@@ -138,6 +171,14 @@
     background-position: center;
     filter: invert(63%) sepia(6%) saturate(214%) hue-rotate(163deg)
       brightness(93%) contrast(89%);
+  }
+
+  &--close {
+    width: 26px;
+    height: 26px;
+    background: url("../icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

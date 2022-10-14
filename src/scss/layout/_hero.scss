@@ -1,25 +1,69 @@
 .hero {
   background: url("../images/bg/bg.jpg");
-  background-size: cover;
-  background-position: center bottom;
+  background-position: bottom;
   background-repeat: no-repeat;
+  min-height: 700px;
+  background-size: cover;
+  @media (min-width: 1600px) {
+    background-position: center;
+  }
+  @include media-small-desktop {
+    background: url("../images/bg/bg-sm-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 504px;
+  }
+  @include media-tablet {
+    min-height: 339px;
+    padding: 0 0 8.5rem;
+    background-repeat: no-repeat;
+  }
+  @include media-mobile-big {
+    margin: 3.3rem 0 0;
+    min-height: 187px;
+    background: url("../images/bg/bg-mb.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    @include media-mobile-small {
+      background-size: contain;
+      background-position: center top;
+      padding-top: 2.2rem;
+    }
+  }
 }
 
 .hero__container {
   position: relative;
   @extend %flex;
-  justify-content: flex-end;
-  padding-top: 8.6rem;
+  @extend %flex-column;
+  gap: 6rem;
+  @include media-small-desktop {
+    padding-top: 0;
+    gap: 4.1rem;
+  }
+  @include media-tablet {
+    gap: 0;
+  }
 }
 
 .hero__content {
   position: relative;
   max-width: 500px;
-  @extend %flex;
-  @extend %flex-column;
-  @extend %al-items-center;
-  gap: 6rem;
-  margin-bottom: 10rem;
+  padding: 8.6rem 0 0;
+  @extend %al-self-end;
+  @include media-small-desktop {
+    padding: 4.2rem 0 0 0;
+  }
+  @include media-tablet {
+    max-width: 293px;
+    padding: 8.3rem 0 0 0;
+  }
+  @include media-mobile-big {
+    padding: 2rem 0.1rem 0 0;
+  }
 }
 
 .hero__cicle {
@@ -30,6 +74,27 @@
   height: 465px;
   background: $main-gradient;
   border-radius: 50%;
+
+  @include media-small-desktop {
+    width: 367px;
+    height: 367px;
+    top: -11px;
+    right: 162px;
+  }
+
+  @include media-tablet {
+    width: 237.6px;
+    height: 237.6px;
+    top: 45px;
+    right: 67px;
+  }
+
+  @include media-mobile-big {
+    width: 119.09px;
+    height: 119.09px;
+    top: 0;
+    right: 38px;
+  }
 }
 
 .hero__title {
@@ -37,7 +102,32 @@
   color: $color-light;
   text-transform: uppercase;
   @extend %text-center;
+  @include media-small-desktop {
+    @include font($accent-size-sm-desktop, $line-heigth-accent-size-sm-desktop);
+  }
+  @include media-tablet {
+    max-width: 255.64px;
+    @include font($accent-size-tablet, $line-height-accent-tablet, $bold);
+  }
+  @include media-mobile-big {
+    max-width: 146px;
+    padding-left: 1.7rem;
+    @include font($accent-size-mb, $line-height-info, $bold);
+  }
   &--accent {
     color: $color-accent;
+  }
+}
+
+.hero__button {
+  @extend %al-self-end;
+  margin: 0 10.6rem 0 0;
+  @include media-tablet {
+    position: absolute;
+    bottom: -46.5px;
+    align-self: auto;
+  }
+  @include media-mobile-big {
+    bottom: -115px;
   }
 }

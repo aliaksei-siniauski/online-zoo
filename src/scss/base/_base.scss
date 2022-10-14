@@ -1,11 +1,22 @@
 body {
-  /*   min-width: 1190px;
- */
-  min-height: 100vh;
+  min-width: 320px;
   @extend %flex;
   @extend %flex-column;
   @extend %js-content-space-between;
   font-family: $font-family-main;
   color: $color-text;
   background: $color-light;
+  overflow: hidden;
+}
+
+.boody-hidden {
+  height: 100vh;
+  overflow-y: hidden;
+  min-height: auto;
+}
+
+input {
+  webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
