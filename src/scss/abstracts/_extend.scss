@@ -1,0 +1,102 @@
+%overflow-hidden {
+  overflow: hidden;
+}
+
+%flex {
+  display: flex;
+}
+
+%inline-flex {
+  display: inline-flex;
+}
+
+%flex-wrap {
+  flex-wrap: wrap;
+}
+
+%flex-column {
+  flex-direction: column;
+}
+
+%al-self-end {
+  align-self: flex-end;
+}
+
+%js-content-space-between {
+  justify-content: space-between;
+}
+
+%js-content-center {
+  justify-content: center;
+}
+
+%al-items-center {
+  align-items: center;
+}
+
+%link-style {
+  color: $color-light;
+  &:hover {
+    color: $color-main;
+  }
+}
+
+%font-info {
+  @include font($second-size, $line-height-second, $light);
+}
+
+%subtitle-font {
+  @include font($subtitle-size, $line-height-subtitle);
+}
+
+%font-style-main {
+  @include font($main-size, $line-height-main, $medium);
+}
+
+%text-center {
+  text-align: center;
+}
+
+%text-uppercase {
+  text-transform: uppercase;
+}
+
+%transition {
+  transition: ease-in-out 0.5s;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}
+
+%position-relative {
+  position: relative;
+}
+
+%position-absolute {
+  position: absolute;
+}
+
+%overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.8);
+}
+
+%custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-accent-second;
+    border-radius: 10px;
+  }
+}
