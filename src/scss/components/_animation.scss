@@ -1,3 +1,16 @@
+/* Animals animation */
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 3s;
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 3s;
+}
+//
+
 @include media-desktop {
   @keyframes move-left {
     from {

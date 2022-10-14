@@ -3,16 +3,18 @@ export { btnPrev, btnNext, petCarousel };
 const btnPrev = document.querySelector(".arrow-prev");
 const btnNext = document.querySelector(".arrow-next");
 const petCarousel = document.querySelector(".animals-cards__carousel");
+const petItemsCardsLeft = document.querySelector("#animal-item--left");
+const petItemsCardsRight = document.querySelector("#animal-item--right");
 
 const sortPetCardItemLeft = () => {
-  let petItemsCardsLeft = document.querySelector("#animal-item--left");
+  petItemsCardsLeft;
   [...petItemsCardsLeft.children]
     .sort((a, b) => 0.5 - Math.random())
     .forEach((node) => petItemsCardsLeft.appendChild(node));
 };
 
 const sortPetCardItemRight = () => {
-  let petItemsCardsRight = document.querySelector("#animal-item--right");
+  petItemsCardsRight;
   [...petItemsCardsRight.children]
     .sort((a, b) => 0.5 - Math.random())
     .forEach((node) => petItemsCardsRight.appendChild(node));
@@ -36,7 +38,16 @@ const moveRight = () => {
 btnPrev.addEventListener("click", moveRight);
 btnNext.addEventListener("click", moveLeft);
 
-petCarousel.addEventListener("animationend", () => {
+petCarousel.addEventListener("animationend", (animationEvent) => {
+  if (animationEvent.animationName === "move-left") {
+    petCarousel.classList.remove("transition-left");
+    document.querySelector("#animal-item--active").innerHTML =
+      petItemsCardsRight.innerHTML;
+  } else {
+    petCarousel.classList.remove("transition-right");
+    document.querySelector("#animal-item--active").innerHTML =
+      petItemsCardsLeft.innerHTML;
+  }
   petCarousel.classList.remove("transition-left");
   petCarousel.classList.remove("transition-right");
   btnPrev.addEventListener("click", moveRight);
